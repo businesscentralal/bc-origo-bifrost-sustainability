@@ -5,6 +5,7 @@ using Microsoft.Sustainability.Account;
 using Microsoft.Sustainability.Journal;
 using Microsoft.Sustainability.Setup;
 using Origo.Bifrost;
+using System.Automation;
 using System.TestLibraries.Utilities;
 
 /// <summary>Self-contained journal fixtures and public-dispatcher calls for issue 7.</summary>
@@ -87,6 +88,61 @@ codeunit 98042 "Sust Jnl Create Fixture ori"
         Batch."No Series" := 'XJ7';
         Batch.Insert();
         Commit();
+    end;
+
+    /// <summary>Creates an unrelated open approval for another approver before restricting permissions.</summary>
+    procedure CreateUnrelatedOpenApproval() EntryNo: Integer
+    var
+        Account: Record "Sustainability Account";
+        ApprovalEntry: Record "Approval Entry";
+    begin
+        Account.Get('XJ7');
+        ApprovalEntry."Table ID" := Database::"Sustainability Account";
+        ApprovalEntry."Record ID to Approve" := Account.RecordId();
+        ApprovalEntry.Status := ApprovalEntry.Status::Open;
+        ApprovalEntry."Sender ID" := 'XJ7-SENDER';
+        ApprovalEntry."Approver ID" := 'XJ7-APPROVER';
+        Assert.AreNotEqual(UserId(), ApprovalEntry."Approver ID", 'The caller must not be the unrelated approver.');
+        ApprovalEntry.Insert();
+        EntryNo := ApprovalEntry."Entry No.";
+        Commit();
+    end;
+
+    /// <summary>Removes only the approval entry created by this test, outside restricted permissions.</summary>
+    procedure DeleteOpenApproval(EntryNo: Integer)
+    var
+        ApprovalEntry: Record "Approval Entry";
+    begin
+        ApprovalEntry.Get(EntryNo);
+        ApprovalEntry.Delete();
+        Commit();
+    end;
+
+    /// <summary>Creates an open batch approval for another user to exercise the native cancellation-permission read.</summary>
+    procedure CreateBatchOpenApproval() EntryNo: Integer
+    var
+        Batch: Record "Sustainability Jnl. Batch";
+        ApprovalEntry: Record "Approval Entry";
+    begin
+        Batch.Get('XJ7', 'XJ7');
+        ApprovalEntry."Table ID" := Database::"Sustainability Jnl. Batch";
+        ApprovalEntry."Record ID to Approve" := Batch.RecordId();
+        ApprovalEntry.Status := ApprovalEntry.Status::Open;
+        ApprovalEntry."Sender ID" := 'XJ7-SENDER';
+        ApprovalEntry."Approver ID" := 'XJ7-APPROVER';
+        Assert.AreNotEqual(UserId(), ApprovalEntry."Approver ID", 'The caller must not be the batch approver.');
+        ApprovalEntry.Insert();
+        EntryNo := ApprovalEntry."Entry No.";
+        Commit();
+    end;
+
+    /// <summary>Checks the fixture's exact line count, including pre-existing lines after a refusal.</summary>
+    procedure AssertLineCount(Expected: Integer)
+    var
+        JournalLine: Record "Sustainability Jnl. Line";
+    begin
+        JournalLine.SetRange("Journal Template Name", 'XJ7');
+        Assert.AreEqual(Expected, JournalLine.Count(), 'A request must retain the expected journal line count.');
     end;
 
     /// <summary>Builds a valid request with one manual-emission line.</summary>

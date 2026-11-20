@@ -12,6 +12,7 @@ using Microsoft.Sustainability.Energy;
 using Microsoft.Sustainability.Journal;
 using Microsoft.Sustainability.Setup;
 using System.Automation;
+using System.Security.User;
 
 /// <summary>
 /// Grants journal creation and its capability only to the Full role.
@@ -46,5 +47,6 @@ permissionset 70009202 "BIFROST SustFull ori"
                   tabledata "Default Dimension" = R,
                   tabledata "Dimension Set Entry" = RI,
                   tabledata "Dimension Set Tree Node" = RI,
-                  tabledata "Approval Entry" = R;
+                  tabledata "Approval Entry" = R,
+                  tabledata "User Setup" = R;
 }

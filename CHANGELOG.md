@@ -2,6 +2,8 @@
 
 ## [28.0.0.0] - Unreleased
 
+- Fixed Full-role journal creation with open approvals by granting read access to User Setup. Permission tests now seed unrelated open approvals for another approver and cover native approval checks plus rollback without losing existing journal lines (#7).
+
 - Added `Sustainability.Journal.Create`: atomic journal creation with native manual/formula validation, Full-only permissions, bilingual help and named refusals (#7). Added enum extension/value, implementation codeunit and capability table 70009213; test codeunits 98040-98041, fixture codeunit 98042 and test execution permission set 98043. No ledger posting.
 
 - Repository scaffolded from the Bifrost Quality Management setup (AL-Go, COSMO Alpaca, source guards, Runtime Package workflow).
