@@ -122,6 +122,7 @@ codeunit 98031 "Sust Category Contract Tst ori"
             LowerPermissions.SetExactPermissionSet('BIFROST Full ori');
             LowerPermissions.AddPermissionSet('BIFROST SustFull ori');
         end;
+        LowerPermissions.AddPermissionSet('BIFROST API ori');
         MessageInterface := Enum::"Message Type ori"::"Sustainability.Category.Set";
         IsVisible := MessageInterface.IsEnabled();
         Assert.AreEqual(Mode in ['setup', 'account'], IsVisible, 'Visibility combines the shared gate and write capability.');

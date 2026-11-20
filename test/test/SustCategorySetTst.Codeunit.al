@@ -500,6 +500,7 @@ codeunit 98030 "Sust Category Set Tst ori"
             LowerPermissions.SetExactPermissionSet('BIFROST Full ori');
             LowerPermissions.AddPermissionSet('BIFROST SustFull ori');
         end;
+        LowerPermissions.AddPermissionSet('BIFROST API ori');
         // [WHEN] The public dispatcher runs the same write path as an external call.
         Response := Dispatch(Request, LanguageId);
         LowerPermissions.SetOutsideO365Scope();
@@ -540,6 +541,7 @@ codeunit 98030 "Sust Category Set Tst ori"
                 Commit();
                 LowerPermissions.SetExactPermissionSet('BIFROST Full ori');
                 LowerPermissions.AddPermissionSet('BIFROST SustFull ori');
+                LowerPermissions.AddPermissionSet('BIFROST API ori');
                 Response := Dispatch(Request, LanguageId);
                 LowerPermissions.SetOutsideO365Scope();
                 Assert.AreEqual('Success', ReadText(Response, 'status'), Format(Response));

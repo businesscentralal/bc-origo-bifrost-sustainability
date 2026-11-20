@@ -330,6 +330,8 @@ codeunit 70009211 "Sust Category Set Impl ori" implements "Msg Interface ori", "
         Source: RecordRef;
         Entry: JsonObject;
     begin
+        Subcategory.ReadIsolation := IsolationLevel::ReadCommitted;
+        Subcategory.SetLoadFields(Code, Description, "Emission Factor CO2", "Emission Factor CH4", "Emission Factor N2O", "Renewable Energy");
         Subcategory.SetRange("Category Code", CategoryCode);
         if Subcategory.FindSet() then
             repeat
