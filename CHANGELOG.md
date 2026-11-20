@@ -2,6 +2,8 @@
 
 ## [28.0.0.0] - Unreleased
 
+- Added `Sustainability.Journal.Create`: atomic journal creation with native manual/formula validation, Full-only permissions, bilingual help and named refusals (#7). Added enum extension/value, implementation codeunit and capability table 70009213; test codeunits 98040-98041, fixture codeunit 98042 and test execution permission set 98043. No ledger posting.
+
 - Repository scaffolded from the Bifrost Quality Management setup (AL-Go, COSMO Alpaca, source guards, Runtime Package workflow).
 - Foundation application registration (codeunit 70009200), base, Full and Read permission sets (70009201-70009203) and the Foundation Full and Read role extensions (70009204-70009205).
 - Registration and licence-administrator setup coverage in test codeunit 98000 (English and Icelandic), with the platform-only test permission set 98001.

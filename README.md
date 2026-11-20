@@ -13,14 +13,14 @@ goals, and prepare sustainability journals. It is built on the same basis as
 
 **Microsoft source:** <https://github.com/microsoft/BCApps/tree/main/src/Apps/W1/Sustainability>
 
-**Message types:** implementation is in progress; see the draft PR for issue #7. The first release adds the `Sustainability.*` reads, master-data writes and journal
-types listed in the release tracking issue. Journal posting and ledger reversal come in release 2.
+**Message types:** `Sustainability.Journal.Create` creates unposted journal lines with manual emissions or formula inputs. Journal posting and ledger reversal come in release 2.
 
 Foundation discovers this app on **Bifrost Setup** through its application registry. All setup notifications stay on
 that Foundation page. Bifrost Sustainability has no setup page of its own.
 
 Assign `BIFROST Sustain ori`, `BIFROST SustFull ori` or `BIFROST SustRead ori` alongside the appropriate Foundation
-role. Foundation Full and Read already include the matching Sustainability set. The complete object allocation is
+role. Foundation Full and Read grant access to this app’s own objects; assign the matching Sustainability set
+for Microsoft table permissions (the AppSource-compatible pattern established by the shared visibility gate). The complete object allocation is
 recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 
 ---
@@ -38,7 +38,29 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 
 | Type | Effect | Retry behavior | Help |
 | --- | --- | --- | --- |
-| (none yet) | | | |
+| `Sustainability.Journal.Create` | Write unposted lines; optionally create a batch | Every retry adds lines | `Help.Implementation.Get` |
+
+```json
+{"type":"Sustainability.Journal.Create","data":{"templateName":"GENERAL","batchName":"DEFAULT","lines":[{"postingDate":"2026-01-15","documentNo":"SUST0001","accountNo":"1000","emissionCO2":10}]}}
+```
+
+The template must exist. `createBatch: true` creates a missing batch; otherwise the batch must exist too.
+Each line requires `postingDate` and `accountNo`. `documentNo` defaults from the batch number series.
+Supply either manual `emissionCO2`, `emissionCH4`, `emissionN2O`, or formula inputs `fuelOrElectricity`,
+`distance`, `customAmount`, `installationMultiplier`, `timeFactor`. Native account/category/subcategory
+validation calculates the emissions. Optional metadata: `description`, `unitOfMeasure`, `energySourceCode`,
+`countryRegionCode`, `responsibilityCenter`, and `dimensions` (a map of dimension codes to value codes).
+
+The response contains `lines`, each with `lineNo`, `CO2`, `CH4`, `N2O` and `CO2e`. CO2e uses Microsoft's
+emission factors for the date, scope and country and is zero if no applicable factor exists.
+Unknown keys are refused. All lines, a newly created batch and any dimension sets belong to one transaction;
+a validation failure leaves no partial data. This operation never posts a ledger entry. A successful retry
+adds more lines, so check the previous result before retrying.
+
+`BIFROST SustFull ori` grants the write and its empty capability table; Read does not. Visibility uses the
+shared `Sust Configured ori` check: an emission unit of measure or at least one sustainability account,
+and the caller's write permissions. Hidden means absent from the roster; a caller who knows the type
+can still run it, subject to permissions and native validation.
 
 ### When the Sustainability types are listed
 

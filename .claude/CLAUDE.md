@@ -30,6 +30,13 @@ The app block is small. Allocate IDs densely and record every allocated id here 
 | Test codeunit | 98003 | Sust Configured Perm Tst ori |
 | Test enum extension + value + codeunit | 98004 | Sust Visibility Probe ori (`Sustainability.Test.Visibility`, test-only) |
 | Test codeunit | 98005 | Sust Roster Tst ori |
+| Enum extension / enum value | 70009213 | Sust Jnl Create ori / Sustainability.Journal.Create |
+| Codeunit | 70009213 | Sust Jnl Create Impl ori |
+| Capability table | 70009213 | Sust Jnl Create Cap ori |
+| Test codeunit | 98040 | Sust Jnl Create Tst ori |
+| Test codeunit | 98041 | Sust Jnl Create Perm Tst ori |
+| Test fixture codeunit | 98042 | Sust Jnl Create Fixture ori |
+| Test permission set | 98043 | Sust Jnl Exec ori |
 
 Reserved for the release 1 issues (one number per message type; the enum extension, its enum value, the Impl
 codeunit and any capability table of a type all use that type's number, since they are different object types):
