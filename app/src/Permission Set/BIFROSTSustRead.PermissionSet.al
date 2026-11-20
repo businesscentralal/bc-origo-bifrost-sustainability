@@ -1,5 +1,12 @@
 namespace Origo.Bifrost.Sustainability;
 
+using Microsoft.Finance.Dimension;
+using Microsoft.Foundation.NoSeries;
+using Microsoft.Sustainability.Account;
+using Microsoft.Sustainability.Journal;
+using Microsoft.Sustainability.Ledger;
+using Microsoft.Sustainability.Setup;
+
 /// <summary>
 /// Read-only Bifrost Sustainability role. In the scaffold it grants registration only; read message types add their grants here.
 /// </summary>
@@ -9,4 +16,20 @@ permissionset 70009203 "BIFROST SustRead ori"
     Access = Public;
     Caption = 'Bifrost Sustainability Read', MaxLength = 30, Comment = 'is-IS=Bifröst - sjálfbærni (lestur)';
     IncludedPermissionSets = "BIFROST Sustain ori";
+    Permissions = codeunit "Sust Preview Post Impl ori" = X,
+                  codeunit "Sust Preview Runner ori" = X,
+                  table "Sust Preview Access ori" = X,
+                  tabledata "Sust Preview Access ori" = R,
+                  tabledata "Sustainability Jnl. Template" = R,
+                  tabledata "Sustainability Jnl. Batch" = R,
+                  tabledata "Sustainability Jnl. Line" = R,
+                  tabledata "Sustainability Ledger Entry" = R,
+                  tabledata "Sustainability Value Entry" = R,
+                  tabledata "Sustainability Account" = R,
+                  tabledata "Sustain. Account Category" = R,
+                  tabledata "Sustain. Account Subcategory" = R,
+                  tabledata "Sustainability Setup" = R,
+                  tabledata "Dimension Set Entry" = R,
+                  tabledata "No. Series" = R,
+                  tabledata "No. Series Line" = R;
 }

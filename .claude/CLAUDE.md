@@ -23,6 +23,8 @@ The app block is small. Allocate IDs densely and record every allocated id here 
 | Permission set | 70009203 | BIFROST SustRead ori |
 | Permission set extension | 70009204 | Sust Full Role ori (extends `BIFROST Full ori`) |
 | Permission set extension | 70009205 | Sust Read Role ori (extends `BIFROST Read ori`) |
+| Enum extension/value, table, codeunit | 70009215 | Sust Preview Post ori; Sust Preview Access ori; Sust Preview Post Impl ori |
+| Test codeunit / permission set | 98050 / 98051 | Sust Preview Post Tst ori / Sust Prev Denied ori |
 | Codeunit | 70009227 | Sust Preview Runner ori (issue #9 rollback adapter) |
 | Test codeunit | 98000 | Sust Scaffold Tst ori |
 | Test permission set | 98001 | Sust Setup Test ori |

@@ -13,7 +13,7 @@ goals, and prepare sustainability journals. It is built on the same basis as
 
 **Microsoft source:** <https://github.com/microsoft/BCApps/tree/main/src/Apps/W1/Sustainability>
 
-**Message types:** none yet. The first release adds the `Sustainability.*` reads, master-data writes and journal
+**Message types:** the first release adds the `Sustainability.*` reads, master-data writes and journal
 types listed in the release tracking issue. Journal posting and ledger reversal come in release 2.
 
 Foundation discovers this app on **Bifrost Setup** through its application registry. All setup notifications stay on
@@ -38,7 +38,26 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 
 | Type | Effect | Retry behavior | Help |
 | --- | --- | --- | --- |
-| (none yet) | | | |
+| `Sustainability.Journal.PreviewPost` | Read; rolls back all posting changes | Idempotent | `Help.Implementation.Get` |
+
+### Preview a journal batch
+
+```json
+{"type":"Sustainability.Journal.PreviewPost","data":{"templateName":"GENERAL","batchName":"DEFAULT"}}
+```
+
+Returns the entries the standard Sustainability posting engine would create, including emissions,
+carbon fees, water, waste, energy, dimensions and totals. Journal lines, number-series state and
+ledger entries remain unchanged. The response carries `rollback: true`. No page or action is added.
+
+Unknown batches return `BatchNotFound`; invalid or empty journals return `JournalNotReady`.
+Validation failures include `journalErrors` with `lineNo`, `fieldName` and `message`, using the
+standard journal check. Other posting errors return the Business Central message. All refusals
+carry `status: Error` and an error entry with `code`, `when` and `fix`. Unknown request keys are refused.
+
+Assign `BIFROST SustRead ori` through Foundation Read or Full. The shared visibility check from #1
+hides the type when Sustainability is unconfigured; a caller that knows the type can still call it.
+The type does not grant permission to post journals.
 
 ### When the Sustainability types are listed
 

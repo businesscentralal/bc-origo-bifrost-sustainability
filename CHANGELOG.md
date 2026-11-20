@@ -2,7 +2,7 @@
 
 ## [28.0.0.0] - Unreleased
 
-- Start the non-posting sustainability journal preview adapter (codeunit 70009227); the message contract and verification for #9 are in progress.
+- Add `Sustainability.Journal.PreviewPost` (enum extension/value, capability table and implementation 70009215; rollback adapter codeunit 70009227), with translated contracts, input refusals and preview totals. Journal and number-series changes roll back. Dispatcher coverage is in test codeunit 98050 with permission fixture 98051.
 
 - Repository scaffolded from the Bifrost Quality Management setup (AL-Go, COSMO Alpaca, source guards, Runtime Package workflow).
 - Foundation application registration (codeunit 70009200), base, Full and Read permission sets (70009201-70009203) and the Foundation Full and Read role extensions (70009204-70009205).
