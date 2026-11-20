@@ -11,5 +11,9 @@ using Origo.Bifrost;
 permissionsetextension 70009204 "Sust Full Role ori" extends "BIFROST Full ori"
 {
     Permissions = codeunit "Sust Registration ori" = X,
-        codeunit "Sust Configured ori" = X;
+        codeunit "Sust Configured ori" = X,
+        codeunit "Sust Preview Post Impl ori" = X,
+        codeunit "Sust Preview Runner ori" = X,
+        table "Sust Preview Access ori" = X,
+        tabledata "Sust Preview Access ori" = R;
 }

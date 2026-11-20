@@ -55,7 +55,7 @@ Validation failures include `journalErrors` with `lineNo`, `fieldName` and `mess
 standard journal check. Other posting errors return the Business Central message. All refusals
 carry `status: Error` and an error entry with `code`, `when` and `fix`. Unknown request keys are refused.
 
-Assign `BIFROST SustRead ori` through Foundation Read or Full. The shared visibility check from #1
+Assign `BIFROST SustRead ori` with the Foundation role. Foundation Read and Full grant the preview capability; Microsoft table reads come from the Sustainability set or the user's Business Central role. The shared visibility check from #1
 hides the type when Sustainability is unconfigured; a caller that knows the type can still call it.
 The type does not grant permission to post journals.
 
