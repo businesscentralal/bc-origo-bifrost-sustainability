@@ -26,7 +26,27 @@ The app block is small. Allocate IDs densely and record every allocated id here 
 | Test codeunit | 98000 | Sust Scaffold Tst ori |
 | Test permission set | 98001 | Sust Setup Test ori |
 
-Next free app id: 70009206. Next free test id: 98002.
+Reserved for the release 1 issues (one number per message type; the enum extension, its enum value, the Impl
+codeunit and any capability table of a type all use that type's number, since they are different object types):
+
+| ID | Reserved for | Test ids |
+| --- | --- | --- |
+| 70009206 | Sust Configured ori (shared visibility check, D5) | 98002-98009 |
+| 70009207 | Sustainability.EmissionSummary.Get | 98010-98014 |
+| 70009208 | Sustainability.AccountBalance.Get | 98015-98019 |
+| 70009209 | Sustainability.Scorecard.Get | 98020-98024 |
+| 70009210 | Sustainability.Account.Set | 98025-98029 |
+| 70009211 | Sustainability.Category.Set | 98030-98034 |
+| 70009212 | Sustainability.Goal.Set | 98035-98039 |
+| 70009213 | Sustainability.Journal.Create | 98040-98044 |
+| 70009214 | Sustainability.Journal.Check | 98045-98049 |
+| 70009215 | Sustainability.Journal.PreviewPost | 98050-98054 |
+| 70009216 | Sustainability.Journal.Post (release 2) | 98055-98059 |
+| 70009217 | Sustainability.LedgerEntry.Reverse (release 2) | 98060-98064 |
+| 70009218 | Sustainability.Journal.Update | 98065-98069 |
+
+A type that needs a second object of the same type (for example a helper codeunit) takes the next free number
+from 70009219 upwards and records it here in the same PR. Next free app id: 70009219. Next free test id: 98070.
 
 ## Microsoft source
 Wrapped Microsoft app: Sustainability (`b3780cd9-f8f8-4a83-a4d5-0c2ad87b28af`, floor 28.0.0.0). Source:
@@ -36,8 +56,9 @@ objects are the same tables, read their symbols). Read it there before designing
 ## Release 1 scope (Gunnar's decisions 20.11.2026)
 - D1: the MVP is the 12 `Sustainability.*` types in the plan, one issue each.
 - D2: **no posting in release 1.** Reads, master data and journal lines first. `Sustainability.Journal.Post` and
-  `Sustainability.LedgerEntry.Reverse` are release 2. Nothing in release 1 may call `Sustainability Jnl.-Post`,
-  `Sustainability Recur Jnl.-Post` or `Sust. Entry Reverse Mgt.`
+  `Sustainability.LedgerEntry.Reverse` are release 2. In release 1 nothing may commit a posting: `Sustainability Jnl.-Post`
+  runs only inside the posting-preview framework (`Sustainability.Journal.PreviewPost`, which rolls back), and
+  `Sustainability Recur Jnl.-Post` and `Sust. Entry Reverse Mgt.` are not called at all.
 - D3: CBAM, EPR and excise are later. D4: Copilot emission calculation is out of scope. D8: ESG/CSRD reporting is release 2.
 - D5: visibility is automatic. A type is visible (`IsEnabled`) when `Sustainability Setup."Emission Unit of Measure Code"`
   is filled in **or** at least one Sustainability Account exists. Hidden means roster-only: a caller that knows the type
