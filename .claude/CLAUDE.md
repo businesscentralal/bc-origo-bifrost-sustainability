@@ -25,7 +25,11 @@ The app block is small. Allocate IDs densely and record every allocated id here 
 | Permission set extension | 70009205 | Sust Read Role ori (extends `BIFROST Read ori`) |
 | Test codeunit | 98000 | Sust Scaffold Tst ori |
 | Test permission set | 98001 | Sust Setup Test ori |
-| Codeunit | 70009206 | Sust Configured ori (#1 design, shared visibility check) |
+| Codeunit | 70009206 | Sust Configured ori (shared visibility check, D5, #1) |
+| Test codeunit | 98002 | Sust Configured Tst ori |
+| Test codeunit | 98003 | Sust Configured Perm Tst ori |
+| Test enum extension + value + codeunit | 98004 | Sust Visibility Probe ori (`Sustainability.Test.Visibility`, test-only) |
+| Test codeunit | 98005 | Sust Roster Tst ori |
 | Enum extension / value | 70009210 | Sust Account Set Msg Type ori / Sustainability.Account.Set |
 | Codeunit | 70009210 | Sust Account Set Impl ori |
 | Table | 70009210 | Sust Account Set Access ori (capability, no records) |
@@ -69,6 +73,8 @@ objects are the same tables, read their symbols). Read it there before designing
 - D5: visibility is automatic. A type is visible (`IsEnabled`) when `Sustainability Setup."Emission Unit of Measure Code"`
   is filled in **or** at least one Sustainability Account exists. Hidden means roster-only: a caller that knows the type
   can still run it. Every type uses the one shared visibility check.
+  Every type's `IsEnabled` returns `Sust Configured ori`.IsConfigured(). Microsoft table data is granted in the
+  assignable Sustainability sets only, never through the Foundation role extensions (AS0110/AS0112 would fail CI).
 - D6: minimum BC 28.0 (application 28.0.0.0, Sustainability 28.0.0.0), same as Foundation.
 
 ## Setup Notifications
