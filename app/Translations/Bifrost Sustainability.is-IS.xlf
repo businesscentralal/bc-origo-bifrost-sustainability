@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="is-IS" original="Bifrost Sustainability">
+    <body>
+      <group id="body">
+        <trans-unit id="PermissionSet 2315649480 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bifrost Sustainability</source>
+          <target>Bifröst - sjálfbærni</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST Sustain ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 3624550339 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bifrost Sustainability Full</source>
+          <target>Bifröst - sjálfbærni (fullt)</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni (fullt)</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST SustFull ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 2471902004 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bifrost Sustainability Read</source>
+          <target>Bifröst - sjálfbærni (lestur)</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni (lestur)</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST SustRead ori - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
