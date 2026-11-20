@@ -9,5 +9,6 @@ permissionset 70009201 "BIFROST Sustain ori"
     Assignable = true;
     Access = Public;
     Caption = 'Bifrost Sustainability', MaxLength = 30, Comment = 'is-IS=Bifröst - sjálfbærni';
-    Permissions = codeunit "Sust Registration ori" = X;
+    Permissions = codeunit "Sust Registration ori" = X,
+        codeunit "Sust Configured ori" = X;
 }

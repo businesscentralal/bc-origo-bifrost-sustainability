@@ -38,7 +38,7 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 
 | Type | Effect | Retry behavior | Help |
 | --- | --- | --- | --- |
-| (none yet) | | | |
+| `Sustainability.Account.Set` | write (idempotent) | Runs in its own transaction; an error rolls everything back, so the same request can be resent. | Contract chapters of `Msg Contract ori` (`Help.MessageType.Get`) |
 
 ## Documentation
 

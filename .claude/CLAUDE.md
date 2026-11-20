@@ -25,6 +25,12 @@ The app block is small. Allocate IDs densely and record every allocated id here 
 | Permission set extension | 70009205 | Sust Read Role ori (extends `BIFROST Read ori`) |
 | Test codeunit | 98000 | Sust Scaffold Tst ori |
 | Test permission set | 98001 | Sust Setup Test ori |
+| Codeunit | 70009206 | Sust Configured ori (#1 design, shared visibility check) |
+| Enum extension / value | 70009210 | Sust Account Set Msg Type ori / Sustainability.Account.Set |
+| Codeunit | 70009210 | Sust Account Set Impl ori |
+| Table | 70009210 | Sust Account Set Access ori (capability, no records) |
+| Test codeunit | 98025 | Sust Account Set Tst ori |
+| Test codeunit | 98026 | Sust Account Set Perm Tst ori |
 
 Reserved for the release 1 issues (one number per message type; the enum extension, its enum value, the Impl
 codeunit and any capability table of a type all use that type's number, since they are different object types):
