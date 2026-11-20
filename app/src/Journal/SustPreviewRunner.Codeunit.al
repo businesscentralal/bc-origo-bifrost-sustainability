@@ -1,0 +1,72 @@
+namespace Origo.Bifrost.Sustainability;
+
+using Microsoft.Finance.GeneralLedger.Preview;
+using Microsoft.Sustainability.Journal;
+using Microsoft.Sustainability.Ledger;
+using Microsoft.Sustainability.Posting;
+
+/// <summary>Runs the standard sustainability posting engine inside Microsoft's preview rollback boundary.</summary>
+codeunit 70009227 "Sust Preview Runner ori"
+{
+    Access = Internal;
+    TableNo = "Sustainability Jnl. Line";
+    EventSubscriberInstance = Manual;
+
+    trigger OnRun()
+    var
+        Preview: Codeunit "Gen. Jnl.-Post Preview";
+    begin
+        // A direct invocation must never become a real post.
+        if not Preview.IsActive() then
+            Error(PreviewRequiredErr);
+        Codeunit.Run(Codeunit::"Sustainability Jnl.-Post", Rec);
+        Preview.ThrowError();
+    end;
+
+    var
+        TempEntries: Record "Sustainability Ledger Entry" temporary;
+        TempValues: Record "Sustainability Value Entry" temporary;
+        PreviewRequiredErr: Label 'This operation requires an active posting preview.', Comment = 'is-IS=Þessi aðgerð krefst virkrar forskoðunar bókunar.';
+
+    /// <summary>Returns copied temporary entries; none of these records was committed.</summary>
+    procedure GetEntries(var Entries: Record "Sustainability Ledger Entry" temporary; var Values: Record "Sustainability Value Entry" temporary)
+    begin
+        Entries.Copy(TempEntries, true);
+        Values.Copy(TempValues, true);
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Gen. Jnl.-Post Preview", 'OnRunPreview', '', false, false)]
+    local procedure RunPreview(var Result: Boolean; Subscriber: Variant; RecVar: Variant)
+    var
+        Line: Record "Sustainability Jnl. Line";
+        Runner: Codeunit "Sust Preview Runner ori";
+    begin
+        Runner := Subscriber;
+        Line.Copy(RecVar);
+        Result := Runner.Run(Line);
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sustainability Jnl.-Post", 'OnBeforeConfirmDialog', '', false, false)]
+    local procedure SuppressConfirmation(var ShowConfirmDialog: Boolean)
+    begin
+        ShowConfirmDialog := false;
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sustainability Post Mgt", 'OnBeforeInsertSustainabilityLedgerEntry', '', false, false)]
+    local procedure CaptureEntry(var SustainabilityLedgerEntry: Record "Sustainability Ledger Entry"; SustainabilityJnlLine: Record "Sustainability Jnl. Line")
+    begin
+        // Microsoft captures this prepared entry immediately afterwards through its internal preview event.
+        TempEntries := SustainabilityLedgerEntry;
+        TempEntries."Entry No." := TempEntries.Count() + 1;
+        TempEntries.Insert();
+    end;
+
+    [EventSubscriber(ObjectType::Table, Database::"Sustainability Value Entry", 'OnAfterInsertEvent', '', false, false)]
+    local procedure CaptureValue(var Rec: Record "Sustainability Value Entry"; RunTrigger: Boolean)
+    begin
+        if Rec.IsTemporary() then
+            exit;
+        TempValues := Rec;
+        TempValues.Insert();
+    end;
+}
