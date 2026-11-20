@@ -3,9 +3,16 @@ namespace Origo.Bifrost.Sustainability;
 using Origo.Bifrost;
 
 /// <summary>
-/// Includes the matching Bifrost Sustainability permissions in the Foundation Read role.
+/// Gives the Foundation Read role execute rights on this app's own objects.
+/// Microsoft Sustainability table data is not added through this extension (AppSourceCop AS0110/AS0112):
+/// role users read it with their own Business Central permissions, and the assignable
+/// Bifrost Sustainability sets grant it directly.
 /// </summary>
 permissionsetextension 70009205 "Sust Read Role ori" extends "BIFROST Read ori"
 {
-    IncludedPermissionSets = "BIFROST SustRead ori";
+    Permissions = codeunit "Sust Registration ori" = X,
+        codeunit "Sust Configured ori" = X,
+        codeunit "Sust Emission Sum Impl ori" = X,
+        table "Sust Emission Access ori" = X,
+        tabledata "Sust Emission Access ori" = R;
 }

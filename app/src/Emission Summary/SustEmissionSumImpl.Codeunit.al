@@ -362,13 +362,15 @@ codeunit 70009207 "Sust Emission Sum Impl ori" implements "Msg Interface ori", "
     end;
 
     /// <summary>
-    /// Shown in the roster when the user can read emission summaries.
-    /// The shared Sustainability-configured check from issue #1 is added here when it merges.
+    /// Listed in the roster when Sustainability is configured (the shared check from issue #1) and the user can
+    /// read emission summaries. Hidden is not blocked: a caller that knows the type can still run it.
     /// </summary>
     /// <returns>True when the type is listed in the roster.</returns>
     procedure IsEnabled(): Boolean
+    var
+        SustConfigured: Codeunit "Sust Configured ori";
     begin
-        exit(HasReadAccess());
+        exit(SustConfigured.IsConfigured() and HasReadAccess());
     end;
 
     /// <summary>Provides the GetFilterTableNo discovery chapter.</summary>

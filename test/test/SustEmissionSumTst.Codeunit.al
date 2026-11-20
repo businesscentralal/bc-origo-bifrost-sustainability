@@ -2,6 +2,7 @@ namespace Origo.Bifrost.Sustainability.Test;
 
 using Microsoft.Sustainability.Account;
 using Microsoft.Sustainability.Ledger;
+using Microsoft.Sustainability.Setup;
 using Origo.Bifrost;
 using System.TestLibraries.Security.AccessControl;
 using System.TestLibraries.Utilities;
@@ -133,12 +134,13 @@ codeunit 98010 "Sust Emission Sum Tst ori"
 
     /// <summary>AC-V/AC-P: the type is listed for a reader and hidden without its permissions.</summary>
     [Test]
-    procedure Scenario_ACV_HiddenWithoutPermission()
+    procedure Scenario_ACP_HiddenWithoutPermission()
     var
         Discovery: Interface "Msg Interface ori";
     begin
         // [GIVEN] The registered type.
         Initialize();
+        SetEmissionUnit('KG');
         Discovery := Enum::"Message Type ori"::"Sustainability.EmissionSummary.Get";
 
         // [WHEN] A reader asks [THEN] it is enabled.
@@ -188,6 +190,65 @@ codeunit 98010 "Sust Emission Sum Tst ori"
         Assert.IsTrue(Contract.Contains('overview'), 'Overview chapter.');
         Assert.IsTrue(Contract.Contains('errors'), 'Errors chapter.');
         Assert.IsTrue(Contract.Contains('examples'), 'Examples chapter.');
+    end;
+
+    /// <summary>AC-V: in a configured company the type is listed for a reader.</summary>
+    [Test]
+    procedure Scenario_ACV_ConfiguredCompany_Listed()
+    var
+        Discovery: Interface "Msg Interface ori";
+    begin
+        // [GIVEN] Sustainability Setup has an Emission Unit of Measure Code.
+        Initialize();
+        SetEmissionUnit('KG');
+        Discovery := Enum::"Message Type ori"::"Sustainability.EmissionSummary.Get";
+
+        // [WHEN] A reader asks [THEN] the type is listed.
+        LowerPermissions.SetExactPermissionSet('BIFROST API ori');
+        LowerPermissions.AddPermissionSet('BIFROST Read ori');
+        LowerPermissions.AddPermissionSet('Sustainability Read');
+        Assert.IsTrue(Discovery.IsEnabled(), 'Configured company: the type is listed.');
+        LowerPermissions.SetOutsideO365Scope();
+    end;
+
+    /// <summary>AC-V: in an unconfigured company the type is hidden but still runs when called.</summary>
+    [Test]
+    procedure Scenario_ACV_UnconfiguredCompany_HiddenButRuns()
+    var
+        SustainabilityAccount: Record "Sustainability Account";
+        Discovery: Interface "Msg Interface ori";
+        Request: JsonObject;
+        Response: JsonObject;
+    begin
+        // [GIVEN] Blank Emission Unit of Measure Code and no Sustainability Accounts.
+        Initialize();
+        SetEmissionUnit('');
+        SustainabilityAccount.DeleteAll(false);
+        Discovery := Enum::"Message Type ori"::"Sustainability.EmissionSummary.Get";
+
+        // [WHEN] A reader asks [THEN] the type is hidden from the roster.
+        LowerPermissions.SetExactPermissionSet('BIFROST API ori');
+        LowerPermissions.AddPermissionSet('BIFROST Read ori');
+        LowerPermissions.AddPermissionSet('Sustainability Read');
+        Assert.IsFalse(Discovery.IsEnabled(), 'Unconfigured company: the type is hidden.');
+        LowerPermissions.SetOutsideO365Scope();
+
+        // [WHEN] A caller that knows the type calls it [THEN] it still runs (hidden is not blocked).
+        Request.Add('fromDate', '2099-01-01');
+        Request.Add('toDate', '2099-01-31');
+        Commit();
+        Response := DispatchAs(Request, 1033, 'BIFROST Read ori');
+        Assert.AreEqual('Success', ReadText(Response, 'status'), ReadOptional(Response, 'error'));
+    end;
+
+    local procedure SetEmissionUnit(UnitCode: Code[10])
+    var
+        SustainabilitySetup: Record "Sustainability Setup";
+    begin
+        if not SustainabilitySetup.Get() then
+            SustainabilitySetup.Insert(false);
+        SustainabilitySetup."Emission Unit of Measure Code" := UnitCode;
+        SustainabilitySetup.Modify(false);
     end;
 
     local procedure VerifySummary(LanguageId: Integer; RoleName: Text)

@@ -40,6 +40,10 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 | --- | --- | --- | --- |
 | `Sustainability.EmissionSummary.Get` | read (idempotent, no Commit) | Safe to retry | Emissions (CO2, CH4, N2O, CO2e, carbon fee; optional water, waste, energy) per emission scope and period, with a grand total per scope. Needs `BIFROST SustRead ori` and Microsoft's `Sustainability Read`. |
 
+### When the Sustainability types are listed
+
+The Sustainability message types are listed only in a company that uses Microsoft Sustainability: its Sustainability Setup has an Emission Unit of Measure Code, or at least one Sustainability Account exists. There is no switch of its own. The rule is read again on every call, so setting the company up (or clearing it) changes the list on the next call. Hidden means left out of the list only: a caller that knows a type can still run it. To block a type, use the Bifröst group settings. A user who cannot read Sustainability Setup or Sustainability Account does not see the types; the Bifrost Sustainability permission sets grant those reads, while users of the Foundation Full and Read roles need their own Sustainability permissions for them.
+
 ## Documentation
 
 All public documentation lives in the [businesscentralal/bifrost](https://github.com/businesscentralal/bifrost)

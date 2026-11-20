@@ -1,5 +1,7 @@
 namespace Origo.Bifrost.Sustainability;
 
+using Microsoft.Sustainability.Ledger;
+
 /// <summary>
 /// Read-only Bifrost Sustainability role. In the scaffold it grants registration only; read message types add their grants here.
 /// </summary>
@@ -11,5 +13,6 @@ permissionset 70009203 "BIFROST SustRead ori"
     IncludedPermissionSets = "BIFROST Sustain ori";
     Permissions = codeunit "Sust Emission Sum Impl ori" = X,
         table "Sust Emission Access ori" = X,
-        tabledata "Sust Emission Access ori" = R;
+        tabledata "Sust Emission Access ori" = R,
+        tabledata "Sustainability Ledger Entry" = R;
 }
