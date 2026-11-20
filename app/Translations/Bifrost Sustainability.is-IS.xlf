@@ -94,9 +94,9 @@
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType UnknownErr</note>
         </trans-unit>
         <trans-unit id="Codeunit 884022185 - Method 1479631707 - NamedType 1449450473" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Posting runs in the standard preview transaction. Journal deletion, number-series updates and entries are rolled back. No Commit is called by this type; explicit commits inside preview are rejected.</source>
-          <target>Bókun keyrir í staðlaðri forskoðunarfærslu. Eyðingu bókarlína, uppfærslu númeraraða og færslum er afturkallað. Tegundin kallar ekki á Commit; slík vistun innan forskoðunar er ekki leyfð.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Bókun keyrir í staðlaðri forskoðunarfærslu. Eyðingu bókarlína, uppfærslu númeraraða og færslum er afturkallað. Tegundin kallar ekki á Commit; slík vistun innan forskoðunar er ekki leyfð.</note>
+          <source>Posting runs on a temporary journal snapshot inside the standard preview transaction. After processing every line, the standard approval check runs and preview rolls back before line deletion. Number-series updates and entries are rolled back. No Commit is called; explicit commits inside preview are rejected.</source>
+          <target>Bókun keyrir á tímabundnu afriti bókarlína innan staðlaðrar forskoðunar. Eftir vinnslu allra lína er stöðluð samþykktarathugun keyrð og forskoðun afturkölluð fyrir eyðingu lína. Uppfærslu númeraraða og færslum er afturkallað. Ekki er kallað á Commit; slík vistun innan forskoðunar er ekki leyfð.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bókun keyrir á tímabundnu afriti bókarlína innan staðlaðrar forskoðunar. Eftir vinnslu allra lína er stöðluð samþykktarathugun keyrð og forskoðun afturkölluð fyrir eyðingu lína. Uppfærslu númeraraða og færslum er afturkallað. Ekki er kallað á Commit; slík vistun innan forskoðunar er ekki leyfð.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetEffect - NamedType ChangesLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 884022185 - Method 1479631707 - NamedType 1687577938" size-unit="char" translate="yes" xml:space="preserve">

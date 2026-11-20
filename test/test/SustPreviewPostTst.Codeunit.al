@@ -7,6 +7,7 @@ using Microsoft.Sustainability.Journal;
 using Microsoft.Sustainability.Ledger;
 using Microsoft.Sustainability.Setup;
 using Origo.Bifrost;
+using System.Automation;
 using System.TestLibraries.Security.AccessControl;
 using System.TestLibraries.Utilities;
 
@@ -25,7 +26,6 @@ codeunit 98050 "Sust Preview Post Tst ori"
 
     /// <summary>Valid preview returns standard emissions and preserves all persisted inputs.</summary>
     [Test]
-    [HandlerFunctions('PostingMessage')]
     procedure Scenario_AC03_AC06_PreviewRollsBackBothLanguages()
     var
         Line: Record "Sustainability Jnl. Line";
@@ -81,7 +81,6 @@ codeunit 98050 "Sust Preview Post Tst ori"
 
     /// <summary>The read role can preview without receiving direct journal-write permission.</summary>
     [Test]
-    [HandlerFunctions('PostingMessage')]
     procedure Scenario_ACP_ReadRoleCanPreview()
     var
         Line: Record "Sustainability Jnl. Line";
@@ -97,6 +96,86 @@ codeunit 98050 "Sust Preview Post Tst ori"
             Response := Dispatch(Request());
             AssertText(Response, 'status', 'Success');
             LowerPermissions.SetOutsideO365Scope();
+        end;
+        GlobalLanguage(1033);
+    end;
+
+    /// <summary>All lines are processed before the preview stops at deletion.</summary>
+    [Test]
+    procedure Scenario_AC06_MultipleLinesPreviewWithoutDeletion()
+    var
+        Line: Record "Sustainability Jnl. Line";
+        Ledger: Record "Sustainability Ledger Entry";
+        Response: JsonObject;
+        Token: JsonToken;
+        TotalCO2: JsonToken;
+        LedgerCount: Integer;
+        LanguageId: Integer;
+    begin
+        foreach LanguageId in Languages() do begin
+            Initialize(LanguageId);
+            Seed();
+            Line.Get(TemplateName, BatchName, 10000);
+            Line."Line No." := 20000;
+            Line."Document No." := 'XPREVIEW-002';
+            Line."Emission CO2" := 5;
+            Line.Insert();
+            LedgerCount := Ledger.Count();
+            Commit();
+            Response := Dispatch(Request());
+            AssertText(Response, 'status', 'Success');
+            Response.Get('entries', Token);
+            Assert.AreEqual(2, Token.AsArray().Count(), 'Every line must be previewed before rollback.');
+            Response.Get('totals', Token);
+            Token.AsObject().Get('CO2', TotalCO2);
+            Assert.AreEqual(15, TotalCO2.AsValue().AsDecimal(), 'Totals must include both lines.');
+            Assert.AreEqual(LedgerCount, Ledger.Count(), 'No ledger entry may be committed.');
+            Line.SetRange("Journal Template Name", TemplateName);
+            Line.SetRange("Journal Batch Name", BatchName);
+            Assert.AreEqual(2, Line.Count(), 'Both persisted journal lines must remain.');
+        end;
+        GlobalLanguage(1033);
+    end;
+
+    /// <summary>A late approval refusal rolls back number-series updates and captured entries.</summary>
+    [Test]
+    procedure Scenario_AC04_OpenApprovalRollsBackLateFailure()
+    var
+        Approval: Record "Approval Entry";
+        Batch: Record "Sustainability Jnl. Batch";
+        Line: Record "Sustainability Jnl. Line";
+        Ledger: Record "Sustainability Ledger Entry";
+        Series: Record "No. Series Line";
+        EntryNo: Integer;
+        LedgerCount: Integer;
+        LanguageId: Integer;
+    begin
+        foreach LanguageId in Languages() do begin
+            Initialize(LanguageId);
+            Seed();
+            Batch.Get(TemplateName, BatchName);
+            EntryNo := 1;
+            if Approval.FindLast() then
+                EntryNo := Approval."Entry No." + 1;
+            Approval.Init();
+            Approval."Entry No." := EntryNo;
+            Approval."Table ID" := Database::"Sustainability Jnl. Batch";
+            Approval."Record ID to Approve" := Batch.RecordId();
+            Approval.Status := Approval.Status::Open;
+            Approval."Sender ID" := CopyStr(UserId(), 1, MaxStrLen(Approval."Sender ID"));
+            Approval."Approver ID" := CopyStr(UserId(), 1, MaxStrLen(Approval."Approver ID"));
+            Approval.Insert();
+            LedgerCount := Ledger.Count();
+            Commit();
+            AssertRefusal(Request(), 'BusinessCentralError');
+            Assert.AreEqual(LedgerCount, Ledger.Count(), 'A late refusal must not commit a ledger entry.');
+            Assert.IsTrue(Line.Get(TemplateName, BatchName, 10000), 'Approval refusal must preserve the journal line.');
+            Series.Get(TemplateName, 10000);
+            Assert.AreEqual('', Series."Last No. Used", 'Approval refusal must roll back number-series updates.');
+            Approval.Get(EntryNo);
+            Assert.AreEqual(Approval.Status::Open, Approval.Status, 'Preview must not cancel approvals.');
+            Approval.Delete();
+            Commit();
         end;
         GlobalLanguage(1033);
     end;
@@ -251,12 +330,6 @@ codeunit 98050 "Sust Preview Post Tst ori"
             LowerPermissions.SetOutsideO365Scope();
         end;
         GlobalLanguage(1033);
-    end;
-
-    /// <summary>Accepts only the standard posting progress completion message during a test preview.</summary>
-    [MessageHandler]
-    procedure PostingMessage(Message: Text[1024])
-    begin
     end;
 
     local procedure Initialize(LanguageId: Integer)

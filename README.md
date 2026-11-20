@@ -48,7 +48,8 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 
 Returns the entries the standard Sustainability posting engine would create, including emissions,
 carbon fees, water, waste, energy, dimensions and totals. Journal lines, number-series state and
-ledger entries remain unchanged. The response carries `rollback: true`. No page or action is added.
+ledger entries remain unchanged. The engine processes a temporary copy of the journal; the standard
+open-approval check runs before preview stops at line deletion, so Read users need no journal delete right. The response carries `rollback: true`. No page or action is added.
 
 Unknown batches return `BatchNotFound`; invalid or empty journals return `JournalNotReady`.
 Validation failures include `journalErrors` with `lineNo`, `fieldName` and `message`, using the

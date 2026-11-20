@@ -77,6 +77,7 @@ codeunit 70009215 "Sust Preview Post Impl ori" implements "Msg Interface ori", "
         JournalTemplate: Record "Sustainability Jnl. Template";
         Batch: Record "Sustainability Jnl. Batch";
         Line: Record "Sustainability Jnl. Line";
+        TempJournalLine: Record "Sustainability Jnl. Line" temporary;
         TempErrors: Record "Error Message" temporary;
         TempEntries: Record "Sustainability Ledger Entry" temporary;
         TempValues: Record "Sustainability Value Entry" temporary;
@@ -146,11 +147,18 @@ codeunit 70009215 "Sust Preview Post Impl ori" implements "Msg Interface ori", "
             Argument.SetResponseJson(Response);
             exit;
         end;
-        Line.FindFirst();
+        if Line.FindSet() then
+            repeat
+                TempJournalLine := Line;
+                TempJournalLine.Insert();
+            until Line.Next() = 0;
+        TempJournalLine.SetRange("Journal Template Name", TemplateName);
+        TempJournalLine.SetRange("Journal Batch Name", BatchName);
+        TempJournalLine.FindFirst();
         Instance.Initialize();
         BindSubscription(Runner);
         SustPreview.TryBindPostingPreviewHandler();
-        Preview.SetContext(Runner, Line);
+        Preview.SetContext(Runner, TempJournalLine);
         ErrorMgt.Activate(ErrorHandler);
         ClearLastError();
         if Preview.Run() then
@@ -363,7 +371,7 @@ codeunit 70009215 "Sust Preview Post Impl ori" implements "Msg Interface ori", "
     procedure GetEffect(var Effect: JsonObject): Boolean
     var
         Preconditions: JsonArray;
-        ChangesLbl: Label 'Posting runs in the standard preview transaction. Journal deletion, number-series updates and entries are rolled back. No Commit is called by this type; explicit commits inside preview are rejected.', Comment = 'is-IS=Bókun keyrir í staðlaðri forskoðunarfærslu. Eyðingu bókarlína, uppfærslu númeraraða og færslum er afturkallað. Tegundin kallar ekki á Commit; slík vistun innan forskoðunar er ekki leyfð.';
+        ChangesLbl: Label 'Posting runs on a temporary journal snapshot inside the standard preview transaction. After processing every line, the standard approval check runs and preview rolls back before line deletion. Number-series updates and entries are rolled back. No Commit is called; explicit commits inside preview are rejected.', Comment = 'is-IS=Bókun keyrir á tímabundnu afriti bókarlína innan staðlaðrar forskoðunar. Eftir vinnslu allra lína er stöðluð samþykktarathugun keyrð og forskoðun afturkölluð fyrir eyðingu lína. Uppfærslu númeraraða og færslum er afturkallað. Ekki er kallað á Commit; slík vistun innan forskoðunar er ekki leyfð.';
         PreconditionLbl: Label 'An existing journal batch whose lines pass the standard sustainability journal check.', Comment = 'is-IS=Fyrirliggjandi bókarkeyrsla með línum sem standast staðlaða athugun sjálfbærnibókar.';
     begin
         Effect.Add('effect', 'read');
