@@ -338,6 +338,7 @@ codeunit 98025 "Sust Account Set Tst ori"
         Assert.AreEqual(Format(AccountNo), GetText(Account, 'no'), 'The response must carry the account number.');
         Assert.AreEqual('Posting', GetText(Account, 'accountType'), 'The account type is a stable token in every language.');
         Assert.AreEqual(SubcategoryTok, GetText(Account, 'subcategory'), 'The response must carry the subcategory.');
+        Assert.AreEqual('', GetText(Account, 'emissionScope'), 'A category without a scope answers an empty emissionScope.');
     end;
 
     local procedure VerifyMissingNo(LanguageId: Integer; ExpectedText: Text)

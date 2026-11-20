@@ -403,7 +403,8 @@ codeunit 70009210 "Sust Account Set Impl ori" implements "Msg Interface ori", "M
         Account.Add('accountType', EnumName(SustainabilityAccount."Account Type"));
         Account.Add('category', SustainabilityAccount.Category);
         Account.Add('subcategory', SustainabilityAccount.Subcategory);
-        Account.Add('emissionScope', SustainabilityAccount."Emission Scope".Names().Get(SustainabilityAccount."Emission Scope".Ordinals().IndexOf(SustainabilityAccount."Emission Scope".AsInteger())));
+        // The blank value of Emission Scope is named ' '; answer it as an empty string.
+        Account.Add('emissionScope', SustainabilityAccount."Emission Scope".Names().Get(SustainabilityAccount."Emission Scope".Ordinals().IndexOf(SustainabilityAccount."Emission Scope".AsInteger())).Trim());
         Account.Add('totaling', SustainabilityAccount.Totaling);
         Account.Add('directPosting', SustainabilityAccount."Direct Posting");
         Account.Add('blocked', SustainabilityAccount.Blocked);
