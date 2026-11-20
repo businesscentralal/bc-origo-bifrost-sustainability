@@ -3,6 +3,132 @@
   <file datatype="xml" source-language="en-US" target-language="is-IS" original="Bifrost Sustainability">
     <body>
       <group id="body">
+        <trans-unit id="Table 1591406506 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability goal write access</source>
+          <target>Aðgangur að ritun sjálfbærnimarkmiða</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðgangur að ritun sjálfbærnimarkmiða</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Goal Set Access ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1591406506 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary key</source>
+          <target>Aðallykill</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðallykill</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Goal Set Access ori - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 2536038079" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The baseline end date of goal %1 is before its baseline start date.</source>
+          <target>Lokadagsetning grunnlínu markmiðs %1 er á undan upphafsdagsetningu grunnlínunnar.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = goal no., is-IS=Lokadagsetning grunnlínu markmiðs %1 er á undan upphafsdagsetningu grunnlínunnar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType BaselineEndBeforeStartTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 1615947222" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The baseline period of goal %1 must end before the goal period starts.</source>
+          <target>Grunnlínutímabil markmiðs %1 verður að enda áður en markmiðstímabilið hefst.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = goal no., is-IS=Grunnlínutímabil markmiðs %1 verður að enda áður en markmiðstímabilið hefst.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType BaselineNotBeforeGoalTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 3181543810" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The end date of goal %1 is before its start date.</source>
+          <target>Lokadagsetning markmiðs %1 er á undan upphafsdagsetningu þess.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = goal no., is-IS=Lokadagsetning markmiðs %1 er á undan upphafsdagsetningu þess.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType EndBeforeStartTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 2149872477" size-unit="char" translate="yes" xml:space="preserve">
+          <source>a valid goal and baseline period</source>
+          <target>gilt markmiðs- og grunnlínutímabil</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=gilt markmiðs- og grunnlínutímabil</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType ExpectedPeriodTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 1462436902" size-unit="char" translate="yes" xml:space="preserve">
+          <source>a scorecard number</source>
+          <target>númer skorkorts</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=númer skorkorts</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType ExpectedScorecardTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 879891180" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use only the keys listed in the contract of Sustainability.Goal.Set.</source>
+          <target>Notaðu aðeins lyklana sem eru taldir upp í samningi Sustainability.Goal.Set.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Notaðu aðeins lyklana sem eru taldir upp í samningi Sustainability.Goal.Set.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType FixKeyTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 716623342" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send a start date on or before the end date, and a baseline period that ends before the goal period starts.</source>
+          <target>Sendu upphafsdagsetningu sem er sama dag eða á undan lokadagsetningu og grunnlínutímabil sem endar áður en markmiðstímabilið hefst.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sendu upphafsdagsetningu sem er sama dag eða á undan lokadagsetningu og grunnlínutímabil sem endar áður en markmiðstímabilið hefst.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType FixPeriodTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 459476893" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send scorecardNo with the scorecard number, at most 20 characters.</source>
+          <target>Sendu scorecardNo með númeri skorkortsins, að hámarki 20 stafi.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sendu scorecardNo með númeri skorkortsins, að hámarki 20 stafi.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType FixScorecardTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 4279912376" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send dates as YYYY-MM-DD, numbers as JSON numbers, mainGoal as true or false and texts within the field length.</source>
+          <target>Sendu dagsetningar sem ÁÁÁÁ-MM-DD, tölur sem JSON-tölur, mainGoal sem true eða false og texta innan lengdar svæðisins.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sendu dagsetningar sem ÁÁÁÁ-MM-DD, tölur sem JSON-tölur, mainGoal sem true eða false og texta innan lengdar svæðisins.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType FixValueTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 1977192435" size-unit="char" translate="yes" xml:space="preserve">
+          <source>InvalidPeriod: %1 Nothing was changed.</source>
+          <target>InvalidPeriod: %1 Engu var breytt.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = the period rule that failed, is-IS=InvalidPeriod: %1 Engu var breytt.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType InvalidPeriodErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 2510853505" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The value of %1 is not valid. Nothing was changed.</source>
+          <target>Gildið í %1 er ekki gilt. Engu var breytt.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = request key, is-IS=Gildið í %1 er ekki gilt. Engu var breytt.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType InvalidValueErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 3967309767" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Every goal needs a no. Nothing was changed.</source>
+          <target>Hvert markmið þarf no. Engu var breytt.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Hvert markmið þarf no. Engu var breytt.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType MissingGoalNoErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 4229010375" size-unit="char" translate="yes" xml:space="preserve">
+          <source>scorecardNo is required. Nothing was changed.</source>
+          <target>scorecardNo er áskilið. Engu var breytt.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=scorecardNo er áskilið. Engu var breytt.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType MissingScorecardErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 315309378" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You need BIFROST SustFull ori to create or update sustainability scorecards and goals.</source>
+          <target>Þú þarft BIFROST SustFull ori til að stofna eða uppfæra sjálfbærniskorkort og markmið.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Þú þarft BIFROST SustFull ori til að stofna eða uppfæra sjálfbærniskorkort og markmið.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType PermissionErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 1738233936" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ask an administrator for the Bifrost Sustainability Full role, which Bifrost Full includes.</source>
+          <target>Biddu stjórnanda um hlutverkið Bifrost Sustainability Full sem Bifrost Full inniheldur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Biddu stjórnanda um hlutverkið Bifrost Sustainability Full sem Bifrost Full inniheldur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType PermissionNextTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 2912406318" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unknown parameter %1. Nothing was changed.</source>
+          <target>Óþekkt viðfang %1. Engu var breytt.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = request key, is-IS=Óþekkt viðfang %1. Engu var breytt.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType UnknownKeyErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - Method 4077369804 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creates or updates a sustainability scorecard and its goals with the standard validation. Goals that are not listed are left as they are. Nothing is posted.</source>
+          <target>Stofnar eða uppfærir sjálfbærniskorkort og markmið þess með staðlaðri sannprófun. Markmið sem ekki eru talin upp haldast óbreytt. Ekkert er bókað.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stofnar eða uppfærir sjálfbærniskorkort og markmið þess með staðlaðri sannprófun. Markmið sem ekki eru talin upp haldast óbreytt. Ekkert er bókað.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - Method GetDescription - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - Method 1027590672 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>sustainability, scorecard, goal, target, emission target, baseline, main goal</source>
+          <target>sjálfbærni, skorkort, markmið, viðmið, losunarmarkmið, grunnlína, aðalmarkmið</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=sjálfbærni, skorkort, markmið, viðmið, losunarmarkmið, grunnlína, aðalmarkmið</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - Method 3650283039 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Effect: the scorecard and the listed goals are created or updated with the standard table rules; goals that are not listed stay as they are. Idempotent: the same request again changes nothing. Nothing is posted and there is no Commit on this path. A refusal rolls back the whole request. In omit-commit mode the caller owns the rollback.</source>
+          <target>Áhrif: skorkortið og markmiðin sem talin eru upp eru stofnuð eða uppfærð með stöðluðum töflureglum; markmið sem ekki eru talin upp haldast óbreytt. Ídempotent: sama beiðni aftur breytir engu. Ekkert er bókað og ekkert Commit er á þessari leið. Höfnun bakfærir alla beiðnina. Í ham án staðfestingar ber kallandi ábyrgð á bakfærslu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Áhrif: skorkortið og markmiðin sem talin eru upp eru stofnuð eða uppfærð með stöðluðum töflureglum; markmið sem ekki eru talin upp haldast óbreytt. Ídempotent: sama beiðni aftur breytir engu. Ekkert er bókað og ekkert Commit er á þessari leið. Höfnun bakfærir alla beiðnina. Í ham án staðfestingar ber kallandi ábyrgð á bakfærslu.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - Method GetNotes - NamedType NotesLbl</note>
+        </trans-unit>
         <trans-unit id="PermissionSet 2315649480 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
           <source>Bifrost Sustainability</source>
           <target>Bifröst - sjálfbærni</target>

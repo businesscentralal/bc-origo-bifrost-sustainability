@@ -38,7 +38,7 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 
 | Type | Effect | Retry behavior | Help |
 | --- | --- | --- | --- |
-| (none yet) | | | |
+| `Sustainability.Goal.Set` | Write: creates or updates a scorecard and the listed goals with the standard table rules; no posting, no Commit | Idempotent; a refusal rolls back the whole request | `Help.Implementation.Get` with subject `Sustainability.Goal.Set` |
 
 ## Documentation
 

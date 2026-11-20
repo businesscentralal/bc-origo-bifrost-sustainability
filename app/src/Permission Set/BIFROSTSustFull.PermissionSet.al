@@ -1,7 +1,8 @@
 namespace Origo.Bifrost.Sustainability;
 
 /// <summary>
-/// Full Bifrost Sustainability role. In the scaffold it grants registration only; write message types add their grants here.
+/// Full Bifrost Sustainability role. Grants the write message types and their permission markers.
+/// Microsoft Sustainability data rights (for scorecards and goals: Sustainability Admin) stay with the Microsoft roles assigned to the user.
 /// </summary>
 permissionset 70009202 "BIFROST SustFull ori"
 {
@@ -9,4 +10,7 @@ permissionset 70009202 "BIFROST SustFull ori"
     Access = Public;
     Caption = 'Bifrost Sustainability Full', MaxLength = 30, Comment = 'is-IS=Bifröst - sjálfbærni (fullt)';
     IncludedPermissionSets = "BIFROST Sustain ori";
+    Permissions = codeunit "Sust Goal Set Impl ori" = X,
+        table "Sust Goal Set Access ori" = X,
+        tabledata "Sust Goal Set Access ori" = RIMD;
 }
