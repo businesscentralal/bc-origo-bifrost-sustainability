@@ -38,7 +38,7 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 
 | Type | Effect | Retry behavior | Help |
 | --- | --- | --- | --- |
-| (none yet) | | | |
+| `Sustainability.Category.Set` (in development, #5) | Create or update a category and its listed subcategories | Idempotent; unlisted subcategories remain | Message contract |
 
 ## Documentation
 
