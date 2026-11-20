@@ -13,14 +13,15 @@ goals, and prepare sustainability journals. It is built on the same basis as
 
 **Microsoft source:** <https://github.com/microsoft/BCApps/tree/main/src/Apps/W1/Sustainability>
 
-**Message types:** none yet. The first release adds the `Sustainability.*` reads, master-data writes and journal
+**Message types:** the first release adds the `Sustainability.*` reads, master-data writes and journal
 types listed in the release tracking issue. Journal posting and ledger reversal come in release 2.
 
 Foundation discovers this app on **Bifrost Setup** through its application registry. All setup notifications stay on
 that Foundation page. Bifrost Sustainability has no setup page of its own.
 
 Assign `BIFROST Sustain ori`, `BIFROST SustFull ori` or `BIFROST SustRead ori` alongside the appropriate Foundation
-role. Foundation Full and Read already include the matching Sustainability set. The complete object allocation is
+role. Foundation Full and Read include the matching app discovery and execution capabilities; native Microsoft
+Sustainability data access comes from the user’s own Business Central permissions or the assignable app sets. The complete object allocation is
 recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 
 ---
@@ -38,7 +39,28 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 
 | Type | Effect | Retry behavior | Help |
 | --- | --- | --- | --- |
-| `Sustainability.Category.Set` (in development, #5) | Create or update a category and its listed subcategories | Idempotent; unlisted subcategories remain | Message contract |
+| `Sustainability.Category.Set` | Create or update a category and its listed subcategories | Idempotent; unlisted subcategories remain | Message contract |
+
+`Sustainability.Category.Set` requires `BIFROST SustFull ori` and uses standard Microsoft field validation.
+It creates or updates the category and only the subcategories supplied in `data.subcategories`; unlisted
+subcategories and omitted fields remain unchanged. Repeating a request updates the same records. A refusal
+rolls back the complete write. Standard validation may recalculate existing journal lines; this type never posts.
+
+```json
+{"type":"Sustainability.Category.Set","data":{"code":"FUEL","emissionScope":"Scope 1","calculationFoundation":"Fuel/Electricity","co2":true,"subcategories":[{"code":"DIESEL","emissionFactorCO2":2.68}]}}
+```
+
+The response contains `status`, the stored `category`, and all its stored `subcategories`. Use invariant enum
+names in either language. `Help.Implementation.Get` provides the complete bilingual contract, field names,
+length limits, errors and transaction behavior. Read roles cannot run this write type.
+
+Sustainability types appear automatically when Sustainability Setup has an Emission Unit of Measure Code
+or the company has a Sustainability Account, subject to each type's permissions. The shared configured
+check controls discovery only: a permitted caller can still run a known type in an unconfigured company.
+
+### When the Sustainability types are listed
+
+The Sustainability message types are listed only in a company that uses Microsoft Sustainability: its Sustainability Setup has an Emission Unit of Measure Code, or at least one Sustainability Account exists. There is no switch of its own. The rule is read again on every call, so setting the company up (or clearing it) changes the list on the next call. Hidden means left out of the list only: a caller that knows a type can still run it. To block a type, use the Bifröst group settings. A user who cannot read Sustainability Setup or Sustainability Account does not see the types; the Bifrost Sustainability permission sets grant those reads, while users of the Foundation Full and Read roles need their own Sustainability permissions for them.
 
 ## Documentation
 
