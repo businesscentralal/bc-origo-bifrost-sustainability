@@ -8,6 +8,7 @@ using Microsoft.Sustainability.Ledger;
 using Microsoft.Sustainability.Setup;
 using Origo.Bifrost;
 using System.Automation;
+using System.Security.User;
 using System.TestLibraries.Security.AccessControl;
 using System.TestLibraries.Utilities;
 
@@ -142,6 +143,7 @@ codeunit 98050 "Sust Preview Post Tst ori"
     procedure Scenario_AC04_OpenApprovalRollsBackLateFailure()
     var
         Approval: Record "Approval Entry";
+        UserSetup: Record "User Setup";
         Batch: Record "Sustainability Jnl. Batch";
         Line: Record "Sustainability Jnl. Line";
         Ledger: Record "Sustainability Ledger Entry";
@@ -149,11 +151,18 @@ codeunit 98050 "Sust Preview Post Tst ori"
         EntryNo: Integer;
         LedgerCount: Integer;
         LanguageId: Integer;
+        CreatedUserSetup: Boolean;
     begin
         foreach LanguageId in Languages() do begin
             Initialize(LanguageId);
             Seed();
             Batch.Get(TemplateName, BatchName);
+            CreatedUserSetup := not UserSetup.Get(UserId());
+            if CreatedUserSetup then begin
+                UserSetup.Init();
+                UserSetup."User ID" := CopyStr(UserId(), 1, MaxStrLen(UserSetup."User ID"));
+                UserSetup.Insert();
+            end;
             EntryNo := 1;
             if Approval.FindLast() then
                 EntryNo := Approval."Entry No." + 1;
@@ -175,6 +184,8 @@ codeunit 98050 "Sust Preview Post Tst ori"
             Approval.Get(EntryNo);
             Assert.AreEqual(Approval.Status::Open, Approval.Status, 'Preview must not cancel approvals.');
             Approval.Delete();
+            if CreatedUserSetup then
+                UserSetup.Delete();
             Commit();
         end;
         GlobalLanguage(1033);
