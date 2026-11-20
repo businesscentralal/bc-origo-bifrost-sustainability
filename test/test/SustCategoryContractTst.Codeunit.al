@@ -149,6 +149,7 @@ codeunit 98031 "Sust Category Contract Tst ori"
     local procedure VerifyContract(LanguageId: Integer)
     var
         ContractMgt: Codeunit "Msg Contract Mgt ori";
+        ContractInterface: Interface "Msg Contract ori";
         Contract: JsonObject;
         Token: JsonToken;
         Effect: JsonObject;
@@ -157,6 +158,10 @@ codeunit 98031 "Sust Category Contract Tst ori"
         ErrorEntry: JsonObject;
         PreviousLanguage: Integer;
         ChapterName: Text;
+        EnglishOverview: Text;
+        LocalizedOverview: Text;
+        EnglishRefusal: Text;
+        LocalizedRefusal: Text;
         ChapterNames: List of [Text];
         ErrorNames: List of [Text];
     begin
@@ -182,6 +187,25 @@ codeunit 98031 "Sust Category Contract Tst ori"
             ErrorEntry := ErrorToken.AsObject();
             foreach ChapterName in ErrorNames do
                 Assert.IsTrue(ErrorEntry.Get(ChapterName, Token), 'Every error needs code, when and fix.');
+        end;
+        // Foundation deliberately serves GetContract chapters in English (#777). The implementation
+        // still supplies localized contract labels when its public interface is read in that language.
+        ContractInterface := Enum::"Message Type ori"::"Sustainability.Category.Set";
+        GlobalLanguage(1033);
+        Assert.IsTrue(ContractInterface.GetOverview(EnglishOverview), 'English overview exists.');
+        ContractInterface.GetErrors(Errors);
+        Errors.Get(0, ErrorToken);
+        ErrorToken.AsObject().Get('when', Token);
+        EnglishRefusal := Token.AsValue().AsText();
+        GlobalLanguage(LanguageId);
+        Assert.IsTrue(ContractInterface.GetOverview(LocalizedOverview), 'Localized overview exists.');
+        ContractInterface.GetErrors(Errors);
+        Errors.Get(0, ErrorToken);
+        ErrorToken.AsObject().Get('when', Token);
+        LocalizedRefusal := Token.AsValue().AsText();
+        if LanguageId = 1039 then begin
+            Assert.AreNotEqual(EnglishOverview, LocalizedOverview, 'Icelandic contract overview must be translated.');
+            Assert.AreNotEqual(EnglishRefusal, LocalizedRefusal, 'Icelandic refusal contract text must be translated.');
         end;
         GlobalLanguage(PreviousLanguage);
     end;
