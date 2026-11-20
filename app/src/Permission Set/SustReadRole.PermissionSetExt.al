@@ -11,5 +11,9 @@ using Origo.Bifrost;
 permissionsetextension 70009205 "Sust Read Role ori" extends "BIFROST Read ori"
 {
     Permissions = codeunit "Sust Registration ori" = X,
-        codeunit "Sust Configured ori" = X;
+        codeunit "Sust Configured ori" = X,
+        codeunit "Sust Journal Check Impl ori" = X,
+        codeunit "Sust Journal Check Runner ori" = X,
+        table "Sust Journal Check Access ori" = X,
+        tabledata "Sust Journal Check Access ori" = R;
 }

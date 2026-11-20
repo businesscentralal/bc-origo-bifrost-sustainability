@@ -3,6 +3,144 @@
   <file datatype="xml" source-language="en-US" target-language="is-IS" original="Bifrost Sustainability">
     <body>
       <group id="body">
+        <trans-unit id="Table 4122963098 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability check access</source>
+          <target>Aðgangur að athugun sjálfbærni</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðgangur að athugun sjálfbærni</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Journal Check Access ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4122963098 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <target>Færslunr.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Færslunr.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Journal Check Access ori - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2730793174 - NamedType 1698601683" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability journal batch %1/%2 does not exist.</source>
+          <target>Keyrsla sjálfbærnibókar %1/%2 er ekki til.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = template, %2 = batch||is-IS=Keyrsla sjálfbærnibókar %1/%2 er ekki til.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - NamedType BatchErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2730793174 - NamedType 857380347" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Choose an existing sustainability journal template and batch.</source>
+          <target>Veldu fyrirliggjandi sniðmát og keyrslu sjálfbærnibókar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Veldu fyrirliggjandi sniðmát og keyrslu sjálfbærnibókar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - NamedType BatchFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2730793174 - NamedType 1596262053" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Business Central could not complete the journal check.</source>
+          <target>Business Central gat ekki lokið athugun bókarinnar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Business Central gat ekki lokið athugun bókarinnar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - NamedType CheckErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2730793174 - NamedType 3923529917" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Correct the reported journal errors and run the check again.</source>
+          <target>Leiðréttu villurnar í bókinni og keyrðu athugunina aftur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Leiðréttu villurnar í bókinni og keyrðu athugunina aftur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - NamedType CheckFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2730793174 - NamedType 3569966352" maxwidth="250" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check every line in a sustainability journal batch and return its validation errors without changing or posting data.</source>
+          <target>Athuga allar línur í keyrslu sjálfbærnibókar og skila villum án þess að breyta eða bóka gögn.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Athuga allar línur í keyrslu sjálfbærnibókar og skila villum án þess að breyta eða bóka gögn.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2730793174 - NamedType 3777985252" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The sustainability journal batch has no lines.</source>
+          <target>Keyrsla sjálfbærnibókar hefur engar línur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Keyrsla sjálfbærnibókar hefur engar línur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - NamedType EmptyErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2730793174 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>check sustainability journal, validate emission lines, journal errors</source>
+          <target>athuga sjálfbærnibók, sannreyna losunarlínur, villur í bók</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=athuga sjálfbærnibók, sannreyna losunarlínur, villur í bók</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2730793174 - NamedType 2191129744" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Parameter %1 must be a non-empty string of at most 10 characters.</source>
+          <target>Færibreytan %1 verður að vera texti með 1 til 10 stöfum.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter||is-IS=Færibreytan %1 verður að vera texti með 1 til 10 stöfum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - NamedType ParameterErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2730793174 - NamedType 1989765040" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Supply only templateName and batchName, using existing journal codes.</source>
+          <target>Tilgreindu aðeins templateName og batchName með fyrirliggjandi bókarkóðum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tilgreindu aðeins templateName og batchName með fyrirliggjandi bókarkóðum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - NamedType ParameterFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2730793174 - NamedType 315309378" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You do not have permission to check sustainability journals.</source>
+          <target>Þú hefur ekki heimild til að athuga sjálfbærnibækur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Þú hefur ekki heimild til að athuga sjálfbærnibækur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - NamedType PermissionErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2730793174 - NamedType 4114032018" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ask an administrator for BIFROST SustRead ori and the required Business Central permissions.</source>
+          <target>Biðjið kerfisstjóra um BIFROST SustRead ori og nauðsynlegar Business Central heimildir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Biðjið kerfisstjóra um BIFROST SustRead ori og nauðsynlegar Business Central heimildir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - NamedType PermissionFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2730793174 - NamedType 1668614503" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unknown request parameter: %1.</source>
+          <target>Óþekkt færibreyta beiðni: %1.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter||is-IS=Óþekkt færibreyta beiðni: %1.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - NamedType UnknownErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2730793174 - Method 1479631707 - NamedType 1449450473" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Runs the standard journal check in a rollback transaction. No Commit is called; explicit commits are rejected. Journal lines and ledger entries are unchanged, including on errors.</source>
+          <target>Keyrir staðlaða bókarathugun í afturkallaðri færslu. Ekki er kallað á Commit og bein vistun er bönnuð. Bókarlínur og færslur haldast óbreyttar, einnig við villur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Keyrir staðlaða bókarathugun í afturkallaðri færslu. Ekki er kallað á Commit og bein vistun er bönnuð. Bókarlínur og færslur haldast óbreyttar, einnig við villur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - Method GetEffect - NamedType ChangesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2730793174 - Method 1479631707 - NamedType 1687577938" size-unit="char" translate="yes" xml:space="preserve">
+          <source>An existing sustainability journal template and batch.</source>
+          <target>Fyrirliggjandi sniðmát og keyrsla sjálfbærnibókar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fyrirliggjandi sniðmát og keyrsla sjálfbærnibókar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - Method GetEffect - NamedType PreconditionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2730793174 - Method 3255554567 - NamedType 1582893390" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check a demo journal</source>
+          <target>Athuga sýnibók</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Athuga sýnibók</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - Method GetExamples - NamedType TitleLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2730793174 - Method 3650283039 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Empty and invalid batches return Success with ready false and journalErrors. Unknown batches return RecordNotFound (BatchNotFound). Unknown keys are refused. Unconfigured types are hidden but remain callable.</source>
+          <target>Tómar og ógildar keyrslur skila Success með ready false og journalErrors. Óþekktar keyrslur skila RecordNotFound (BatchNotFound). Óþekktum lyklum er hafnað. Óuppsettar tegundir eru faldar en áfram kallanlegar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tómar og ógildar keyrslur skila Success með ready false og journalErrors. Óþekktar keyrslur skila RecordNotFound (BatchNotFound). Óþekktum lyklum er hafnað. Óuppsettar tegundir eru faldar en áfram kallanlegar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - Method GetNotes - NamedType NotesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2730793174 - Method 3615801952 - NamedType 807217974" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Existing sustainability journal template code, up to 10 characters.</source>
+          <target>Fyrirliggjandi sniðmátskóði sjálfbærnibókar, allt að 10 stafir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fyrirliggjandi sniðmátskóði sjálfbærnibókar, allt að 10 stafir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - Method GetParameters - NamedType TemplateLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2730793174 - Method 3615801952 - NamedType 1533895450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Existing batch in that template, up to 10 characters.</source>
+          <target>Fyrirliggjandi keyrsla í sniðmátinu, allt að 10 stafir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fyrirliggjandi keyrsla í sniðmátinu, allt að 10 stafir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - Method GetParameters - NamedType BatchLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2730793174 - Method 4268477247 - NamedType 2214933811" size-unit="char" translate="yes" xml:space="preserve">
+          <source>True only when the batch contains lines and the standard check finds no errors.</source>
+          <target>Satt aðeins þegar keyrslan hefur línur og staðlaða athugunin finnur engar villur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Satt aðeins þegar keyrslan hefur línur og staðlaða athugunin finnur engar villur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - Method GetResponse - NamedType ReadyLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2730793174 - Method 4268477247 - NamedType 3071622107" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number of lines checked in this batch.</source>
+          <target>Fjöldi lína sem voru athugaðar í keyrslunni.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fjöldi lína sem voru athugaðar í keyrslunni.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - Method GetResponse - NamedType CountLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2730793174 - Method 4268477247 - NamedType 1670204571" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Collected errors with lineNo, fieldName and message. An empty batch has one message with lineNo 0.</source>
+          <target>Safnaðar villur með lineNo, fieldName og message. Tóm keyrsla hefur ein skilaboð með lineNo 0.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Safnaðar villur með lineNo, fieldName og message. Tóm keyrsla hefur ein skilaboð með lineNo 0.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - Method GetResponse - NamedType ErrorsLbl</note>
+        </trans-unit>
         <trans-unit id="PermissionSet 2315649480 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
           <source>Bifrost Sustainability</source>
           <target>Bifröst - sjálfbærni</target>
