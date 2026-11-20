@@ -102,17 +102,19 @@ codeunit 98015 "Sust Account Balance Tst ori"
         VerifyPermissionDenied(1039);
     end;
 
-    /// <summary>Exercises ReadRole through Foundation in language 1033.</summary>
+    /// <summary>Verifies Foundation Read alone cannot read native sustainability data in English.</summary>
     [Test]
     procedure Scenario_ACP_ReadRole1033()
     begin
+        // Story #3, amended AC-P | Time: fixed fixture dates | Risk: #21 permission boundary.
         VerifyReadRole(1033, false);
     end;
 
-    /// <summary>Exercises ReadRole through Foundation in language 1039.</summary>
+    /// <summary>Verifies Foundation Read alone cannot read native sustainability data in Icelandic.</summary>
     [Test]
     procedure Scenario_ACP_ReadRole1039()
     begin
+        // Story #3, amended AC-P | Time: fixed fixture dates | Risk: #21 permission boundary.
         VerifyReadRole(1039, false);
     end;
 
@@ -304,6 +306,7 @@ codeunit 98015 "Sust Account Balance Tst ori"
     var
         Account: Record "Sustainability Account";
         LedgerEntry: Record "Sustainability Ledger Entry";
+        Implementation: Codeunit "Sust Account Bal Impl ori";
         Request: JsonObject;
         Response: JsonObject;
     begin
@@ -315,11 +318,21 @@ codeunit 98015 "Sust Account Balance Tst ori"
         if IncludeSustainabilitySet then
             LowerPermissions.AddPermissionSet('BIFROST SustRead ori');
         LowerPermissions.AddPermissionSet('Sust Setup Test ori');
-        Assert.IsTrue(Account.ReadPermission() and LedgerEntry.ReadPermission(), 'Foundation Read includes native sustainability reads.');
+        // [THEN] Native reads require the separately assigned Sustainability permission set.
+        Assert.AreEqual(IncludeSustainabilitySet, Account.ReadPermission(), 'Native account reads require Sustainability Read alongside Foundation Read.');
+        Assert.AreEqual(IncludeSustainabilitySet, LedgerEntry.ReadPermission(), 'Native ledger reads require Sustainability Read alongside Foundation Read.');
         Assert.IsFalse(Account.WritePermission() or LedgerEntry.WritePermission(), 'Read role does not grant sustainability writes.');
+        Assert.AreEqual(IncludeSustainabilitySet, Implementation.IsEnabled(), 'Discovery requires native sustainability read access.');
+        // [WHEN] Foundation dispatches the known message type with the assigned permissions.
         Response := Dispatch(Request, LanguageId);
         LowerPermissions.SetOutsideO365Scope();
-        AssertMeasures(FirstRow(Response), 'balance', 1);
+        // [THEN] Both sets allow the balance read; Foundation Read alone returns a structured refusal.
+        if IncludeSustainabilitySet then
+            AssertMeasures(FirstRow(Response), 'balance', 1)
+        else begin
+            AssertText(Response, 'status', 'Error');
+            AssertText(Response, 'code', 'PermissionDenied');
+        end;
     end;
 
     local procedure Initialize(LanguageId: Integer)
