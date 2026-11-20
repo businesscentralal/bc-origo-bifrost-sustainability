@@ -513,7 +513,18 @@ codeunit 98040 "Sust Jnl Create Tst ori"
         Assert.AreEqual(LedgerCount, LedgerEntry.Count(), 'AC06: no sustainability ledger posting.');
         if ExpectedCode <> '' then begin
             Fixture.AssertText(Response, 'status', 'Error');
-            Fixture.AssertText(Response, 'code', ExpectedCode);
+            if ExpectedCode in ['BatchNotFound', 'InvalidAccount', 'AmbiguousInput', 'ScopeMismatch'] then begin
+                Fixture.AssertText(Response, 'reason', ExpectedCode);
+                case ExpectedCode of
+                    'BatchNotFound':
+                        Fixture.AssertText(Response, 'code', 'RecordNotFound');
+                    'InvalidAccount', 'AmbiguousInput':
+                        Fixture.AssertText(Response, 'code', 'InvalidParameter');
+                    'ScopeMismatch':
+                        Fixture.AssertText(Response, 'code', 'PreconditionFailed');
+                end;
+            end else
+                Fixture.AssertText(Response, 'code', ExpectedCode);
             Fixture.AssertNoLines();
             if Scenario = 'BatchRollback' then
                 Assert.IsFalse(Batch.Get('XJ7', 'XNEW'), 'A failed request must also roll back the created batch.');
@@ -567,13 +578,16 @@ codeunit 98040 "Sust Jnl Create Tst ori"
         // Knowing a hidden type still reaches the handler, which returns its own account refusal.
         RequestJson := Fixture.Request();
         Response := Fixture.Invoke(RequestJson, LanguageId);
-        Fixture.AssertText(Response, 'code', 'InvalidAccount');
+        Fixture.AssertText(Response, 'reason', 'InvalidAccount');
+        Fixture.AssertText(Response, 'code', 'InvalidParameter');
         Fixture.AssertText(Response, 'status', 'Error');
     end;
 
     local procedure VerifyContract(LanguageId: Integer)
     var
+        ContractMgt: Codeunit "Msg Contract Mgt ori";
         Handler: Interface "Msg Contract ori";
+        Contract: JsonObject;
         Effect: JsonObject;
         Parameters: JsonArray;
         Errors: JsonArray;
@@ -590,6 +604,7 @@ codeunit 98040 "Sust Jnl Create Tst ori"
         Assert.AreEqual(4, Parameters.Count(), 'All root request keys must be documented.');
         Assert.IsTrue(Handler.GetErrors(Errors), 'Error chapter is required.');
         Assert.AreEqual(6, Errors.Count(), 'Four named refusals, permission and native errors must be documented.');
+        Assert.IsTrue(ContractMgt.GetContract(Enum::"Message Type ori"::"Sustainability.Journal.Create", Contract), 'Foundation must assemble the complete contract without an invalid error code.');
         GlobalLanguage(PreviousLanguage);
     end;
 }

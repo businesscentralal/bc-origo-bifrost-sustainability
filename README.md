@@ -53,7 +53,9 @@ validation calculates the emissions. Optional metadata: `description`, `unitOfMe
 
 The response contains `lines`, each with `lineNo`, `CO2`, `CH4`, `N2O` and `CO2e`. CO2e uses Microsoft's
 emission factors for the date, scope and country and is zero if no applicable factor exists.
-Unknown keys are refused. All lines, a newly created batch and any dimension sets belong to one transaction;
+Refusals use Foundation error `code` values and retain the named business refusal in `reason`:
+`BatchNotFound` (`RecordNotFound`), `InvalidAccount` / `AmbiguousInput` (`InvalidParameter`),
+and `ScopeMismatch` (`PreconditionFailed`). Unknown keys are refused. All lines, a newly created batch and any dimension sets belong to one transaction;
 a validation failure leaves no partial data. This operation never posts a ledger entry. A successful retry
 adds more lines, so check the previous result before retrying.
 

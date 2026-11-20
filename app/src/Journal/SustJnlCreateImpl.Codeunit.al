@@ -6,6 +6,8 @@ using Microsoft.Sustainability.Account;
 using Microsoft.Sustainability.Journal;
 using Microsoft.Sustainability.Posting;
 using Origo.Bifrost;
+using System.Security.AccessControl;
+using System.Security.User;
 
 /// <summary>Creates journal lines with native field validation in one transaction, without posting.</summary>
 codeunit 70009213 "Sust Jnl Create Impl ori" implements "Msg Interface ori", "Msg Discovery ori", "Msg Contract ori"
@@ -93,7 +95,18 @@ codeunit 70009213 "Sust Jnl Create Impl ori" implements "Msg Interface ori", "Ms
         JournalLine: Record "Sustainability Jnl. Line";
         JournalBatch: Record "Sustainability Jnl. Batch";
     begin
-        exit(Capability.ReadPermission() and JournalLine.WritePermission() and JournalBatch.WritePermission());
+        exit(Capability.ReadPermission() and JournalLine.ReadPermission() and JournalBatch.ReadPermission() and
+            CanInsert(Database::"Sustainability Jnl. Line") and CanInsert(Database::"Sustainability Jnl. Batch"));
+    end;
+
+    local procedure CanInsert(TableId: Integer): Boolean
+    var
+        TempPermission: Record "Expanded Permission" temporary;
+        UserPermissions: Codeunit "User Permissions";
+    begin
+        // WritePermission also requires deletion, which this creation-only operation must not grant.
+        TempPermission := UserPermissions.GetEffectivePermission(TempPermission."Object Type"::"Table Data", TableId);
+        exit(TempPermission."Insert Permission" = TempPermission."Insert Permission"::Yes);
     end;
 
     [CommitBehavior(CommitBehavior::Error)]
@@ -329,16 +342,26 @@ codeunit 70009213 "Sust Jnl Create Impl ori" implements "Msg Interface ori", "Ms
             Error(InputErr, ParameterName);
     end;
 
-    local procedure Refuse(var Argument: Record "Message Argument ori"; Code: Text; Message: Text)
+    local procedure Refuse(var Argument: Record "Message Argument ori"; Reason: Text; Message: Text)
     var
         Response: JsonObject;
     begin
-        Response.Add('status', 'Error');
-        Response.Add('code', Code);
-        Response.Add('error', Message);
-        Response.Add('nextStep', FixLbl);
+        Argument.RespondWithError(RefusalCode(Reason), Message, '', '', '', FixLbl);
+        Response := Argument.GetResponseJson();
+        Response.Add('reason', Reason);
         Argument.SetResponseJson(Response);
-        Argument."Content Type" := 'text/json';
+    end;
+
+    local procedure RefusalCode(Reason: Text): Enum "Bifrost Error Code ori"
+    begin
+        case Reason of
+            'BatchNotFound':
+                exit(Enum::"Bifrost Error Code ori"::RecordNotFound);
+            'InvalidAccount', 'AmbiguousInput':
+                exit(Enum::"Bifrost Error Code ori"::InvalidParameter);
+            else
+                exit(Enum::"Bifrost Error Code ori"::PreconditionFailed);
+        end;
     end;
 
     /// <summary>Declares the JSON envelope.</summary>
@@ -455,9 +478,8 @@ codeunit 70009213 "Sust Jnl Create Impl ori" implements "Msg Interface ori", "Ms
     var
         Entry: JsonObject;
     begin
-        Entry.Add('code', Code);
-        Entry.Add('when', WhenText);
-        Entry.Add('fix', FixLbl);
+        Entry := ContractMgt.ErrorEntry(RefusalCode(Code), WhenText, FixLbl);
+        Entry.Add('reason', Code);
         Errors.Add(Entry);
     end;
 
