@@ -13,8 +13,9 @@ goals, and prepare sustainability journals. It is built on the same basis as
 
 **Microsoft source:** <https://github.com/microsoft/BCApps/tree/main/src/Apps/W1/Sustainability>
 
-**Message types:** none yet. The first release adds the `Sustainability.*` reads, master-data writes and journal
-types listed in the release tracking issue. Journal posting and ledger reversal come in release 2.
+**Message types:** `Sustainability.Scorecard.Get` reads a scorecard and the progress of its goals. The rest of the
+first release adds the other `Sustainability.*` reads, master-data writes and journal types listed in the release
+tracking issue. Journal posting and ledger reversal come in release 2.
 
 Foundation discovers this app on **Bifrost Setup** through its application registry. All setup notifications stay on
 that Foundation page. Bifrost Sustainability has no setup page of its own.
@@ -38,7 +39,7 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 
 | Type | Effect | Retry behavior | Help |
 | --- | --- | --- | --- |
-| (none yet) | | | |
+| `Sustainability.Scorecard.Get` | Reads a scorecard and the baseline, current, target and progress of its goals. Posts nothing. | Idempotent. The same request reads the same rows. | [Scorecard](https://docs.bifrost.origo.is/en-us/sustainability/) |
 
 ## Documentation
 

@@ -23,18 +23,24 @@ The app block is small. Allocate IDs densely and record every allocated id here 
 | Permission set | 70009203 | BIFROST SustRead ori |
 | Permission set extension | 70009204 | Sust Full Role ori (extends `BIFROST Full ori`) |
 | Permission set extension | 70009205 | Sust Read Role ori (extends `BIFROST Read ori`) |
+| Codeunit | 70009206 | Sust Configured ori |
+| Enum extension | 70009209 | Sust Scorecard Msg ori |
+| Codeunit | 70009209 | Sust Scorecard Get Impl ori |
 | Test codeunit | 98000 | Sust Scaffold Tst ori |
 | Test permission set | 98001 | Sust Setup Test ori |
+| Test codeunit | 98020 | Sust Scorecard Get Tst ori |
+| Test codeunit | 98021 | Sust Scorecard Perm Tst ori |
+| Test permission set | 98022 | Sust Sc Exec ori |
 
 Reserved for the release 1 issues (one number per message type; the enum extension, its enum value, the Impl
 codeunit and any capability table of a type all use that type's number, since they are different object types):
 
 | ID | Reserved for | Test ids |
 | --- | --- | --- |
-| 70009206 | Sust Configured ori (shared visibility check, D5) | 98002-98009 |
+| 70009206 | allocated: Sust Configured ori | 98002-98009 |
 | 70009207 | Sustainability.EmissionSummary.Get | 98010-98014 |
 | 70009208 | Sustainability.AccountBalance.Get | 98015-98019 |
-| 70009209 | Sustainability.Scorecard.Get | 98020-98024 |
+| 70009209 | allocated: Sustainability.Scorecard.Get | 98020-98024 |
 | 70009210 | Sustainability.Account.Set | 98025-98029 |
 | 70009211 | Sustainability.Category.Set | 98030-98034 |
 | 70009212 | Sustainability.Goal.Set | 98035-98039 |
