@@ -64,7 +64,7 @@ codeunit 98036 "Sust Goal Set Perm Tst ori"
         Assert.AreEqual(BeforeCount, Scorecard.Count(), 'A permission refusal must not write a scorecard.');
     end;
 
-    /// <summary>Foundation Full includes the type: it is visible in a configured company.</summary>
+    /// <summary>Foundation Full includes the type: with Microsoft's Sustainability Read set it is visible in a configured company.</summary>
     [Test]
     procedure Scenario_ACV_FullRole_ConfiguredCompany_TypeIsVisible()
     var
@@ -74,7 +74,9 @@ codeunit 98036 "Sust Goal Set Perm Tst ori"
         // Story #6, AC-V/AC-P | Time: no date-dependent inputs | Risk: isolation rolls back the setup change
         SetConfigured(true);
         Impl := Enum::"Message Type ori"::"Sustainability.Goal.Set";
+        // Role users read Microsoft Sustainability data with their own Business Central permissions (#1, AS0110/AS0112)
         LowerPermissions.SetExactPermissionSet('BIFROST Full ori');
+        LowerPermissions.AddPermissionSet('Sustainability Read');
         Enabled := Impl.IsEnabled();
         LowerPermissions.SetOutsideO365Scope();
         Assert.IsTrue(Enabled, 'Foundation Full must see Goal.Set when Sustainability is configured.');
