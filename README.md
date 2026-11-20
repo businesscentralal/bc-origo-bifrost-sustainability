@@ -13,8 +13,8 @@ goals, and prepare sustainability journals. It is built on the same basis as
 
 **Microsoft source:** <https://github.com/microsoft/BCApps/tree/main/src/Apps/W1/Sustainability>
 
-**Message types:** none yet. The first release adds the `Sustainability.*` reads, master-data writes and journal
-types listed in the release tracking issue. Journal posting and ledger reversal come in release 2.
+**Message types:** the first release adds the `Sustainability.*` reads, master-data writes and journal
+types listed in the release tracking issue (see the table below for the ones available so far). Journal posting and ledger reversal come in release 2.
 
 Foundation discovers this app on **Bifrost Setup** through its application registry. All setup notifications stay on
 that Foundation page. Bifrost Sustainability has no setup page of its own.
@@ -38,7 +38,7 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 
 | Type | Effect | Retry behavior | Help |
 | --- | --- | --- | --- |
-| (none yet) | | | |
+| `Sustainability.EmissionSummary.Get` | read (idempotent, no Commit) | Safe to retry | Emissions (CO2, CH4, N2O, CO2e, carbon fee; optional water, waste, energy) per emission scope and period, with a grand total per scope. Needs `BIFROST SustRead ori` and Microsoft's `Sustainability Read`. |
 
 ## Documentation
 

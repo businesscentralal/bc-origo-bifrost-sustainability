@@ -25,6 +25,11 @@ The app block is small. Allocate IDs densely and record every allocated id here 
 | Permission set extension | 70009205 | Sust Read Role ori (extends `BIFROST Read ori`) |
 | Test codeunit | 98000 | Sust Scaffold Tst ori |
 | Test permission set | 98001 | Sust Setup Test ori |
+| Enum extension + value | 70009207 | Sust Emission Types ori / `Sustainability.EmissionSummary.Get` |
+| Codeunit | 70009207 | Sust Emission Sum Impl ori |
+| Table | 70009207 | Sust Emission Access ori (capability) |
+| Test codeunit | 98010 | Sust Emission Sum Tst ori |
+| Test permission set | 98011 | Sust Msg Test ori |
 
 Reserved for the release 1 issues (one number per message type; the enum extension, its enum value, the Impl
 codeunit and any capability table of a type all use that type's number, since they are different object types):
