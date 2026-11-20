@@ -21,7 +21,7 @@ Foundation discovers this app on **Bifrost Setup** through its application regis
 that Foundation page. Bifrost Sustainability has no setup page of its own.
 
 Assign `BIFROST Sustain ori`, `BIFROST SustFull ori` or `BIFROST SustRead ori` alongside the appropriate Foundation
-role. Foundation Full and Read already include the matching Sustainability set. The complete object allocation is
+role. Foundation Full and Read grant this app's codeunit execution; the Sustainability sets supply the native table reads. The complete object allocation is
 recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 
 ---

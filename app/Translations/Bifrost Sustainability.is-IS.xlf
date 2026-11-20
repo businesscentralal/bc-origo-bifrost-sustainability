@@ -88,9 +88,9 @@
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FixPeriodLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 1937637357 - NamedType 1157690618" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Assign BIFROST Read ori, including BIFROST SustRead ori.</source>
-          <target>Úthlutaðu BIFROST Read ori, ásamt BIFROST SustRead ori.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Úthlutaðu BIFROST Read ori, ásamt BIFROST SustRead ori.</note>
+          <source>Assign BIFROST Read ori alongside BIFROST SustRead ori.</source>
+          <target>Úthlutaðu BIFROST Read ori ásamt BIFROST SustRead ori.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Úthlutaðu BIFROST Read ori ásamt BIFROST SustRead ori.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FixPermissionLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 1937637357 - NamedType 2593779812" size-unit="char" translate="yes" xml:space="preserve">

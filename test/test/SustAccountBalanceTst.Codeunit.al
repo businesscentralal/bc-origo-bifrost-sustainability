@@ -20,100 +20,114 @@ codeunit 98015 "Sust Account Balance Tst ori"
 
     /// <summary>Exercises BalancesAndNoPosting through Foundation in language 1033.</summary>
     [Test]
-    procedure BalancesAndNoPosting1033()
+    procedure Scenario_AC03_AC06_BalancesAndNoPosting1033()
     begin
         VerifyBalancesAndNoPosting(1033);
     end;
 
     /// <summary>Exercises BalancesAndNoPosting through Foundation in language 1039.</summary>
     [Test]
-    procedure BalancesAndNoPosting1039()
+    procedure Scenario_AC03_AC06_BalancesAndNoPosting1039()
     begin
         VerifyBalancesAndNoPosting(1039);
     end;
 
     /// <summary>Exercises TotalsAndDimensions through Foundation in language 1033.</summary>
     [Test]
-    procedure TotalsAndDimensions1033()
+    procedure Scenario_AC03_TotalsAndDimensions1033()
     begin
         VerifyTotalsAndDimensions(1033);
     end;
 
     /// <summary>Exercises TotalsAndDimensions through Foundation in language 1039.</summary>
     [Test]
-    procedure TotalsAndDimensions1039()
+    procedure Scenario_AC03_TotalsAndDimensions1039()
     begin
         VerifyTotalsAndDimensions(1039);
     end;
 
     /// <summary>Exercises ZeroAndBoundaryDates through Foundation in language 1033.</summary>
     [Test]
-    procedure ZeroAndBoundaryDates1033()
+    procedure Scenario_AC03_ZeroAndBoundaryDates1033()
     begin
         VerifyZeroAndBoundaryDates(1033);
     end;
 
     /// <summary>Exercises ZeroAndBoundaryDates through Foundation in language 1039.</summary>
     [Test]
-    procedure ZeroAndBoundaryDates1039()
+    procedure Scenario_AC03_ZeroAndBoundaryDates1039()
     begin
         VerifyZeroAndBoundaryDates(1039);
     end;
 
     /// <summary>Exercises Refusals through Foundation in language 1033.</summary>
     [Test]
-    procedure Refusals1033()
+    procedure Scenario_AC04_AC05_Refusals1033()
     begin
         VerifyRefusals(1033);
     end;
 
     /// <summary>Exercises Refusals through Foundation in language 1039.</summary>
     [Test]
-    procedure Refusals1039()
+    procedure Scenario_AC04_AC05_Refusals1039()
     begin
         VerifyRefusals(1039);
     end;
 
     /// <summary>Exercises Visibility through Foundation in language 1033.</summary>
     [Test]
-    procedure Visibility1033()
+    procedure Scenario_ACV_Visibility1033()
     begin
         VerifyVisibility(1033);
     end;
 
     /// <summary>Exercises Visibility through Foundation in language 1039.</summary>
     [Test]
-    procedure Visibility1039()
+    procedure Scenario_ACV_Visibility1039()
     begin
         VerifyVisibility(1039);
     end;
 
     /// <summary>Exercises PermissionDenied through Foundation in language 1033.</summary>
     [Test]
-    procedure PermissionDenied1033()
+    procedure Scenario_ACP_PermissionDenied1033()
     begin
         VerifyPermissionDenied(1033);
     end;
 
     /// <summary>Exercises PermissionDenied through Foundation in language 1039.</summary>
     [Test]
-    procedure PermissionDenied1039()
+    procedure Scenario_ACP_PermissionDenied1039()
     begin
         VerifyPermissionDenied(1039);
     end;
 
     /// <summary>Exercises ReadRole through Foundation in language 1033.</summary>
     [Test]
-    procedure ReadRole1033()
+    procedure Scenario_ACP_ReadRole1033()
     begin
-        VerifyReadRole(1033);
+        VerifyReadRole(1033, false);
     end;
 
     /// <summary>Exercises ReadRole through Foundation in language 1039.</summary>
     [Test]
-    procedure ReadRole1039()
+    procedure Scenario_ACP_ReadRole1039()
     begin
-        VerifyReadRole(1039);
+        VerifyReadRole(1039, false);
+    end;
+
+    /// <summary>Verifies the merged AppSource-compatible permission assignment in English.</summary>
+    [Test]
+    procedure Scenario_ACP_AssignedReadSets1033()
+    begin
+        VerifyReadRole(1033, true);
+    end;
+
+    /// <summary>Verifies the merged AppSource-compatible permission assignment in Icelandic.</summary>
+    [Test]
+    procedure Scenario_ACP_AssignedReadSets1039()
+    begin
+        VerifyReadRole(1039, true);
     end;
 
     local procedure VerifyBalancesAndNoPosting(LanguageId: Integer)
@@ -286,7 +300,7 @@ codeunit 98015 "Sust Account Balance Tst ori"
         AssertText(Response, 'code', 'PermissionDenied');
     end;
 
-    local procedure VerifyReadRole(LanguageId: Integer)
+    local procedure VerifyReadRole(LanguageId: Integer; IncludeSustainabilitySet: Boolean)
     var
         Account: Record "Sustainability Account";
         LedgerEntry: Record "Sustainability Ledger Entry";
@@ -298,6 +312,8 @@ codeunit 98015 "Sust Account Balance Tst ori"
         SeedEntry(Account."No.", 20260101D, 1, '', '');
         Request.Add('accountNo', Account."No.");
         LowerPermissions.SetExactPermissionSet('BIFROST Read ori');
+        if IncludeSustainabilitySet then
+            LowerPermissions.AddPermissionSet('BIFROST SustRead ori');
         LowerPermissions.AddPermissionSet('Sust Setup Test ori');
         Assert.IsTrue(Account.ReadPermission() and LedgerEntry.ReadPermission(), 'Foundation Read includes native sustainability reads.');
         Assert.IsFalse(Account.WritePermission() or LedgerEntry.WritePermission(), 'Read role does not grant sustainability writes.');

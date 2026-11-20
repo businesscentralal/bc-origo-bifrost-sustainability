@@ -20,7 +20,7 @@ Microsoft's account FlowFields supply six measures. CO2e uses the stored ledger 
 
 Unknown account, malformed filter and invalid period refusals are named `AccountNotFound`, `InvalidFilter` and `InvalidPeriod`. Foundation's stable error codes accompany those refusal names and translated guidance. Unknown request keys are refused.
 
-The Read role grants the implementation and native table reads. The shared visibility check from #1 controls catalogue visibility; a hidden type can still be called by name if the caller has permission.
+Foundation Read grants implementation execution. Assign BIFROST SustRead ori alongside it for native table reads; the Full set includes these reads too. The shared visibility check from #1 controls catalogue visibility; a hidden type can still be called by name if the caller has permission.
 
 The response has `status: Success` and an `accounts` array. Each row has `no`, `name`, invariant `accountType`, `indentation`, `netChange` and `balance`. Each amount object contains `co2`, `ch4`, `n2o`, `co2e`, `water`, `dischargedWater` and `waste`, retaining the stored unit. An empty selection succeeds with an empty array. An explicitly requested, unknown `accountNo` is refused.
 
@@ -29,7 +29,7 @@ The response has `status: Success` and an `accounts` array. Each row has `no`, `
 | `AccountNotFound` | `RecordNotFound` | Select an existing account. |
 | `InvalidFilter` | `InvalidParameterFormat` | Correct the received Business Central filter. |
 | `InvalidPeriod` | `InvalidParameterFormat` or `InvalidParameter` | Use ISO dates and an ordered period. |
-| `PermissionDenied` | `PermissionDenied` | Assign Foundation Read, including Sustainability Read. |
+| `PermissionDenied` | `PermissionDenied` | Assign Foundation Read alongside Sustainability Read. |
 | `InvalidParameter` | `InvalidParameter` | Correct the key, JSON type or conflicting account selectors. |
 
 The response includes the named `refusal` alongside Foundation's `code`, `error` and `nextStep`; the contract's error entries include `code`, `when` and `fix`. Unexpected native read errors retain Foundation's `BusinessCentralError`. Dates and booleans are strictly typed; `includeZero` must be a JSON Boolean. No business-data writes or `Commit()` occur in this implementation. Foundation may record message processing.
