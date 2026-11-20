@@ -13,7 +13,7 @@ goals, and prepare sustainability journals. It is built on the same basis as
 
 **Microsoft source:** <https://github.com/microsoft/BCApps/tree/main/src/Apps/W1/Sustainability>
 
-**Message types:** none yet. The first release adds the `Sustainability.*` reads, master-data writes and journal
+**Message types:** implementation is in progress; see the draft PR for issue #7. The first release adds the `Sustainability.*` reads, master-data writes and journal
 types listed in the release tracking issue. Journal posting and ledger reversal come in release 2.
 
 Foundation discovers this app on **Bifrost Setup** through its application registry. All setup notifications stay on
