@@ -2,6 +2,8 @@
 
 ## [28.0.0.0] - Unreleased
 
+- Use Foundation `RecordNotFound` and `PreconditionFailed` for preview refusals, with the requested template/batch in missing-batch diagnostics. Public help regression coverage validates the complete contract in English and Icelandic (Architect clarification of #9 AC04).
+
 - Add `Sustainability.Journal.PreviewPost` (enum extension/value, capability table and implementation 70009215; rollback adapter codeunit 70009227), with translated contracts, input refusals and preview totals. Posting uses temporary journal lines and rolls back after the standard approval check, before deletion; Read users need no journal-delete permission. Number-series changes roll back. Dispatcher coverage is in test codeunit 98050 with permission fixture 98051.
 
 - Repository scaffolded from the Bifrost Quality Management setup (AL-Go, COSMO Alpaca, source guards, Runtime Package workflow).

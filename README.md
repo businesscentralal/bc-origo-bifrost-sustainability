@@ -51,7 +51,7 @@ carbon fees, water, waste, energy, dimensions and totals. Journal lines, number-
 ledger entries remain unchanged. The engine processes a temporary copy of the journal; the standard
 open-approval check runs before preview stops at line deletion, so Read users need no journal delete right. The response carries `rollback: true`. No page or action is added.
 
-Unknown batches return `BatchNotFound`; invalid or empty journals return `JournalNotReady`.
+Unknown batches return `RecordNotFound`; invalid or empty journals return `PreconditionFailed`.
 Validation failures include `journalErrors` with `lineNo`, `fieldName` and `message`, using the
 standard journal check. Other posting errors return the Business Central message. All refusals
 carry `status: Error` and an error entry with `code`, `when` and `fix`. Unknown request keys are refused.

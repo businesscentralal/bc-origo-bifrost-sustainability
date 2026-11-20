@@ -21,6 +21,12 @@
           <note from="Developer" annotates="general" priority="2">%1 = template, %2 = batch||is-IS=Keyrsla sjálfbærnibókar %1/%2 er ekki til.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType BatchErr</note>
         </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 3316243964" size-unit="char" translate="yes" xml:space="preserve">
+          <source>An existing sustainability journal batch %1/%2.</source>
+          <target>Fyrirliggjandi keyrsla sjálfbærnibókar %1/%2.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = template, %2 = batch||is-IS=Fyrirliggjandi keyrsla sjálfbærnibókar %1/%2.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType BatchExpectedLbl</note>
+        </trans-unit>
         <trans-unit id="Codeunit 884022185 - NamedType 857380347" size-unit="char" translate="yes" xml:space="preserve">
           <source>Choose an existing sustainability journal template and batch.</source>
           <target>Veldu fyrirliggjandi sniðmát og keyrslu sjálfbærnibókar.</target>
@@ -112,9 +118,9 @@
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetExamples - NamedType TitleLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 884022185 - Method 3650283039 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
-          <source>An empty batch is JournalNotReady. Unknown keys are refused. Hidden types remain callable when Sustainability is unconfigured. The preview never posts a ledger entry or consumes a journal line.</source>
-          <target>Tóm keyrsla skilar JournalNotReady. Óþekktum lyklum er hafnað. Faldar tegundir eru áfram kallanlegar þegar sjálfbærni er óuppsett. Forskoðun bókar aldrei færslu né eyðir bókarlínu.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Tóm keyrsla skilar JournalNotReady. Óþekktum lyklum er hafnað. Faldar tegundir eru áfram kallanlegar þegar sjálfbærni er óuppsett. Forskoðun bókar aldrei færslu né eyðir bókarlínu.</note>
+          <source>An empty batch is PreconditionFailed. Unknown keys are refused. Hidden types remain callable when Sustainability is unconfigured. The preview never posts a ledger entry or consumes a journal line.</source>
+          <target>Tóm keyrsla skilar PreconditionFailed. Óþekktum lyklum er hafnað. Faldar tegundir eru áfram kallanlegar þegar sjálfbærni er óuppsett. Forskoðun bókar aldrei færslu né eyðir bókarlínu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tóm keyrsla skilar PreconditionFailed. Óþekktum lyklum er hafnað. Faldar tegundir eru áfram kallanlegar þegar sjálfbærni er óuppsett. Forskoðun bókar aldrei færslu né eyðir bókarlínu.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetNotes - NamedType NotesLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 884022185 - Method 3615801952 - NamedType 807217974" size-unit="char" translate="yes" xml:space="preserve">

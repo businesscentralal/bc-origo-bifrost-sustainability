@@ -26,6 +26,7 @@ codeunit 70009215 "Sust Preview Post Impl ori" implements "Msg Interface ori", "
         KeywordsLbl: Label 'preview sustainability journal, simulate emissions posting, check sustainability entries', Comment = 'is-IS=forskoða sjálfbærnibók, herma bókun losunar, athuga sjálfbærnifærslur';
         BatchErr: Label 'Sustainability journal batch %1/%2 does not exist.', Comment = '%1 = template, %2 = batch||is-IS=Keyrsla sjálfbærnibókar %1/%2 er ekki til.';
         BatchFixLbl: Label 'Choose an existing sustainability journal template and batch.', Comment = 'is-IS=Veldu fyrirliggjandi sniðmát og keyrslu sjálfbærnibókar.';
+        BatchExpectedLbl: Label 'An existing sustainability journal batch %1/%2.', Comment = '%1 = template, %2 = batch||is-IS=Fyrirliggjandi keyrsla sjálfbærnibókar %1/%2.';
         PermissionErr: Label 'You do not have permission to preview sustainability journals.', Comment = 'is-IS=Þú hefur ekki heimild til að forskoða sjálfbærnibækur.';
         PermissionFixLbl: Label 'Ask an administrator for BIFROST SustRead ori and the required Business Central permissions.', Comment = 'is-IS=Biðjið kerfisstjóra um BIFROST SustRead ori og nauðsynlegar Business Central heimildir.';
         UnknownErr: Label 'Unknown request parameter: %1.', Comment = '%1 = parameter||is-IS=Óþekkt færibreyta beiðni: %1.';
@@ -116,14 +117,19 @@ codeunit 70009215 "Sust Preview Post Impl ori" implements "Msg Interface ori", "
         if not ReadCode(Argument, ParameterToken, 'batchName', BatchName) then
             exit;
         if (not JournalTemplate.Get(TemplateName)) or (not Batch.Get(TemplateName, BatchName)) then begin
-            Refuse(Argument, 'BatchNotFound', StrSubstNo(BatchErr, TemplateName, BatchName), BatchFixLbl);
+            Refuse(Argument, 'RecordNotFound', StrSubstNo(BatchErr, TemplateName, BatchName), BatchFixLbl);
+            Response := Argument.GetResponseJson();
+            Response.Add('parameter', 'templateName, batchName');
+            Response.Add('received', TemplateName + '/' + BatchName);
+            Response.Add('expected', StrSubstNo(BatchExpectedLbl, TemplateName, BatchName));
+            Argument.SetResponseJson(Response);
             exit;
         end;
         Line.ReadIsolation := IsolationLevel::ReadCommitted;
         Line.SetRange("Journal Template Name", TemplateName);
         Line.SetRange("Journal Batch Name", BatchName);
         if not Line.FindFirst() then begin
-            Refuse(Argument, 'JournalNotReady', EmptyErr, CheckFixLbl);
+            Refuse(Argument, 'PreconditionFailed', EmptyErr, CheckFixLbl);
             exit;
         end;
         Check.CheckAllJournalLinesWithErrorCollect(Line, TempErrors);
@@ -141,7 +147,7 @@ codeunit 70009215 "Sust Preview Post Impl ori" implements "Msg Interface ori", "
                 Problem.Add('message', TempErrors."Message");
                 Errors.Add(Problem);
             until TempErrors.Next() = 0;
-            Refuse(Argument, 'JournalNotReady', NotReadyErr, CheckFixLbl);
+            Refuse(Argument, 'PreconditionFailed', NotReadyErr, CheckFixLbl);
             Response := Argument.GetResponseJson();
             Response.Add('journalErrors', Errors);
             Argument.SetResponseJson(Response);
@@ -386,8 +392,8 @@ codeunit 70009215 "Sust Preview Post Impl ori" implements "Msg Interface ori", "
     /// <summary>Provides GetErrors for the public preview contract.</summary>
     procedure GetErrors(var Errors: JsonArray): Boolean
     begin
-        AddError(Errors, 'BatchNotFound', BatchErr, BatchFixLbl);
-        AddError(Errors, 'JournalNotReady', NotReadyErr, CheckFixLbl);
+        AddError(Errors, 'RecordNotFound', BatchErr, BatchFixLbl);
+        AddError(Errors, 'PreconditionFailed', NotReadyErr, CheckFixLbl);
         AddError(Errors, 'BusinessCentralError', PostingErr, CheckFixLbl);
         AddError(Errors, 'PermissionDenied', PermissionErr, PermissionFixLbl);
         AddError(Errors, 'UnknownParameter', UnknownErr, ParameterFixLbl);
@@ -447,7 +453,7 @@ codeunit 70009215 "Sust Preview Post Impl ori" implements "Msg Interface ori", "
     /// <summary>Provides GetNotes for the public preview contract.</summary>
     procedure GetNotes(var Notes: Text): Boolean
     var
-        NotesLbl: Label 'An empty batch is JournalNotReady. Unknown keys are refused. Hidden types remain callable when Sustainability is unconfigured. The preview never posts a ledger entry or consumes a journal line.', Comment = 'is-IS=Tóm keyrsla skilar JournalNotReady. Óþekktum lyklum er hafnað. Faldar tegundir eru áfram kallanlegar þegar sjálfbærni er óuppsett. Forskoðun bókar aldrei færslu né eyðir bókarlínu.';
+        NotesLbl: Label 'An empty batch is PreconditionFailed. Unknown keys are refused. Hidden types remain callable when Sustainability is unconfigured. The preview never posts a ledger entry or consumes a journal line.', Comment = 'is-IS=Tóm keyrsla skilar PreconditionFailed. Óþekktum lyklum er hafnað. Faldar tegundir eru áfram kallanlegar þegar sjálfbærni er óuppsett. Forskoðun bókar aldrei færslu né eyðir bókarlínu.';
     begin
         Notes := NotesLbl;
         exit(true);

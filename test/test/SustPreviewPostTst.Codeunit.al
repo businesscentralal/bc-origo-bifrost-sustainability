@@ -191,22 +191,66 @@ codeunit 98050 "Sust Preview Post Tst ori"
         GlobalLanguage(1033);
     end;
 
+    /// <summary>Public help validates every preview chapter and uses Foundation refusal codes.</summary>
+    [Test]
+    procedure Scenario_ACH_PublicHelpBothLanguages()
+    var
+        Dispatcher: Codeunit "Dispatcher ori";
+        Input: BigText;
+        Output: BigText;
+        Response: JsonObject;
+        ContentType: Text[100];
+        ResponseText: Text;
+        MessageId: Guid;
+        TaskId: Guid;
+        ResponseTime: Duration;
+        LanguageId: Integer;
+    begin
+        // [SCENARIO] AC-H: the public help path must validate the complete contract in both languages.
+        foreach LanguageId in Languages() do begin
+            Initialize(LanguageId);
+            Clear(Input);
+            Clear(Output);
+            Clear(Response);
+            Input.AddText('{"detail":"full"}');
+            Commit();
+            Dispatcher.EnqueueAndProcess(Enum::"Message Type ori"::"Help.Implementation.Get", Enum::"Message Version ori"::"1.0", 'Sustainability.Journal.PreviewPost', 'XSUSTPREVIEW', 'text/json', Input, TaskId, LanguageId, MessageId, Output, ContentType, ResponseTime);
+            Output.GetSubText(ResponseText, 1);
+            Assert.IsTrue(Response.ReadFrom(ResponseText), 'Public help must return JSON.');
+            AssertText(Response, 'status', 'Success');
+            Assert.IsTrue(ResponseText.Contains('RecordNotFound'), 'Help must describe the canonical missing-batch code.');
+            Assert.IsTrue(ResponseText.Contains('PreconditionFailed'), 'Help must describe the canonical journal-not-ready code.');
+            Assert.IsFalse(ResponseText.Contains('BatchNotFound'), 'Help must not name a non-existent Foundation code.');
+            Assert.IsFalse(ResponseText.Contains('JournalNotReady'), 'Help must not name a non-existent Foundation code.');
+            Assert.AreEqual(LanguageId, GlobalLanguage(), 'Public help must restore the caller language.');
+        end;
+        GlobalLanguage(1033);
+    end;
+
     /// <summary>Unknown templates and batches are explicit refusals.</summary>
     [Test]
     procedure Scenario_AC04_UnknownTemplateAndBatch()
     var
+        Response: JsonObject;
+        Token: JsonToken;
         LanguageId: Integer;
     begin
         foreach LanguageId in Languages() do begin
             Initialize(LanguageId);
             Seed();
-            AssertRefusal('{"templateName":"XUNKNOWN","batchName":"XUNKNOWN"}', 'BatchNotFound');
-            AssertRefusal('{"templateName":"XPREVIEW","batchName":"XUNKNOWN"}', 'BatchNotFound');
+            AssertRefusal('{"templateName":"XUNKNOWN","batchName":"XUNKNOWN"}', 'RecordNotFound');
+            Response := Dispatch('{"templateName":"XPREVIEW","batchName":"XUNKNOWN"}');
+            AssertText(Response, 'status', 'Error');
+            AssertText(Response, 'code', 'RecordNotFound');
+            AssertText(Response, 'parameter', 'templateName, batchName');
+            AssertText(Response, 'received', 'XPREVIEW/XUNKNOWN');
+            Assert.IsTrue(Response.Get('expected', Token), 'Expected batch must be named.');
+            Assert.IsTrue(Token.AsValue().AsText().Contains('XPREVIEW/XUNKNOWN'), 'Expected must name the requested template and batch.');
         end;
         GlobalLanguage(1033);
     end;
 
-    /// <summary>Empty journals return JournalNotReady without posting.</summary>
+    /// <summary>Empty journals return PreconditionFailed without posting.</summary>
     [Test]
     procedure Scenario_AC04_EmptyBatch()
     var
@@ -219,7 +263,7 @@ codeunit 98050 "Sust Preview Post Tst ori"
             Line.Get(TemplateName, BatchName, 10000);
             Line.Delete();
             Commit();
-            AssertRefusal(Request(), 'JournalNotReady');
+            AssertRefusal(Request(), 'PreconditionFailed');
         end;
         GlobalLanguage(1033);
     end;
@@ -242,7 +286,7 @@ codeunit 98050 "Sust Preview Post Tst ori"
             Line.Modify();
             Commit();
             Response := Dispatch(Request());
-            AssertText(Response, 'code', 'JournalNotReady');
+            AssertText(Response, 'code', 'PreconditionFailed');
             Assert.IsTrue(Response.Get('journalErrors', Token), 'Standard errors must be included.');
             Assert.IsTrue(Token.AsArray().Count() >= 2, 'Both invalid fields must be reported.');
             Assert.IsTrue(Line.Get(TemplateName, BatchName, 10000), 'Refusal must preserve the line.');
@@ -313,7 +357,7 @@ codeunit 98050 "Sust Preview Post Tst ori"
             Discovery := MessageType;
             Assert.IsFalse(Discovery.IsEnabled(), 'Unconfigured type must be hidden.');
             Assert.IsFalse(IsInRoster(), 'The public roster must omit the unconfigured type.');
-            AssertRefusal('{"templateName":"XUNKNOWN","batchName":"XUNKNOWN"}', 'BatchNotFound');
+            AssertRefusal('{"templateName":"XUNKNOWN","batchName":"XUNKNOWN"}', 'RecordNotFound');
             Seed();
             Assert.IsTrue(Discovery.IsEnabled(), 'A configured company must expose the type.');
             Assert.IsTrue(IsInRoster(), 'The public roster must include the configured type.');
