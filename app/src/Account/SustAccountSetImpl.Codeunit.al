@@ -13,6 +13,7 @@ using Origo.Bifrost;
 codeunit 70009210 "Sust Account Set Impl ori" implements "Msg Interface ori", "Msg Discovery ori", "Msg Contract ori"
 {
     Access = Internal;
+    InherentPermissions = X;
     TableNo = "Message Argument ori";
 
     var
