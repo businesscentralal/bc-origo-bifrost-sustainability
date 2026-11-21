@@ -27,7 +27,10 @@ codeunit 98036 "Sust Goal Set Perm Tst ori"
         // Story #6, AC-P | Time: no date-dependent inputs | Risk: permissions restored
         SetConfigured(true);
         Impl := Enum::"Message Type ori"::"Sustainability.Goal.Set";
-        LowerPermissions.SetExactPermissionSet('BIFROST SustRead ori');
+        // Foundation Read supplies execution; Sustainability Read and test setup supply reads (#18).
+        LowerPermissions.SetExactPermissionSet('BIFROST Read ori');
+        LowerPermissions.AddPermissionSet('BIFROST SustRead ori');
+        LowerPermissions.AddPermissionSet('Sust Setup Test ori');
         Enabled := Impl.IsEnabled();
         LowerPermissions.SetOutsideO365Scope();
         Assert.IsFalse(Enabled, 'The read role must not see Goal.Set.');
