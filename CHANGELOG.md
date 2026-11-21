@@ -2,6 +2,7 @@
 
 ## [28.0.0.0] - Unreleased
 
+- Added `Sustainability.Journal.Check` (#8): enum extension/value, implementation and capability table 70009214, rollback runner codeunit 70009228. Uses the standard batch validator, returns all line errors, treats empty batches as not ready and commits no journal or ledger changes. Includes Foundation Read/Full capability grants, bilingual help, and dispatcher/rollback tests 98045–98047.
 - Added `Sustainability.AccountBalance.Get`: native account net change, balance and totals with date, global-dimension and responsibility-center filters; stored CO2e is summed without recalculating emission factors. Added enum extension/value and implementation codeunit 70009208, Read-role grants, bilingual contracts and dispatcher tests in codeunit 98015.
 - `Sustainability.Scorecard.Get` (enum extension 70009209, codeunit 70009209) reads a sustainability scorecard and its goals, with baseline, current, target and progress. Read only: it does not post.
 - Test codeunit 98021 asserts the amended AC-P boundary: Foundation Read and Full (70009205, 70009204) grant execution only. Native scorecard, goal and ledger reads come from `BIFROST SustRead ori` (70009203) assigned alongside. Without those reads the type is hidden and the call returns PermissionDenied. Test permission set 98023 holds the message-argument rows that fixture needs.
