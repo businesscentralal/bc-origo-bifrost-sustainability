@@ -21,5 +21,8 @@ permissionsetextension 70009205 "Sust Read Role ori" extends "BIFROST Read ori"
         codeunit "Sust Journal Check Impl ori" = X,
         codeunit "Sust Journal Check Runner ori" = X,
         table "Sust Journal Check Access ori" = X,
-        tabledata "Sust Journal Check Access ori" = R;
+        tabledata "Sust Journal Check Access ori" = R,
+        codeunit "Sust Emission Sum Impl ori" = X,
+        table "Sust Emission Access ori" = X,
+        tabledata "Sust Emission Access ori" = R;
 }
