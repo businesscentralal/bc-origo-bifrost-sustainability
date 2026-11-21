@@ -15,8 +15,8 @@ using System.Automation;
 using System.Security.User;
 
 /// <summary>
-/// Full Bifrost Sustainability role. Includes the read set and grants write message types and their permission markers.
-/// Microsoft Sustainability data rights (for scorecards and goals: Sustainability Admin) stay with the Microsoft roles assigned to the user.
+/// Full Bifrost Sustainability role. Includes the read and preview capabilities and grants write message types and their permission markers.
+/// Microsoft Sustainability data rights for scorecards and goals (Sustainability Admin) stay with the Microsoft roles assigned to the user.
 /// </summary>
 permissionset 70009202 "BIFROST SustFull ori"
 {
