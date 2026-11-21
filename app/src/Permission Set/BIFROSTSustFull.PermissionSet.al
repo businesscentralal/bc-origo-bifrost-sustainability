@@ -10,6 +10,7 @@ using Microsoft.Sustainability.Account;
 using Microsoft.Sustainability.Emission;
 using Microsoft.Sustainability.Energy;
 using Microsoft.Sustainability.Journal;
+using Microsoft.Sustainability.Ledger;
 using Microsoft.Sustainability.Setup;
 using System.Automation;
 using System.Security.User;
@@ -25,16 +26,20 @@ permissionset 70009202 "BIFROST SustFull ori"
     Access = Public;
     Caption = 'Bifrost Sustainability Full', MaxLength = 30, Comment = 'is-IS=Bifröst - sjálfbærni (fullt)';
     IncludedPermissionSets = "BIFROST Sustain ori", "BIFROST SustRead ori";
-    Permissions = table "Sust Jnl Create Cap ori" = X,
+    Permissions = codeunit "Sust Category Set Impl ori" = X,
+                  table "Sust Category Access ori" = X,
+                  tabledata "Sust Category Access ori" = RIMD,
+                  table "Sust Jnl Create Cap ori" = X,
                   tabledata "Sust Jnl Create Cap ori" = R,
                   codeunit "Sust Jnl Create Impl ori" = X,
                   tabledata "Sustainability Jnl. Template" = R,
                   tabledata "Sustainability Jnl. Batch" = RIM,
                   tabledata "Sustainability Jnl. Line" = RIM,
                   tabledata "Sustainability Account" = R,
-                  tabledata "Sustain. Account Category" = R,
-                  tabledata "Sustain. Account Subcategory" = R,
+                  tabledata "Sustain. Account Category" = RIM,
+                  tabledata "Sustain. Account Subcategory" = RIM,
                   tabledata "Sustainability Setup" = R,
+                  tabledata "Sustainability Ledger Entry" = R,
                   tabledata "Sustainability Energy Source" = R,
                   tabledata "Emission Fee" = R,
                   tabledata "No. Series" = R,

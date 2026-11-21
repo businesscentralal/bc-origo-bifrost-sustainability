@@ -35,6 +35,11 @@ The app block is small. Allocate IDs densely and record every allocated id here 
 | Enum extension | 70009209 | Sust Scorecard Msg ori |
 | Codeunit | 70009209 | Sust Scorecard Get Impl ori |
 | Test codeunit | 98000 | Sust Scaffold Tst ori |
+| Enum extension / enum value | 70009211 | Sust Category Types ori / Sustainability.Category.Set |
+| Codeunit | 70009211 | Sust Category Set Impl ori |
+| Capability table | 70009211 | Sust Category Access ori |
+| Test codeunit | 98030 | Sust Category Set Tst ori |
+| Test codeunit | 98031 | Sust Category Contract Tst ori |
 | Test permission set | 98001 | Sust Setup Test ori |
 | Test codeunit | 98002 | Sust Configured Tst ori |
 | Test codeunit | 98003 | Sust Configured Perm Tst ori |
