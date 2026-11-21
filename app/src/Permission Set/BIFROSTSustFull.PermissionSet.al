@@ -16,9 +16,8 @@ using System.Automation;
 using System.Security.User;
 
 /// <summary>
-/// Full Bifrost Sustainability role, including all read and preview capabilities.
-/// Includes the read set. Write message types add their grants here.
-/// Full Bifrost Sustainability role. Includes the read set and grants journal creation and its capability.
+/// Full Bifrost Sustainability role. Includes the read and preview capabilities and grants write message types and their permission markers.
+/// Microsoft Sustainability data rights for scorecards and goals (Sustainability Admin) stay with the Microsoft roles assigned to the user.
 /// </summary>
 permissionset 70009202 "BIFROST SustFull ori"
 {
@@ -26,7 +25,10 @@ permissionset 70009202 "BIFROST SustFull ori"
     Access = Public;
     Caption = 'Bifrost Sustainability Full', MaxLength = 30, Comment = 'is-IS=Bifröst - sjálfbærni (fullt)';
     IncludedPermissionSets = "BIFROST Sustain ori", "BIFROST SustRead ori";
-    Permissions = codeunit "Sust Category Set Impl ori" = X,
+    Permissions = codeunit "Sust Goal Set Impl ori" = X,
+                  table "Sust Goal Set Access ori" = X,
+                  tabledata "Sust Goal Set Access ori" = RIMD,
+                  codeunit "Sust Category Set Impl ori" = X,
                   table "Sust Category Access ori" = X,
                   tabledata "Sust Category Access ori" = RIMD,
                   table "Sust Jnl Create Cap ori" = X,
