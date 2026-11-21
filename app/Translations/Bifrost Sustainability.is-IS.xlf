@@ -189,7 +189,6 @@
           <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni (lestur)</note>
           <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST SustRead ori - Property Caption</note>
         </trans-unit>
-      </group>
       <trans-unit id="Table 4135161029 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sustainability preview access</source>
           <target>Aðgangur að forskoðun sjálfbærni</target>
@@ -358,6 +357,7 @@
           <note from="Developer" annotates="general" priority="2">is-IS=Þessi aðgerð krefst virkrar forskoðunar bókunar.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Runner ori - NamedType PreviewRequiredErr</note>
         </trans-unit>
+      </group>
     </body>
   </file>
 </xliff>
