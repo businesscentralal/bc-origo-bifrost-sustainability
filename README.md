@@ -13,8 +13,9 @@ goals, and prepare sustainability journals. It is built on the same basis as
 
 **Microsoft source:** <https://github.com/microsoft/BCApps/tree/main/src/Apps/W1/Sustainability>
 
-**Message types:** the first release adds the `Sustainability.*` reads, master-data writes and journal
-types listed in the release tracking issue. Journal posting and ledger reversal come in release 2.
+**Message types:** `Sustainability.AccountBalance.Get` reads net change and balances for selected accounts.
+The first release adds the other reads, master-data writes and journal types listed in the release tracker.
+Journal posting and ledger reversal come in release 2.
 
 Foundation discovers this app on **Bifrost Setup** through its application registry. All setup notifications stay on
 that Foundation page. Bifrost Sustainability has no setup page of its own.
@@ -40,6 +41,7 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 | Type | Effect | Retry behavior | Help |
 | --- | --- | --- | --- |
 | `Sustainability.Category.Set` | Create or update a category and its listed subcategories | Idempotent; unlisted subcategories remain | Message contract |
+| `Sustainability.AccountBalance.Get` | Read account net change and balance, including totals | Read-only and idempotent | [Contract](docs/account-balance.md) |
 
 `Sustainability.Category.Set` requires `BIFROST SustFull ori` and uses standard Microsoft field validation.
 It creates or updates the category and only the subcategories supplied in `data.subcategories`; unlisted
