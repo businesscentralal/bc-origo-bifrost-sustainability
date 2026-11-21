@@ -14,6 +14,7 @@ goals, and prepare sustainability journals. It is built on the same basis as
 **Microsoft source:** <https://github.com/microsoft/BCApps/tree/main/src/Apps/W1/Sustainability>
 
 **Message types:** `Sustainability.AccountBalance.Get` reads net change and balances for selected accounts.
+`Sustainability.Journal.Check` validates a journal batch without changing it.
 The first release adds the other reads, master-data writes and journal types listed in the release tracker.
 Journal posting and ledger reversal come in release 2.
 
@@ -21,7 +22,7 @@ Foundation discovers this app on **Bifrost Setup** through its application regis
 that Foundation page. Bifrost Sustainability has no setup page of its own.
 
 Assign `BIFROST Sustain ori`, `BIFROST SustFull ori` or `BIFROST SustRead ori` alongside the appropriate Foundation
-role. Foundation Full and Read grant this app's codeunit execution; the Sustainability sets supply the native table reads. The complete object allocation is
+role. Foundation Full and Read receive this app's execute and capability grants; Microsoft table reads come from the assignable Sustainability sets or the user's existing Business Central roles. The complete object allocation is
 recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 
 ---
@@ -41,6 +42,7 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 | --- | --- | --- | --- |
 | `Sustainability.AccountBalance.Get` | Read account net change and balance, including totals | Read-only and idempotent | [Contract](docs/account-balance.md) |
 | `Sustainability.Journal.PreviewPost` | Read; rolls back all posting changes | Idempotent | `Help.Implementation.Get` |
+| `Sustainability.Journal.Check` | Read | Idempotent; all validation changes roll back | Public message-type help, en-US and is-IS |
 
 ### Preview a journal batch
 
@@ -61,6 +63,16 @@ carry `status: Error` and an error entry with `code`, `when` and `fix`. Unknown 
 Assign `BIFROST SustRead ori` with the Foundation role. Foundation Read and Full grant the preview capability; Microsoft table reads come from the Sustainability set or the user's Business Central role. The shared visibility check from #1
 hides the type when Sustainability is unconfigured; a caller that knows the type can still call it.
 The type does not grant permission to post journals.
+
+### Check a sustainability journal
+
+```json
+{"type":"Sustainability.Journal.Check","data":{"templateName":"GENERAL","batchName":"DEFAULT"}}
+```
+
+Returns `status: Success`, `ready`, `lineCount`, and `journalErrors` containing `lineNo`, `fieldName`, and `message` from Microsoft's standard journal check. Empty batches return `ready: false`, zero lines and one explanatory message. Invalid lines also return `ready: false` with all collected errors. The check never posts or changes journal data; its transaction always rolls back and rejects explicit commits.
+
+Unknown templates or batches return `RecordNotFound` with the requested codes and a corrective next step (the story's BatchNotFound reason). Unknown keys and invalid input are refused. Both names must be strings of 1–10 characters. Assign `BIFROST SustRead ori` and the required Business Central read permissions; a user lacking the capability receives `PermissionDenied` and cannot discover the type.
 
 ### When the Sustainability types are listed
 

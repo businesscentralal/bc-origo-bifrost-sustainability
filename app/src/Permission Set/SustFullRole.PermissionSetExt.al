@@ -16,5 +16,9 @@ permissionsetextension 70009204 "Sust Full Role ori" extends "BIFROST Full ori"
         codeunit "Sust Preview Post Impl ori" = X,
         codeunit "Sust Preview Runner ori" = X,
         table "Sust Preview Access ori" = X,
-        tabledata "Sust Preview Access ori" = R;
+        tabledata "Sust Preview Access ori" = R,
+        codeunit "Sust Journal Check Impl ori" = X,
+        codeunit "Sust Journal Check Runner ori" = X,
+        table "Sust Journal Check Access ori" = X,
+        tabledata "Sust Journal Check Access ori" = R;
 }

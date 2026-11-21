@@ -5,10 +5,11 @@ using Microsoft.Foundation.NoSeries;
 using Microsoft.Sustainability.Account;
 using Microsoft.Sustainability.Journal;
 using Microsoft.Sustainability.Ledger;
+using Microsoft.Sustainability.Posting;
 using Microsoft.Sustainability.Setup;
 
 /// <summary>
-/// Grants account balance reads, journal preview and the native table reads they require.
+/// Grants account balance reads, journal validation, journal preview and the native table reads they require.
 /// </summary>
 permissionset 70009203 "BIFROST SustRead ori"
 {
@@ -32,5 +33,10 @@ permissionset 70009203 "BIFROST SustRead ori"
                   tabledata "Sustainability Setup" = R,
                   tabledata "Dimension Set Entry" = R,
                   tabledata "No. Series" = R,
-                  tabledata "No. Series Line" = R;
+                  tabledata "No. Series Line" = R,
+                  codeunit "Sust Journal Check Impl ori" = X,
+                  codeunit "Sust Journal Check Runner ori" = X,
+                  codeunit "Sustainability Jnl.-Check" = X,
+                  table "Sust Journal Check Access ori" = X,
+                  tabledata "Sust Journal Check Access ori" = R;
 }
