@@ -42,6 +42,13 @@ The app block is small. Allocate IDs densely and record every allocated id here 
 | Table | 70009212 | Sust Goal Set Access ori (empty permission marker) |
 | Test codeunit | 98035 | Sust Goal Set Tst ori |
 | Test codeunit | 98036 | Sust Goal Set Perm Tst ori |
+| Enum extension / enum value | 70009213 | Sust Jnl Create ori / Sustainability.Journal.Create |
+| Codeunit | 70009213 | Sust Jnl Create Impl ori |
+| Capability table | 70009213 | Sust Jnl Create Cap ori |
+| Test codeunit | 98040 | Sust Jnl Create Tst ori |
+| Test codeunit | 98041 | Sust Jnl Create Perm Tst ori |
+| Test fixture codeunit | 98042 | Sust Jnl Create Fixture ori |
+| Test permission set | 98043 | Sust Jnl Exec ori |
 | Test codeunit | 98015 | Sust Account Balance Tst ori |
 | Test codeunit | 98020 | Sust Scorecard Get Tst ori |
 | Test codeunit | 98021 | Sust Scorecard Perm Tst ori |
