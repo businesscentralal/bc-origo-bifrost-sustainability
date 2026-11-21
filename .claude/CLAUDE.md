@@ -45,6 +45,11 @@ The app block is small. Allocate IDs densely and record every allocated id here 
 | Test codeunit | 98003 | Sust Configured Perm Tst ori |
 | Test enum extension + value + codeunit | 98004 | Sust Visibility Probe ori (`Sustainability.Test.Visibility`, test-only) |
 | Test codeunit | 98005 | Sust Roster Tst ori |
+| Enum extension + value | 70009207 | Sust Emission Types ori / `Sustainability.EmissionSummary.Get` |
+| Codeunit | 70009207 | Sust Emission Sum Impl ori |
+| Table | 70009207 | Sust Emission Access ori (capability) |
+| Test codeunit | 98010 | Sust Emission Sum Tst ori |
+| Test permission set | 98011 | Sust Msg Test ori |
 | Enum extension / enum value | 70009213 | Sust Jnl Create ori / Sustainability.Journal.Create |
 | Codeunit | 70009213 | Sust Jnl Create Impl ori |
 | Capability table | 70009213 | Sust Jnl Create Cap ori |
