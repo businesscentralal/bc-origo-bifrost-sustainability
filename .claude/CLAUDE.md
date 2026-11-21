@@ -50,6 +50,12 @@ The app block is small. Allocate IDs densely and record every allocated id here 
 | Table | 70009210 | Sust Account Set Access ori (capability, no records) |
 | Test codeunit | 98025 | Sust Account Set Tst ori |
 | Test codeunit | 98026 | Sust Account Set Perm Tst ori |
+| Enum extension / value | 70009212 | Sust Goal Set Types ori / Sustainability.Goal.Set |
+| Codeunit | 70009212 | Sust Goal Set Impl ori |
+| Table | 70009212 | Sust Goal Set Access ori (empty permission marker) |
+| Test codeunit | 98035 | Sust Goal Set Tst ori |
+| Test codeunit | 98036 | Sust Goal Set Perm Tst ori |
+| Test permission set | 98037 | Sust Goal Exec ori (execute only; no write marker) |
 | Enum extension + value | 70009207 | Sust Emission Types ori / `Sustainability.EmissionSummary.Get` |
 | Codeunit | 70009207 | Sust Emission Sum Impl ori |
 | Table | 70009207 | Sust Emission Access ori (capability) |

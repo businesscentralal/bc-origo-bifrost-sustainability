@@ -44,6 +44,7 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 | Type | Effect | Retry behavior | Help |
 | --- | --- | --- | --- |
 | `Sustainability.Account.Set` | write (idempotent) | Runs in its own transaction; an error rolls everything back, so the same request can be resent. | Contract chapters of `Msg Contract ori` (`Help.MessageType.Get`) |
+| `Sustainability.Goal.Set` | Write: creates or updates a scorecard and the listed goals with the standard table rules; no posting, no Commit | Idempotent; a refusal rolls back the whole request | `Help.Implementation.Get` with subject `Sustainability.Goal.Set` |
 | `Sustainability.Category.Set` | Create or update a category and its listed subcategories | Idempotent; unlisted subcategories remain | Message contract |
 | `Sustainability.AccountBalance.Get` | Read account net change and balance, including totals | Read-only and idempotent | [Contract](docs/account-balance.md) |
 | `Sustainability.EmissionSummary.Get` | read (idempotent, no Commit) | Safe to retry | Emissions (CO2, CH4, N2O, CO2e, carbon fee; optional water, waste, energy) per emission scope and period, with a grand total per scope. Needs `BIFROST SustRead ori` and Microsoft's `Sustainability Read`. |
