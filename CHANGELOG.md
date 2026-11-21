@@ -3,6 +3,10 @@
 ## [28.0.0.0] - Unreleased
 
 - Add `Sustainability.Category.Set`: atomic, idempotent category and subcategory maintenance through Microsoft validation, with Full-only access and bilingual contract help. Enum extension, enum value, implementation codeunit and empty permission capability table use 70009211. Dispatcher tests use 98030-98031.
+- Use Foundation `RecordNotFound` and `PreconditionFailed` for preview refusals, with the requested template/batch in missing-batch diagnostics. Public help regression coverage validates the complete contract in English and Icelandic (Architect clarification of #9 AC04).
+
+- Add `Sustainability.Journal.PreviewPost` (enum extension/value, capability table and implementation 70009215; rollback adapter codeunit 70009227), with translated contracts, input refusals and preview totals. Posting uses temporary journal lines and rolls back after the standard approval check, before deletion; Read users need no journal-delete permission. Number-series changes roll back. Dispatcher coverage is in test codeunit 98050 with permission fixture 98051.
+
 - Fixed Full-role journal creation with open approvals by granting read access to User Setup. Permission tests now seed unrelated open approvals for another approver and cover native approval checks plus rollback without losing existing journal lines (#7).
 
 - Added `Sustainability.Journal.Create`: atomic journal creation with native manual/formula validation, Full-only permissions, bilingual help and named refusals (#7). Added enum extension/value, implementation codeunit and capability table 70009213; test codeunits 98040-98041, fixture codeunit 98042 and test execution permission set 98043. No ledger posting.
