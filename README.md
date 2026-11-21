@@ -42,6 +42,7 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 | Type | Effect | Retry behavior | Help |
 | --- | --- | --- | --- |
 | `Sustainability.Goal.Set` | Write: creates or updates a scorecard and the listed goals with the standard table rules; no posting, no Commit | Idempotent; a refusal rolls back the whole request | `Help.Implementation.Get` with subject `Sustainability.Goal.Set` |
+| `Sustainability.Category.Set` | Create or update a category and its listed subcategories | Idempotent; unlisted subcategories remain | Message contract |
 | `Sustainability.Journal.Create` | Write unposted lines; optionally create a batch | Every retry adds lines | `Help.Implementation.Get` |
 | `Sustainability.AccountBalance.Get` | Read account net change and balance, including totals | Read-only and idempotent | [Contract](docs/account-balance.md) |
 | `Sustainability.Journal.PreviewPost` | Read; rolls back all posting changes | Idempotent | `Help.Implementation.Get` |
@@ -103,6 +104,23 @@ can still run it, subject to permissions and native validation.
 Returns `status: Success`, `ready`, `lineCount`, and `journalErrors` containing `lineNo`, `fieldName`, and `message` from Microsoft's standard journal check. Empty batches return `ready: false`, zero lines and one explanatory message. Invalid lines also return `ready: false` with all collected errors. The check never posts or changes journal data; its transaction always rolls back and rejects explicit commits.
 
 Unknown templates or batches return `RecordNotFound` with the requested codes and a corrective next step (the story's BatchNotFound reason). Unknown keys and invalid input are refused. Both names must be strings of 1–10 characters. Assign `BIFROST SustRead ori` and the required Business Central read permissions; a user lacking the capability receives `PermissionDenied` and cannot discover the type.
+
+`Sustainability.Category.Set` requires `BIFROST SustFull ori` and uses standard Microsoft field validation.
+It creates or updates the category and only the subcategories supplied in `data.subcategories`; unlisted
+subcategories and omitted fields remain unchanged. Repeating a request updates the same records. A refusal
+rolls back the complete write. Standard validation may recalculate existing journal lines; this type never posts.
+
+```json
+{"type":"Sustainability.Category.Set","data":{"code":"FUEL","emissionScope":"Scope 1","calculationFoundation":"Fuel/Electricity","co2":true,"subcategories":[{"code":"DIESEL","emissionFactorCO2":2.68}]}}
+```
+
+The response contains `status`, the stored `category`, and all its stored `subcategories`. Use invariant enum
+names in either language. `Help.Implementation.Get` provides the complete bilingual contract, field names,
+length limits, errors and transaction behavior. Read roles cannot run this write type.
+
+Sustainability types appear automatically when Sustainability Setup has an Emission Unit of Measure Code
+or the company has a Sustainability Account, subject to each type's permissions. The shared configured
+check controls discovery only: a permitted caller can still run a known type in an unconfigured company.
 
 ### When the Sustainability types are listed
 

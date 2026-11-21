@@ -16,6 +16,7 @@ permissionsetextension 70009204 "Sust Full Role ori" extends "BIFROST Full ori"
         codeunit "Sust Goal Set Impl ori" = X,
         table "Sust Goal Set Access ori" = X,
         tabledata "Sust Goal Set Access ori" = RIMD,
+        codeunit "Sust Category Set Impl ori" = X,
         codeunit "Sust Jnl Create Impl ori" = X,
         table "Sust Jnl Create Cap ori" = X,
         tabledata "Sust Jnl Create Cap ori" = R,
@@ -27,6 +28,8 @@ permissionsetextension 70009204 "Sust Full Role ori" extends "BIFROST Full ori"
         codeunit "Sust Scorecard Get Impl ori" = X,
         codeunit "Sust Journal Check Impl ori" = X,
         codeunit "Sust Journal Check Runner ori" = X,
+        table "Sust Category Access ori" = X,
+        tabledata "Sust Category Access ori" = RIMD,
         table "Sust Journal Check Access ori" = X,
         tabledata "Sust Journal Check Access ori" = R;
 }
