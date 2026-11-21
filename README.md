@@ -15,6 +15,7 @@ goals, and prepare sustainability journals. It is built on the same basis as
 
 **Message types:** `Sustainability.AccountBalance.Get` reads net change and balances for selected accounts;
 `Sustainability.Account.Set` creates or updates accounts;
+`Sustainability.Scorecard.Get` reads a scorecard and the progress of its goals;
 `Sustainability.Journal.Check` validates a journal batch without changing it.
 The first release adds the other reads, master-data writes and journal types listed in the release tracker.
 Journal posting and ledger reversal come in release 2.
@@ -43,6 +44,7 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 | --- | --- | --- | --- |
 | `Sustainability.Account.Set` | write (idempotent) | Runs in its own transaction; an error rolls everything back, so the same request can be resent. | Contract chapters of `Msg Contract ori` (`Help.MessageType.Get`) |
 | `Sustainability.AccountBalance.Get` | Read account net change and balance, including totals | Read-only and idempotent | [Contract](docs/account-balance.md) |
+| `Sustainability.Scorecard.Get` | Reads a scorecard and the baseline, current, target and progress of its goals. Posts nothing. | Idempotent. The same request reads the same rows. | [Scorecard](https://docs.bifrost.origo.is/en-us/sustainability/) |
 | `Sustainability.Journal.Check` | Read | Idempotent; all validation changes roll back | Public message-type help, en-US and is-IS |
 
 ### Check a sustainability journal
