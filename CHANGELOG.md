@@ -6,6 +6,8 @@
 
 - Add `Sustainability.Journal.PreviewPost` (enum extension/value, capability table and implementation 70009215; rollback adapter codeunit 70009227), with translated contracts, input refusals and preview totals. Posting uses temporary journal lines and rolls back after the standard approval check, before deletion; Read users need no journal-delete permission. Number-series changes roll back. Dispatcher coverage is in test codeunit 98050 with permission fixture 98051.
 
+- Added `Sustainability.AccountBalance.Get`: native account net change, balance and totals with date, global-dimension and responsibility-center filters; stored CO2e is summed without recalculating emission factors. Added enum extension/value and implementation codeunit 70009208, Read-role grants, bilingual contracts and dispatcher tests in codeunit 98015.
+
 - Repository scaffolded from the Bifrost Quality Management setup (AL-Go, COSMO Alpaca, source guards, Runtime Package workflow).
 - Foundation application registration (codeunit 70009200), base, Full and Read permission sets (70009201-70009203) and the Foundation Full and Read role extensions (70009204-70009205).
 - Registration and licence-administrator setup coverage in test codeunit 98000 (English and Icelandic), with the platform-only test permission set 98001.

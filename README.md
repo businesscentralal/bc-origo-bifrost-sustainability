@@ -13,14 +13,15 @@ goals, and prepare sustainability journals. It is built on the same basis as
 
 **Microsoft source:** <https://github.com/microsoft/BCApps/tree/main/src/Apps/W1/Sustainability>
 
-**Message types:** the first release adds the `Sustainability.*` reads, master-data writes and journal
-types listed in the release tracking issue. Journal posting and ledger reversal come in release 2.
+**Message types:** `Sustainability.AccountBalance.Get` reads net change and balances for selected accounts.
+The first release adds the other reads, master-data writes and journal types listed in the release tracker.
+Journal posting and ledger reversal come in release 2.
 
 Foundation discovers this app on **Bifrost Setup** through its application registry. All setup notifications stay on
 that Foundation page. Bifrost Sustainability has no setup page of its own.
 
 Assign `BIFROST Sustain ori`, `BIFROST SustFull ori` or `BIFROST SustRead ori` alongside the appropriate Foundation
-role. Foundation Full and Read already include the matching Sustainability set. The complete object allocation is
+role. Foundation Full and Read grant this app's codeunit execution; the Sustainability sets supply the native table reads. The complete object allocation is
 recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 
 ---
@@ -38,6 +39,7 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 
 | Type | Effect | Retry behavior | Help |
 | --- | --- | --- | --- |
+| `Sustainability.AccountBalance.Get` | Read account net change and balance, including totals | Read-only and idempotent | [Contract](docs/account-balance.md) |
 | `Sustainability.Journal.PreviewPost` | Read; rolls back all posting changes | Idempotent | `Help.Implementation.Get` |
 
 ### Preview a journal batch

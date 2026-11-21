@@ -8,7 +8,7 @@ using Microsoft.Sustainability.Ledger;
 using Microsoft.Sustainability.Setup;
 
 /// <summary>
-/// Read-only Bifrost Sustainability role. In the scaffold it grants registration only; read message types add their grants here.
+/// Grants account balance reads, journal preview and the native table reads they require.
 /// </summary>
 permissionset 70009203 "BIFROST SustRead ori"
 {
@@ -16,7 +16,8 @@ permissionset 70009203 "BIFROST SustRead ori"
     Access = Public;
     Caption = 'Bifrost Sustainability Read', MaxLength = 30, Comment = 'is-IS=Bifröst - sjálfbærni (lestur)';
     IncludedPermissionSets = "BIFROST Sustain ori";
-    Permissions = codeunit "Sust Preview Post Impl ori" = X,
+    Permissions = codeunit "Sust Account Bal Impl ori" = X,
+                  codeunit "Sust Preview Post Impl ori" = X,
                   codeunit "Sust Preview Runner ori" = X,
                   table "Sust Preview Access ori" = X,
                   tabledata "Sust Preview Access ori" = R,
