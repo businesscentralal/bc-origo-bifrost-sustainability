@@ -1,10 +1,13 @@
 namespace Origo.Bifrost.Sustainability;
 
 using Microsoft.Sustainability.Account;
+using Microsoft.Sustainability.Journal;
 using Microsoft.Sustainability.Ledger;
+using Microsoft.Sustainability.Posting;
+using Microsoft.Sustainability.Setup;
 
 /// <summary>
-/// Grants read-only account balance calculation and native sustainability table reads.
+/// Grants read-only journal validation, account balance calculation and native sustainability table reads.
 /// </summary>
 permissionset 70009203 "BIFROST SustRead ori"
 {
@@ -13,9 +16,20 @@ permissionset 70009203 "BIFROST SustRead ori"
     Caption = 'Bifrost Sustainability Read', MaxLength = 30, Comment = 'is-IS=Bifröst - sjálfbærni (lestur)';
     IncludedPermissionSets = "BIFROST Sustain ori";
     Permissions = codeunit "Sust Account Bal Impl ori" = X,
+        codeunit "Sust Journal Check Impl ori" = X,
+        codeunit "Sust Journal Check Runner ori" = X,
+        codeunit "Sustainability Jnl.-Check" = X,
+        table "Sust Journal Check Access ori" = X,
+        tabledata "Sust Journal Check Access ori" = R,
+        tabledata "Sustainability Jnl. Template" = R,
+        tabledata "Sustainability Jnl. Batch" = R,
+        tabledata "Sustainability Jnl. Line" = R,
+        tabledata "Sustainability Setup" = R,
+        tabledata "Sustainability Account" = R,
+        tabledata "Sustainability Ledger Entry" = R,
+        tabledata "Sustain. Account Category" = R,
+        tabledata "Sustain. Account Subcategory" = R,
         codeunit "Sust Emission Sum Impl ori" = X,
         table "Sust Emission Access ori" = X,
-        tabledata "Sust Emission Access ori" = R,
-        tabledata "Sustainability Account" = R,
-        tabledata "Sustainability Ledger Entry" = R;
+        tabledata "Sust Emission Access ori" = R;
 }
