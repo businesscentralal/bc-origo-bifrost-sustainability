@@ -35,6 +35,7 @@ The app block is small. Allocate IDs densely and record every allocated id here 
 | Test codeunit | 98020 | Sust Scorecard Get Tst ori |
 | Test codeunit | 98021 | Sust Scorecard Perm Tst ori |
 | Test permission set | 98022 | Sust Sc Exec ori |
+| Test permission set | 98023 | Sust Arg Test ori |
 
 Reserved for the release 1 issues (one number per message type; the enum extension, its enum value, the Impl
 codeunit and any capability table of a type all use that type's number, since they are different object types):
