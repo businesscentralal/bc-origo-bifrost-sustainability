@@ -45,6 +45,11 @@ The app block is small. Allocate IDs densely and record every allocated id here 
 | Test codeunit | 98003 | Sust Configured Perm Tst ori |
 | Test enum extension + value + codeunit | 98004 | Sust Visibility Probe ori (`Sustainability.Test.Visibility`, test-only) |
 | Test codeunit | 98005 | Sust Roster Tst ori |
+| Enum extension / value | 70009210 | Sust Account Set Msg Type ori / Sustainability.Account.Set |
+| Codeunit | 70009210 | Sust Account Set Impl ori |
+| Table | 70009210 | Sust Account Set Access ori (capability, no records) |
+| Test codeunit | 98025 | Sust Account Set Tst ori |
+| Test codeunit | 98026 | Sust Account Set Perm Tst ori |
 | Enum extension / value | 70009212 | Sust Goal Set Types ori / Sustainability.Goal.Set |
 | Codeunit | 70009212 | Sust Goal Set Impl ori |
 | Table | 70009212 | Sust Goal Set Access ori (empty permission marker) |
