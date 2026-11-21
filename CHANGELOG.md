@@ -2,6 +2,8 @@
 
 ## [28.0.0.0] - Unreleased
 
+- Fix the Goal.Set Read-role visibility test with a test-only Execute permission set (98037). It reaches `IsEnabled()` under restrictive permissions and explicitly asserts that the write marker remains denied before checking that the type is hidden.
+
 - Add `Sustainability.Category.Set`: atomic, idempotent category and subcategory maintenance through Microsoft validation, with Full-only access and bilingual contract help. Enum extension, enum value, implementation codeunit and empty permission capability table use 70009211. Dispatcher tests use 98030-98031.
 - Use Foundation `RecordNotFound` and `PreconditionFailed` for preview refusals, with the requested template/batch in missing-batch diagnostics. Public help regression coverage validates the complete contract in English and Icelandic (Architect clarification of #9 AC04).
 

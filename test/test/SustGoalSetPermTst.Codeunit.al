@@ -4,6 +4,7 @@ using Microsoft.Sustainability.Account;
 using Microsoft.Sustainability.Scorecard;
 using Microsoft.Sustainability.Setup;
 using Origo.Bifrost;
+using Origo.Bifrost.Sustainability;
 using System.TestLibraries.Security.AccessControl;
 using System.TestLibraries.Utilities;
 
@@ -21,18 +22,23 @@ codeunit 98036 "Sust Goal Set Perm Tst ori"
     [Test]
     procedure Scenario_ACP_ReadRole_TypeIsHidden()
     var
+        AccessMarker: Record "Sust Goal Set Access ori";
         Impl: Interface "Msg Interface ori";
         Enabled: Boolean;
+        HasWriteGrant: Boolean;
     begin
         // Story #6, AC-P | Time: no date-dependent inputs | Risk: permissions restored
         SetConfigured(true);
         Impl := Enum::"Message Type ori"::"Sustainability.Goal.Set";
-        // Foundation Read supplies execution; Sustainability Read and test setup supply reads (#18).
+        // Test-only execution reaches the visibility guard without granting the write marker.
         LowerPermissions.SetExactPermissionSet('BIFROST Read ori');
         LowerPermissions.AddPermissionSet('BIFROST SustRead ori');
         LowerPermissions.AddPermissionSet('Sust Setup Test ori');
+        LowerPermissions.AddPermissionSet('Sust Goal Exec ori');
+        HasWriteGrant := AccessMarker.WritePermission();
         Enabled := Impl.IsEnabled();
         LowerPermissions.SetOutsideO365Scope();
+        Assert.IsFalse(HasWriteGrant, 'The visibility fixture must not grant Goal.Set write access.');
         Assert.IsFalse(Enabled, 'The read role must not see Goal.Set.');
     end;
 
