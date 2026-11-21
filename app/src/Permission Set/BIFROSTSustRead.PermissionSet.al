@@ -4,10 +4,12 @@ using Microsoft.Sustainability.Account;
 using Microsoft.Sustainability.Journal;
 using Microsoft.Sustainability.Ledger;
 using Microsoft.Sustainability.Posting;
+using Microsoft.Sustainability.Scorecard;
 using Microsoft.Sustainability.Setup;
 
 /// <summary>
-/// Grants read-only journal validation, account balance calculation and native sustainability table reads.
+/// Grants read-only journal validation, account balance and scorecard calculation,
+/// plus the native sustainability table reads those types require.
 /// </summary>
 permissionset 70009203 "BIFROST SustRead ori"
 {
@@ -16,6 +18,7 @@ permissionset 70009203 "BIFROST SustRead ori"
     Caption = 'Bifrost Sustainability Read', MaxLength = 30, Comment = 'is-IS=Bifröst - sjálfbærni (lestur)';
     IncludedPermissionSets = "BIFROST Sustain ori";
     Permissions = codeunit "Sust Account Bal Impl ori" = X,
+        codeunit "Sust Scorecard Get Impl ori" = X,
         codeunit "Sust Journal Check Impl ori" = X,
         codeunit "Sust Journal Check Runner ori" = X,
         codeunit "Sustainability Jnl.-Check" = X,
@@ -26,6 +29,8 @@ permissionset 70009203 "BIFROST SustRead ori"
         tabledata "Sustainability Jnl. Line" = R,
         tabledata "Sustainability Setup" = R,
         tabledata "Sustainability Account" = R,
+        tabledata "Sustainability Goal" = R,
+        tabledata "Sustainability Scorecard" = R,
         tabledata "Sustainability Ledger Entry" = R,
         tabledata "Sustain. Account Category" = R,
         tabledata "Sustain. Account Subcategory" = R;
