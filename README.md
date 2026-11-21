@@ -43,9 +43,57 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 | Type | Effect | Retry behavior | Help |
 | --- | --- | --- | --- |
 | `Sustainability.Account.Set` | write (idempotent) | Runs in its own transaction; an error rolls everything back, so the same request can be resent. | Contract chapters of `Msg Contract ori` (`Help.MessageType.Get`) |
+| `Sustainability.Journal.Create` | Write unposted lines; optionally create a batch | Every retry adds lines | `Help.Implementation.Get` |
 | `Sustainability.AccountBalance.Get` | Read account net change and balance, including totals | Read-only and idempotent | [Contract](docs/account-balance.md) |
+| `Sustainability.Journal.PreviewPost` | Read; rolls back all posting changes | Idempotent | `Help.Implementation.Get` |
 | `Sustainability.Scorecard.Get` | Reads a scorecard and the baseline, current, target and progress of its goals. Posts nothing. | Idempotent. The same request reads the same rows. | [Scorecard](https://docs.bifrost.origo.is/en-us/sustainability/) |
 | `Sustainability.Journal.Check` | Read | Idempotent; all validation changes roll back | Public message-type help, en-US and is-IS |
+
+### Preview a journal batch
+
+```json
+{"type":"Sustainability.Journal.PreviewPost","data":{"templateName":"GENERAL","batchName":"DEFAULT"}}
+```
+
+Returns the entries the standard Sustainability posting engine would create, including emissions,
+carbon fees, water, waste, energy, dimensions and totals. Journal lines, number-series state and
+ledger entries remain unchanged. The engine processes a temporary copy of the journal; the standard
+open-approval check runs before preview stops at line deletion, so Read users need no journal delete right. The response carries `rollback: true`. No page or action is added.
+
+Unknown batches return `RecordNotFound`; invalid or empty journals return `PreconditionFailed`.
+Validation failures include `journalErrors` with `lineNo`, `fieldName` and `message`, using the
+standard journal check. Other posting errors return the Business Central message. All refusals
+carry `status: Error` and an error entry with `code`, `when` and `fix`. Unknown request keys are refused.
+
+Assign `BIFROST SustRead ori` with the Foundation role. Foundation Read and Full grant the preview capability; Microsoft table reads come from the Sustainability set or the user's Business Central role. The shared visibility check from #1
+hides the type when Sustainability is unconfigured; a caller that knows the type can still call it.
+The type does not grant permission to post journals.
+
+### Create journal lines
+
+```json
+{"type":"Sustainability.Journal.Create","data":{"templateName":"GENERAL","batchName":"DEFAULT","lines":[{"postingDate":"2026-01-15","documentNo":"SUST0001","accountNo":"1000","emissionCO2":10}]}}
+```
+
+The template must exist. `createBatch: true` creates a missing batch; otherwise the batch must exist too.
+Each line requires `postingDate` and `accountNo`. `documentNo` defaults from the batch number series.
+Supply either manual `emissionCO2`, `emissionCH4`, `emissionN2O`, or formula inputs `fuelOrElectricity`,
+`distance`, `customAmount`, `installationMultiplier`, `timeFactor`. Native account/category/subcategory
+validation calculates the emissions. Optional metadata: `description`, `unitOfMeasure`, `energySourceCode`,
+`countryRegionCode`, `responsibilityCenter`, and `dimensions` (a map of dimension codes to value codes).
+
+The response contains `lines`, each with `lineNo`, `CO2`, `CH4`, `N2O` and `CO2e`. CO2e uses Microsoft's
+emission factors for the date, scope and country and is zero if no applicable factor exists.
+Refusals use Foundation error `code` values and retain the named business refusal in `reason`:
+`BatchNotFound` (`RecordNotFound`), `InvalidAccount` / `AmbiguousInput` (`InvalidParameter`),
+and `ScopeMismatch` (`PreconditionFailed`). Unknown keys are refused. All lines, a newly created batch and any dimension sets belong to one transaction;
+a validation failure leaves no partial data. This operation never posts a ledger entry. A successful retry
+adds more lines, so check the previous result before retrying.
+
+`BIFROST SustFull ori` grants the write and its empty capability table; Read does not. Visibility uses the
+shared `Sust Configured ori` check: an emission unit of measure or at least one sustainability account,
+and the caller's write permissions. Hidden means absent from the roster; a caller who knows the type
+can still run it, subject to permissions and native validation.
 
 ### Check a sustainability journal
 

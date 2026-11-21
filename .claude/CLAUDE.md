@@ -26,6 +26,9 @@ The app block is small. Allocate IDs densely and record every allocated id here 
 | Permission set | 70009203 | BIFROST SustRead ori |
 | Permission set extension | 70009204 | Sust Full Role ori (extends `BIFROST Full ori`) |
 | Permission set extension | 70009205 | Sust Read Role ori (extends `BIFROST Read ori`) |
+| Enum extension/value, table, codeunit | 70009215 | Sust Preview Post ori; Sust Preview Access ori; Sust Preview Post Impl ori |
+| Test codeunit / permission set | 98050 / 98051 | Sust Preview Post Tst ori / Sust Prev Denied ori |
+| Codeunit | 70009227 | Sust Preview Runner ori (issue #9 rollback adapter) |
 | Codeunit | 70009206 | Sust Configured ori (shared visibility check, D5, #1) |
 | Enum extension/value | 70009208 | Sust Account Balance ori / Sustainability.AccountBalance.Get |
 | Codeunit | 70009208 | Sust Account Bal Impl ori |
@@ -42,6 +45,13 @@ The app block is small. Allocate IDs densely and record every allocated id here 
 | Table | 70009210 | Sust Account Set Access ori (capability, no records) |
 | Test codeunit | 98025 | Sust Account Set Tst ori |
 | Test codeunit | 98026 | Sust Account Set Perm Tst ori |
+| Enum extension / enum value | 70009213 | Sust Jnl Create ori / Sustainability.Journal.Create |
+| Codeunit | 70009213 | Sust Jnl Create Impl ori |
+| Capability table | 70009213 | Sust Jnl Create Cap ori |
+| Test codeunit | 98040 | Sust Jnl Create Tst ori |
+| Test codeunit | 98041 | Sust Jnl Create Perm Tst ori |
+| Test fixture codeunit | 98042 | Sust Jnl Create Fixture ori |
+| Test permission set | 98043 | Sust Jnl Exec ori |
 | Test codeunit | 98015 | Sust Account Balance Tst ori |
 | Test codeunit | 98020 | Sust Scorecard Get Tst ori |
 | Test codeunit | 98021 | Sust Scorecard Perm Tst ori |
