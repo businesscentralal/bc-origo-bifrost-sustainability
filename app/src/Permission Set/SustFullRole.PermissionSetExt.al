@@ -16,6 +16,7 @@ permissionsetextension 70009204 "Sust Full Role ori" extends "BIFROST Full ori"
         table "Sust Jnl Create Cap ori" = X,
         tabledata "Sust Jnl Create Cap ori" = R,
         codeunit "Sust Account Bal Impl ori" = X,
+        codeunit "Sust Scorecard Get Impl ori" = X,
         codeunit "Sust Journal Check Impl ori" = X,
         codeunit "Sust Journal Check Runner ori" = X,
         table "Sust Journal Check Access ori" = X,

@@ -15,7 +15,7 @@ using System.Automation;
 using System.Security.User;
 
 /// <summary>
-/// Grants journal creation and its capability only to the Full role.
+/// Full Bifrost Sustainability role. Includes the read set and grants journal creation and its capability.
 /// </summary>
 permissionset 70009202 "BIFROST SustFull ori"
 {
