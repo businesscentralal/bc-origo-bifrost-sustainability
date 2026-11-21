@@ -435,6 +435,210 @@
           <note from="Developer" annotates="general" priority="2">is-IS=Safnaðar villur með lineNo, fieldName og message. Tóm keyrsla hefur ein skilaboð með lineNo 0.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - Method GetResponse - NamedType ErrorsLbl</note>
         </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 2142096021" size-unit="char" translate="yes" xml:space="preserve">
+          <source>baseline</source>
+          <target>grunnlína</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=grunnlína</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType BaselineTok</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 3463406715" size-unit="char" translate="yes" xml:space="preserve">
+          <source>text of at most 20 characters</source>
+          <target>texti sem er í mesta lagi 20 stafir</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=texti sem er í mesta lagi 20 stafir</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType CodeExpectedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 2622383074" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 is longer than %2 characters.</source>
+          <target>%1 er lengra en %2 stafir.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name, %2 = max length||is-IS=%1 er lengra en %2 stafir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType CodeTooLongErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 3145036466" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send the scorecard or goal number from Business Central, at most 20 characters.</source>
+          <target>Sendu númer mælaborðs eða markmiðs úr Business Central, í mesta lagi 20 stafir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sendu númer mælaborðs eða markmiðs úr Business Central, í mesta lagi 20 stafir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType CodeTooLongFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 715967703" size-unit="char" translate="yes" xml:space="preserve">
+          <source>scorecardNo or goalNo is longer than 20 characters.</source>
+          <target>scorecardNo eða goalNo er lengra en 20 stafir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=scorecardNo eða goalNo er lengra en 20 stafir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType CodeTooLongWhenLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 4110763179" size-unit="char" translate="yes" xml:space="preserve">
+          <source>current</source>
+          <target>núverandi</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=núverandi</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType CurrentTok</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 1098416156" size-unit="char" translate="yes" xml:space="preserve">
+          <source>a date in the form yyyy-MM-dd</source>
+          <target>dagsetning á forminu yyyy-MM-dd</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=dagsetning á forminu yyyy-MM-dd</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType DateExpectedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 3569966352" maxwidth="250" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Returns a sustainability scorecard with each goal's baseline, current value, target and progress.</source>
+          <target>Skilar sjálfbærnimælaborði með grunnlínu, núverandi gildi, markgildi og framvindu hvers markmiðs.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Skilar sjálfbærnimælaborði með grunnlínu, núverandi gildi, markgildi og framvindu hvers markmiðs.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 131648365" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability goal '%1' does not exist on scorecard '%2'.</source>
+          <target>Sjálfbærnimarkmiðið '%1' er ekki til á mælaborðinu '%2'.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = goal no., %2 = scorecard no.||is-IS=Sjálfbærnimarkmiðið '%1' er ekki til á mælaborðinu '%2'.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType GoalNotFoundErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 1817013477" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Leave goalNo out to read every goal, or send a goal number that exists on the scorecard.</source>
+          <target>Slepptu goalNo til að lesa öll markmið, eða sendu númer markmiðs sem er til á mælaborðinu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Slepptu goalNo til að lesa öll markmið, eða sendu númer markmiðs sem er til á mælaborðinu.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType GoalNotFoundFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 1610953012" size-unit="char" translate="yes" xml:space="preserve">
+          <source>goalNo is sent and no goal on the scorecard has that number.</source>
+          <target>goalNo er sent og ekkert markmið á mælaborðinu hefur það númer.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=goalNo er sent og ekkert markmið á mælaborðinu hefur það númer.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType GoalNotFoundWhenLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 411844913" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The value of %1 has the wrong JSON type or is not a date in the form yyyy-MM-dd.</source>
+          <target>Gildi %1 er af rangri JSON-gerð eða er ekki dagsetning á forminu yyyy-MM-dd.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name||is-IS=Gildi %1 er af rangri JSON-gerð eða er ekki dagsetning á forminu yyyy-MM-dd.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType InvalidFormatErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 642200393" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send codes as text and dates as yyyy-MM-dd.</source>
+          <target>Sendu kóða sem texta og dagsetningar sem yyyy-MM-dd.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sendu kóða sem texta og dagsetningar sem yyyy-MM-dd.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType InvalidFormatFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 1173296568" size-unit="char" translate="yes" xml:space="preserve">
+          <source>scorecardNo or goalNo is not text, a date parameter is not text, or a date is not yyyy-MM-dd.</source>
+          <target>scorecardNo eða goalNo er ekki texti, dagsetning er ekki texti, eða dagsetning er ekki á forminu yyyy-MM-dd.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=scorecardNo eða goalNo er ekki texti, dagsetning er ekki texti, eða dagsetning er ekki á forminu yyyy-MM-dd.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType InvalidFormatWhenLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 1977192435" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The %1 period is invalid because the from-date is after the to-date.</source>
+          <target>Tímabilið %1 er ógilt því upphafsdagur er á eftir lokadegi.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = baseline or current||is-IS=Tímabilið %1 er ógilt því upphafsdagur er á eftir lokadegi.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType InvalidPeriodErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 897824795" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send the from-date on or before the to-date, or leave both ends of that period out.</source>
+          <target>Sendu upphafsdag á eða fyrir lokadag, eða slepptu báðum endum tímabilsins.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sendu upphafsdag á eða fyrir lokadag, eða slepptu báðum endum tímabilsins.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType InvalidPeriodFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 2763266622" size-unit="char" translate="yes" xml:space="preserve">
+          <source>baselineFrom is after baselineTo, or currentFrom is after currentTo.</source>
+          <target>baselineFrom er á eftir baselineTo, eða currentFrom er á eftir currentTo.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=baselineFrom er á eftir baselineTo, eða currentFrom er á eftir currentTo.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType InvalidPeriodWhenLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>sustainability scorecard, sustainability goal, scorecard, goal, progress, baseline, target, CO2, emissions, on track</source>
+          <target>sjálfbærnimælaborð, sjálfbærnimarkmið, mælaborð, markmið, framvinda, grunnlína, markgildi, CO2, losun, á réttri leið</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=sjálfbærnimælaborð, sjálfbærnimarkmið, mælaborð, markmið, framvinda, grunnlína, markgildi, CO2, losun, á réttri leið</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 3309742093" size-unit="char" translate="yes" xml:space="preserve">
+          <source>scorecardNo, goalNo, baselineFrom, baselineTo, currentFrom and currentTo</source>
+          <target>scorecardNo, goalNo, baselineFrom, baselineTo, currentFrom og currentTo</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=scorecardNo, goalNo, baselineFrom, baselineTo, currentFrom og currentTo</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType KnownKeysExpectedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 4229010375" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The request is missing the required parameter 'scorecardNo'.</source>
+          <target>Beiðnina vantar nauðsynlega færibreytu 'scorecardNo'.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Beiðnina vantar nauðsynlega færibreytu 'scorecardNo'.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType MissingScorecardErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 2445584783" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send scorecardNo with the scorecard number.</source>
+          <target>Sendu scorecardNo með númeri mælaborðsins.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sendu scorecardNo með númeri mælaborðsins.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType MissingScorecardFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 4206922322" size-unit="char" translate="yes" xml:space="preserve">
+          <source>scorecardNo is missing, null or blank.</source>
+          <target>scorecardNo vantar, er null eða autt.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=scorecardNo vantar, er null eða autt.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType MissingScorecardWhenLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Read only and idempotent. The call does not insert, modify, delete or post, and the number of sustainability ledger entries is unchanged. A hidden type (Sustainability is not configured, or the caller lacks read permission) is left out of the roster; a caller that names the type can still run it when the caller has read permission. Unknown request keys are refused before anything is read. Country and responsibility-center flowfilters follow the goal. An open end of a period (only from, or only to) is a valid open-ended filter.</source>
+          <target>Eingöngu lestur og endurtekið. Kallið bætir hvorki við, breytir, eyðir né bókar, og fjöldi færslna í sjálfbærnifærslubók er óbreyttur. Falinn tegund (sjálfbærni er ekki uppsett, eða kallanda skortir lesheimild) er ekki á listanum; kallaandi sem nefnir tegundina getur samt keyrt hana þegar kallandi hefur lesheimild. Óþekktum lyklum beiðni er hafnað áður en nokkuð er lesið. Flæðisíur lands og ábyrgðarstöðvar fylgja markmiðinu. Opinn endi tímabils (aðeins frá, eða aðeins til) er gild opin sía.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Eingöngu lestur og endurtekið. Kallið bætir hvorki við, breytir, eyðir né bókar, og fjöldi færslna í sjálfbærnifærslubók er óbreyttur. Falinn tegund (sjálfbærni er ekki uppsett, eða kallanda skortir lesheimild) er ekki á listanum; kallaandi sem nefnir tegundina getur samt keyrt hana þegar kallandi hefur lesheimild. Óþekktum lyklum beiðni er hafnað áður en nokkuð er lesið. Flæðisíur lands og ábyrgðarstöðvar fylgja markmiðinu. Opinn endi tímabils (aðeins frá, eða aðeins til) er gild opin sía.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType NotesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 3593894611" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reads one sustainability scorecard and its goals so a caller can see whether the company is on track. Baseline and current amounts are the flowfields on the goal. The request periods, when sent, become the flowfilters before those amounts are calculated. When a period is omitted, the goal's own baseline dates or its start and end date are used. Progress for a measure is how far the current amount has moved from the baseline toward the target. When the target equals the baseline, that progress is null.</source>
+          <target>Les eitt sjálfbærnimælaborð og markmið þess svo kallaandi sjái hvort fyrirtækið er á réttri leið. Grunnlína og núverandi upphæðir eru flæðisreitir markmiðsins. Tímabil beiðninnar, þegar þau eru send, verða flæðisíur áður en upphæðirnar eru reiknaðar. Þegar tímabili er sleppt eru eigin grunnlínudagsetningar markmiðsins eða upphafs- og lokadagur þess notaðar. Framvinda mælikvarða er hversu langt núverandi upphæð hefur færst frá grunnlínu að markgildi. Þegar markgildið er jafnt grunnlínunni er framvindan null.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Les eitt sjálfbærnimælaborð og markmið þess svo kallaandi sjái hvort fyrirtækið er á réttri leið. Grunnlína og núverandi upphæðir eru flæðisreitir markmiðsins. Tímabil beiðninnar, þegar þau eru send, verða flæðisíur áður en upphæðirnar eru reiknaðar. Þegar tímabili er sleppt eru eigin grunnlínudagsetningar markmiðsins eða upphafs- og lokadagur þess notaðar. Framvinda mælikvarða er hversu langt núverandi upphæð hefur færst frá grunnlínu að markgildi. Þegar markgildið er jafnt grunnlínunni er framvindan null.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType OverviewLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 1902290539" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You do not have read permission for sustainability scorecards.</source>
+          <target>Þú hefur ekki lesheimild á sjálfbærnimælaborð.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Þú hefur ekki lesheimild á sjálfbærnimælaborð.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType PermissionDeniedErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 1427289299" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ask your administrator for the BIFROST SustRead ori permission set, or for BIFROST Read ori.</source>
+          <target>Biddu kerfisstjóra um heimildasamstæðuna BIFROST SustRead ori, eða um BIFROST Read ori.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Biddu kerfisstjóra um heimildasamstæðuna BIFROST SustRead ori, eða um BIFROST Read ori.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType PermissionDeniedFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 2512505270" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The caller cannot read sustainability scorecards, goals or ledger entries.</source>
+          <target>Kallandinn getur ekki lesið sjálfbærnimælaborð, markmið eða færslubók.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Kallandinn getur ekki lesið sjálfbærnimælaborð, markmið eða færslubók.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType PermissionDeniedWhenLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 441078526" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability scorecard '%1' does not exist.</source>
+          <target>Sjálfbærnimælaborðið '%1' er ekki til.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = scorecard no.||is-IS=Sjálfbærnimælaborðið '%1' er ekki til.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType ScorecardNotFoundErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 3471238798" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send the number of a scorecard that exists in the company.</source>
+          <target>Sendu númer mælaborðs sem er til í fyrirtækinu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sendu númer mælaborðs sem er til í fyrirtækinu.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType ScorecardNotFoundFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 3548440755" size-unit="char" translate="yes" xml:space="preserve">
+          <source>scorecardNo does not match a sustainability scorecard.</source>
+          <target>scorecardNo passar ekki við sjálfbærnimælaborð.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=scorecardNo passar ekki við sjálfbærnimælaborð.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType ScorecardNotFoundWhenLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 895773054" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reads one scorecard and the progress of its goals. It does not change goals and it does not post.</source>
+          <target>Les eitt mælaborð og framvindu markmiða þess. Það breytir ekki markmiðum og bókar ekki.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Les eitt mælaborð og framvindu markmiða þess. Það breytir ekki markmiðum og bókar ekki.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType SelectionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 2912406318" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Parameter '%1' is not declared by this message type. Nothing was read.</source>
+          <target>Viðfangið '%1' er ekki skilgreint fyrir þessa skilaboðategund. Ekkert var lesið.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name||is-IS=Viðfangið '%1' er ekki skilgreint fyrir þessa skilaboðategund. Ekkert var lesið.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType UnknownKeyErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 2892628702" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Remove the unknown key. The declared parameters are listed by Help.Implementation.Get.</source>
+          <target>Fjarlægðu óþekkta lykilinn. Skilgreind viðföng eru talin upp af Help.Implementation.Get.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fjarlægðu óþekkta lykilinn. Skilgreind viðföng eru talin upp af Help.Implementation.Get.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType UnknownKeyFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 3136841475" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The request contains a key other than scorecardNo, goalNo, baselineFrom, baselineTo, currentFrom or currentTo.</source>
+          <target>Beiðnin inniheldur annan lykil en scorecardNo, goalNo, baselineFrom, baselineTo, currentFrom eða currentTo.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Beiðnin inniheldur annan lykil en scorecardNo, goalNo, baselineFrom, baselineTo, currentFrom eða currentTo.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType UnknownKeyWhenLbl</note>
+        </trans-unit>
         <trans-unit id="PermissionSet 2315649480 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
           <source>Bifrost Sustainability</source>
           <target>Bifröst - sjálfbærni</target>
