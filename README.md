@@ -17,7 +17,8 @@ goals, and prepare sustainability journals. It is built on the same basis as
 `Sustainability.Account.Set` creates or updates accounts;
 `Sustainability.Scorecard.Get` reads a scorecard and the progress of its goals;
 `Sustainability.Journal.Check` validates a journal batch without changing it.
-The first release adds the other reads, master-data writes and journal types listed in the release tracker.
+The first release adds the other reads, master-data writes and journal types listed in the release tracker
+(see the table below for the ones available so far).
 Journal posting and ledger reversal come in release 2.
 
 Foundation discovers this app on **Bifrost Setup** through its application registry. All setup notifications stay on
@@ -44,8 +45,9 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 | --- | --- | --- | --- |
 | `Sustainability.Account.Set` | write (idempotent) | Runs in its own transaction; an error rolls everything back, so the same request can be resent. | Contract chapters of `Msg Contract ori` (`Help.MessageType.Get`) |
 | `Sustainability.Category.Set` | Create or update a category and its listed subcategories | Idempotent; unlisted subcategories remain | Message contract |
-| `Sustainability.Journal.Create` | Write unposted lines; optionally create a batch | Every retry adds lines | `Help.Implementation.Get` |
 | `Sustainability.AccountBalance.Get` | Read account net change and balance, including totals | Read-only and idempotent | [Contract](docs/account-balance.md) |
+| `Sustainability.EmissionSummary.Get` | read (idempotent, no Commit) | Safe to retry | Emissions (CO2, CH4, N2O, CO2e, carbon fee; optional water, waste, energy) per emission scope and period, with a grand total per scope. Needs `BIFROST SustRead ori` and Microsoft's `Sustainability Read`. |
+| `Sustainability.Journal.Create` | Write unposted lines; optionally create a batch | Every retry adds lines | `Help.Implementation.Get` |
 | `Sustainability.Journal.PreviewPost` | Read; rolls back all posting changes | Idempotent | `Help.Implementation.Get` |
 | `Sustainability.Scorecard.Get` | Reads a scorecard and the baseline, current, target and progress of its goals. Posts nothing. | Idempotent. The same request reads the same rows. | [Scorecard](https://docs.bifrost.origo.is/en-us/sustainability/) |
 | `Sustainability.Journal.Check` | Read | Idempotent; all validation changes roll back | Public message-type help, en-US and is-IS |

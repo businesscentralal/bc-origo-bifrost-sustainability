@@ -30,5 +30,8 @@ permissionsetextension 70009204 "Sust Full Role ori" extends "BIFROST Full ori"
         table "Sust Category Access ori" = X,
         tabledata "Sust Category Access ori" = RIMD,
         table "Sust Journal Check Access ori" = X,
-        tabledata "Sust Journal Check Access ori" = R;
+        tabledata "Sust Journal Check Access ori" = R,
+        codeunit "Sust Emission Sum Impl ori" = X,
+        table "Sust Emission Access ori" = X,
+        tabledata "Sust Emission Access ori" = R;
 }
