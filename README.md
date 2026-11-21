@@ -14,7 +14,6 @@ goals, and prepare sustainability journals. It is built on the same basis as
 **Microsoft source:** <https://github.com/microsoft/BCApps/tree/main/src/Apps/W1/Sustainability>
 
 **Message types:** `Sustainability.AccountBalance.Get` reads net change and balances for selected accounts.
-`Sustainability.Journal.Create` creates unposted journal lines with manual emissions or formula inputs.
 `Sustainability.Scorecard.Get` reads a scorecard and the progress of its goals.
 `Sustainability.Journal.Check` validates a journal batch without changing it.
 The first release adds the other reads, master-data writes and journal types listed in the release tracker.
@@ -42,10 +41,33 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 
 | Type | Effect | Retry behavior | Help |
 | --- | --- | --- | --- |
-| `Sustainability.AccountBalance.Get` | Read account net change and balance, including totals | Read-only and idempotent | [Contract](docs/account-balance.md) |
 | `Sustainability.Journal.Create` | Write unposted lines; optionally create a batch | Every retry adds lines | `Help.Implementation.Get` |
+| `Sustainability.AccountBalance.Get` | Read account net change and balance, including totals | Read-only and idempotent | [Contract](docs/account-balance.md) |
+| `Sustainability.Journal.PreviewPost` | Read; rolls back all posting changes | Idempotent | `Help.Implementation.Get` |
 | `Sustainability.Scorecard.Get` | Reads a scorecard and the baseline, current, target and progress of its goals. Posts nothing. | Idempotent. The same request reads the same rows. | [Scorecard](https://docs.bifrost.origo.is/en-us/sustainability/) |
 | `Sustainability.Journal.Check` | Read | Idempotent; all validation changes roll back | Public message-type help, en-US and is-IS |
+
+### Preview a journal batch
+
+```json
+{"type":"Sustainability.Journal.PreviewPost","data":{"templateName":"GENERAL","batchName":"DEFAULT"}}
+```
+
+Returns the entries the standard Sustainability posting engine would create, including emissions,
+carbon fees, water, waste, energy, dimensions and totals. Journal lines, number-series state and
+ledger entries remain unchanged. The engine processes a temporary copy of the journal; the standard
+open-approval check runs before preview stops at line deletion, so Read users need no journal delete right. The response carries `rollback: true`. No page or action is added.
+
+Unknown batches return `RecordNotFound`; invalid or empty journals return `PreconditionFailed`.
+Validation failures include `journalErrors` with `lineNo`, `fieldName` and `message`, using the
+standard journal check. Other posting errors return the Business Central message. All refusals
+carry `status: Error` and an error entry with `code`, `when` and `fix`. Unknown request keys are refused.
+
+Assign `BIFROST SustRead ori` with the Foundation role. Foundation Read and Full grant the preview capability; Microsoft table reads come from the Sustainability set or the user's Business Central role. The shared visibility check from #1
+hides the type when Sustainability is unconfigured; a caller that knows the type can still call it.
+The type does not grant permission to post journals.
+
+### Create journal lines
 
 ```json
 {"type":"Sustainability.Journal.Create","data":{"templateName":"GENERAL","batchName":"DEFAULT","lines":[{"postingDate":"2026-01-15","documentNo":"SUST0001","accountNo":"1000","emissionCO2":10}]}}

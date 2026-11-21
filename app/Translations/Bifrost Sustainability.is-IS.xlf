@@ -771,6 +771,174 @@
           <note from="Developer" annotates="general" priority="2">is-IS=Beiðnin inniheldur annan lykil en scorecardNo, goalNo, baselineFrom, baselineTo, currentFrom eða currentTo.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType UnknownKeyWhenLbl</note>
         </trans-unit>
+        <trans-unit id="Table 4135161029 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability preview access</source>
+          <target>Aðgangur að forskoðun sjálfbærni</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðgangur að forskoðun sjálfbærni</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Preview Access ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4135161029 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <target>Færslunr.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Færslunr.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Preview Access ori - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 1698601683" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability journal batch %1/%2 does not exist.</source>
+          <target>Keyrsla sjálfbærnibókar %1/%2 er ekki til.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = template, %2 = batch||is-IS=Keyrsla sjálfbærnibókar %1/%2 er ekki til.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType BatchErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 3316243964" size-unit="char" translate="yes" xml:space="preserve">
+          <source>An existing sustainability journal batch %1/%2.</source>
+          <target>Fyrirliggjandi keyrsla sjálfbærnibókar %1/%2.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = template, %2 = batch||is-IS=Fyrirliggjandi keyrsla sjálfbærnibókar %1/%2.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType BatchExpectedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 857380347" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Choose an existing sustainability journal template and batch.</source>
+          <target>Veldu fyrirliggjandi sniðmát og keyrslu sjálfbærnibókar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Veldu fyrirliggjandi sniðmát og keyrslu sjálfbærnibókar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType BatchFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 3923529917" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Run Sustainability.Journal.Check and correct every reported journal error.</source>
+          <target>Keyrðu Sustainability.Journal.Check og leiðréttu allar villur sem koma fram.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Keyrðu Sustainability.Journal.Check og leiðréttu allar villur sem koma fram.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType CheckFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 3569966352" maxwidth="250" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Preview the sustainability entries a journal batch would create. All posting changes are rolled back.</source>
+          <target>Forskoða sjálfbærnifærslur sem bókarkeyrsla myndi stofna. Öllum bókunarbreytingum er afturkallað.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Forskoða sjálfbærnifærslur sem bókarkeyrsla myndi stofna. Öllum bókunarbreytingum er afturkallað.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 3777985252" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The sustainability journal batch has no lines.</source>
+          <target>Keyrsla sjálfbærnibókar hefur engar línur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Keyrsla sjálfbærnibókar hefur engar línur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType EmptyErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>preview sustainability journal, simulate emissions posting, check sustainability entries</source>
+          <target>forskoða sjálfbærnibók, herma bókun losunar, athuga sjálfbærnifærslur</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=forskoða sjálfbærnibók, herma bókun losunar, athuga sjálfbærnifærslur</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 1601715269" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The sustainability journal is not ready for posting.</source>
+          <target>Sjálfbærnibókin er ekki tilbúin til bókunar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sjálfbærnibókin er ekki tilbúin til bókunar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType NotReadyErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 2191129744" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Parameter %1 must be a non-empty string of at most 10 characters.</source>
+          <target>Færibreytan %1 verður að vera texti með 1 til 10 stöfum.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter||is-IS=Færibreytan %1 verður að vera texti með 1 til 10 stöfum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType ParameterErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 1989765040" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Supply only templateName and batchName, using existing journal codes.</source>
+          <target>Tilgreindu aðeins templateName og batchName með fyrirliggjandi bókarkóðum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tilgreindu aðeins templateName og batchName með fyrirliggjandi bókarkóðum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType ParameterFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 315309378" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You do not have permission to preview sustainability journals.</source>
+          <target>Þú hefur ekki heimild til að forskoða sjálfbærnibækur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Þú hefur ekki heimild til að forskoða sjálfbærnibækur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType PermissionErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 4114032018" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ask an administrator for BIFROST SustRead ori and the required Business Central permissions.</source>
+          <target>Biðjið kerfisstjóra um BIFROST SustRead ori og nauðsynlegar Business Central heimildir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Biðjið kerfisstjóra um BIFROST SustRead ori og nauðsynlegar Business Central heimildir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType PermissionFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 2845165943" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Business Central could not preview this journal. No posting changes were committed.</source>
+          <target>Business Central gat ekki forskoðað þessa bók. Engar bókunarbreytingar voru vistaðar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Business Central gat ekki forskoðað þessa bók. Engar bókunarbreytingar voru vistaðar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType PostingErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 1668614503" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unknown request parameter: %1.</source>
+          <target>Óþekkt færibreyta beiðni: %1.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter||is-IS=Óþekkt færibreyta beiðni: %1.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType UnknownErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - Method 1479631707 - NamedType 1449450473" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting runs on a temporary journal snapshot inside the standard preview transaction. After processing every line, the standard approval check runs and preview rolls back before line deletion. Number-series updates and entries are rolled back. No Commit is called; explicit commits inside preview are rejected.</source>
+          <target>Bókun keyrir á tímabundnu afriti bókarlína innan staðlaðrar forskoðunar. Eftir vinnslu allra lína er stöðluð samþykktarathugun keyrð og forskoðun afturkölluð fyrir eyðingu lína. Uppfærslu númeraraða og færslum er afturkallað. Ekki er kallað á Commit; slík vistun innan forskoðunar er ekki leyfð.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bókun keyrir á tímabundnu afriti bókarlína innan staðlaðrar forskoðunar. Eftir vinnslu allra lína er stöðluð samþykktarathugun keyrð og forskoðun afturkölluð fyrir eyðingu lína. Uppfærslu númeraraða og færslum er afturkallað. Ekki er kallað á Commit; slík vistun innan forskoðunar er ekki leyfð.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetEffect - NamedType ChangesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - Method 1479631707 - NamedType 1687577938" size-unit="char" translate="yes" xml:space="preserve">
+          <source>An existing journal batch whose lines pass the standard sustainability journal check.</source>
+          <target>Fyrirliggjandi bókarkeyrsla með línum sem standast staðlaða athugun sjálfbærnibókar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fyrirliggjandi bókarkeyrsla með línum sem standast staðlaða athugun sjálfbærnibókar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetEffect - NamedType PreconditionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - Method 3255554567 - NamedType 1582893390" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Preview a demo journal</source>
+          <target>Forskoða sýnibók</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Forskoða sýnibók</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetExamples - NamedType TitleLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - Method 3650283039 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
+          <source>An empty batch is PreconditionFailed. Unknown keys are refused. Hidden types remain callable when Sustainability is unconfigured. The preview never posts a ledger entry or consumes a journal line.</source>
+          <target>Tóm keyrsla skilar PreconditionFailed. Óþekktum lyklum er hafnað. Faldar tegundir eru áfram kallanlegar þegar sjálfbærni er óuppsett. Forskoðun bókar aldrei færslu né eyðir bókarlínu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tóm keyrsla skilar PreconditionFailed. Óþekktum lyklum er hafnað. Faldar tegundir eru áfram kallanlegar þegar sjálfbærni er óuppsett. Forskoðun bókar aldrei færslu né eyðir bókarlínu.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetNotes - NamedType NotesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - Method 3615801952 - NamedType 807217974" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Existing sustainability journal template code, up to 10 characters.</source>
+          <target>Fyrirliggjandi sniðmátskóði sjálfbærnibókar, allt að 10 stafir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fyrirliggjandi sniðmátskóði sjálfbærnibókar, allt að 10 stafir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetParameters - NamedType TemplateLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - Method 3615801952 - NamedType 1533895450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Existing batch in that template, up to 10 characters.</source>
+          <target>Fyrirliggjandi keyrsla í sniðmátinu, allt að 10 stafir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fyrirliggjandi keyrsla í sniðmátinu, allt að 10 stafir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetParameters - NamedType BatchLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - Method 4268477247 - NamedType 851404832" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Always true. No posting changes are committed.</source>
+          <target>Alltaf satt. Engar bókunarbreytingar eru vistaðar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Alltaf satt. Engar bókunarbreytingar eru vistaðar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetResponse - NamedType RollbackLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - Method 4268477247 - NamedType 3071622107" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Count of captured ledger and value entries.</source>
+          <target>Fjöldi sjálfbærni- og virðisfærslna í forskoðun.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fjöldi sjálfbærni- og virðisfærslna í forskoðun.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetResponse - NamedType CountLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - Method 4268477247 - NamedType 392547388" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting date, document, account, emission scope, CO2, CH4, N2O, CO2e, carbon fee, water, waste, energy and dimensions from the standard posting engine.</source>
+          <target>Bókunardagur, skjal, reikningur, umfang losunar, CO2, CH4, N2O, CO2e, kolefnisgjald, vatn, úrgangur, orka og víddir frá staðlaðri bókun.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bókunardagur, skjal, reikningur, umfang losunar, CO2, CH4, N2O, CO2e, kolefnisgjald, vatn, úrgangur, orka og víddir frá staðlaðri bókun.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetResponse - NamedType EntriesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - Method 4268477247 - NamedType 633872462" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value entries captured during preview; empty when the journal creates none.</source>
+          <target>Virðisfærslur í forskoðun; tómt þegar bókin stofnar engar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Virðisfærslur í forskoðun; tómt þegar bókin stofnar engar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetResponse - NamedType ValuesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - Method 4268477247 - NamedType 1308046429" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sums of CO2, CH4, N2O, CO2e, carbonFee, water, waste and energy over the ledger entries.</source>
+          <target>Samtölur CO2, CH4, N2O, CO2e, kolefnisgjalds, vatns, úrgangs og orku úr sjálfbærnifærslum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Samtölur CO2, CH4, N2O, CO2e, kolefnisgjalds, vatns, úrgangs og orku úr sjálfbærnifærslum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetResponse - NamedType TotalsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1376074593 - NamedType 1752251194" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This operation requires an active posting preview.</source>
+          <target>Þessi aðgerð krefst virkrar forskoðunar bókunar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Þessi aðgerð krefst virkrar forskoðunar bókunar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Runner ori - NamedType PreviewRequiredErr</note>
+        </trans-unit>
       </group>
     </body>
   </file>
