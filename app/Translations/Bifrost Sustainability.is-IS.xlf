@@ -3,17 +3,263 @@
   <file datatype="xml" source-language="en-US" target-language="is-IS" original="Bifrost Sustainability">
     <body>
       <group id="body">
-        <trans-unit id="Table 4122963098 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Sustainability check access</source>
-          <target>Aðgangur að athugun sjálfbærni</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Aðgangur að athugun sjálfbærni</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Journal Check Access ori - Property Caption</note>
+        <trans-unit id="Table 22106557 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create sustainability journal</source>
+          <target>Stofna sjálfbærnibók</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stofna sjálfbærnibók</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Jnl Create Cap ori - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 4122963098 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Entry No.</source>
-          <target>Færslunr.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Færslunr.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Journal Check Access ori - Field Entry No. - Property Caption</note>
+        <trans-unit id="Table 22106557 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <target>Aðallykill</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðallykill</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Jnl Create Cap ori - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - NamedType 2014814840" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The sustainability account does not exist, is blocked, or is not a posting account.</source>
+          <target>Sjálfbærnireikningurinn er ekki til, er lokaður eða er ekki bókunarreikningur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sjálfbærnireikningurinn er ekki til, er lokaður eða er ekki bókunarreikningur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - NamedType AccountErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - NamedType 4148992451" size-unit="char" translate="yes" xml:space="preserve">
+          <source>A line cannot contain both manual emissions and formula inputs.</source>
+          <target>Lína má ekki innihalda bæði handvirka losun og inntak fyrir formúlu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Lína má ekki innihalda bæði handvirka losun og inntak fyrir formúlu.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - NamedType AmbiguousErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - NamedType 1698601683" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The sustainability template or batch does not exist.</source>
+          <target>Sniðmát eða keyrsla sjálfbærnibókar er ekki til.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sniðmát eða keyrsla sjálfbærnibókar er ekki til.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - NamedType BatchErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - NamedType 3569966352" maxwidth="250" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creates unposted sustainability journal lines from manual emissions or formula inputs. A retry adds more lines.</source>
+          <target>Stofnar óbókaðar sjálfbærnibókarlínur með handvirkri losun eða inntaki fyrir formúlur. Endurtekning bætir við fleiri línum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stofnar óbókaðar sjálfbærnibókarlínur með handvirkri losun eða inntaki fyrir formúlur. Endurtekning bætir við fleiri línum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - NamedType 2078768823" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Correct the request using the contract and retry. No lines were created.</source>
+          <target>Leiðréttu beiðnina samkvæmt samningnum og reyndu aftur. Engar línur voru stofnaðar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Leiðréttu beiðnina samkvæmt samningnum og reyndu aftur. Engar línur voru stofnaðar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - NamedType FixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - NamedType 1277429285" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invalid or missing value for %1.</source>
+          <target>Ógilt gildi eða gildi vantar fyrir %1.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = request key||is-IS=Ógilt gildi eða gildi vantar fyrir %1.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - NamedType InputErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - NamedType 3750629744" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Correct the value reported by Business Central and retry the complete request.</source>
+          <target>Leiðréttu gildið sem Business Central tilgreinir og sendu alla beiðnina aftur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Leiðréttu gildið sem Business Central tilgreinir og sendu alla beiðnina aftur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - NamedType NativeFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - NamedType 315309378" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Full sustainability role and journal write permissions are required.</source>
+          <target>Fullt sjálfbærnihlutverk og skrifheimildir fyrir bók eru nauðsynleg.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fullt sjálfbærnihlutverk og skrifheimildir fyrir bók eru nauðsynleg.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - NamedType PermissionErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - NamedType 3036859145" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The account emission scope does not match the journal batch.</source>
+          <target>Losunarumfang reikningsins samræmist ekki keyrslu bókarinnar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Losunarumfang reikningsins samræmist ekki keyrslu bókarinnar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - NamedType ScopeErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 1479631707 - NamedType 1449450473" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inserts journal lines and, with createBatch, a missing batch. Standard validation can create dimension sets. No ledger posting.</source>
+          <target>Stofnar bókarlínur og keyrslu sem vantar ef createBatch er virkt. Stöðluð staðfesting getur stofnað víddarsamstæður. Engin fjárhagsbókun.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stofnar bókarlínur og keyrslu sem vantar ef createBatch er virkt. Stöðluð staðfesting getur stofnað víddarsamstæður. Engin fjárhagsbókun.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetEffect - NamedType ChangesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 1479631707 - NamedType 2147065720" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Existing template, valid accounts with category and subcategory, and native journal setup.</source>
+          <target>Fyrirliggjandi sniðmát, gildir reikningar með flokki og undirflokki og innbyggð bókaruppsetning.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fyrirliggjandi sniðmát, gildir reikningar með flokki og undirflokki og innbyggð bókaruppsetning.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetEffect - NamedType PrerequisiteLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 1027590672 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability.Journal.Create, sustainability, journal, emissions, formula, create</source>
+          <target>Sustainability.Journal.Create, sjálfbærni, bók, losun, formúla, stofna</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sustainability.Journal.Create, sjálfbærni, bók, losun, formúla, stofna</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 3650283039 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Not idempotent: every successful retry adds lines. All lines and an optional batch form one transaction. The isolated Codeunit.Run commits only on success; the handler calls no Commit. Omit Commit participates in the caller transaction and lets native errors propagate for rollback. Visibility is not an execution block. Unknown keys are refused. Unit of measure is valid in both modes.</source>
+          <target>Ekki ítrekunaröruggt: hver heppnuð endurtekning bætir við línum. Allar línur og valfrjáls keyrsla mynda eina færsluheild. Einangrað Codeunit.Run vistar aðeins þegar aðgerð tekst; meðhöndlarinn kallar ekki á Commit. Omit Commit tekur þátt í færsluheild kallanda og lætur innbyggðar villur berast áfram til afturköllunar. Sýnileiki lokar ekki fyrir framkvæmd. Óþekktum lyklum er hafnað. Mælieining gildir í báðum hamum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Ekki ítrekunaröruggt: hver heppnuð endurtekning bætir við línum. Allar línur og valfrjáls keyrsla mynda eina færsluheild. Einangrað Codeunit.Run vistar aðeins þegar aðgerð tekst; meðhöndlarinn kallar ekki á Commit. Omit Commit tekur þátt í færsluheild kallanda og lætur innbyggðar villur berast áfram til afturköllunar. Sýnileiki lokar ekki fyrir framkvæmd. Óþekktum lyklum er hafnað. Mælieining gildir í báðum hamum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetNotes - NamedType NotesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 3615801952 - NamedType 2429417902" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Existing journal template, maximum 10 characters.</source>
+          <target>Fyrirliggjandi bókarsniðmát, mest 10 stafir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fyrirliggjandi bókarsniðmát, mest 10 stafir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetParameters - NamedType P0Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 3615801952 - NamedType 50548173" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Journal batch, maximum 10 characters.</source>
+          <target>Bókarkeyrsla, mest 10 stafir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bókarkeyrsla, mest 10 stafir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetParameters - NamedType P1Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 3615801952 - NamedType 2876272172" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create a missing batch under the existing template. Defaults to false.</source>
+          <target>Stofna keyrslu sem vantar undir fyrirliggjandi sniðmáti. Sjálfgefið false.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stofna keyrslu sem vantar undir fyrirliggjandi sniðmáti. Sjálfgefið false.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetParameters - NamedType P2Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 3615801952 - NamedType 3370458571" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nonempty array of lines. The complete request succeeds or rolls back.</source>
+          <target>Listi lína sem má ekki vera tómur. Öll beiðnin tekst eða er afturkölluð.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Listi lína sem má ekki vera tómur. Öll beiðnin tekst eða er afturkölluð.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetParameters - NamedType P3Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 3615801952 - NamedType 1296420714" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting date in YYYY-MM-DD format.</source>
+          <target>Bókunardagur á sniðinu YYYY-MM-DD.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bókunardagur á sniðinu YYYY-MM-DD.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetParameters - NamedType P4Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 3615801952 - NamedType 2532937737" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document number, maximum 20 characters. Defaults from the batch number series at the posting date. Required when there is no series.</source>
+          <target>Skjalanúmer, mest 20 stafir. Sjálfgefið úr númeraröð keyrslu á bókunardegi. Skylda ef engin númeraröð er til.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Skjalanúmer, mest 20 stafir. Sjálfgefið úr númeraröð keyrslu á bókunardegi. Skylda ef engin númeraröð er til.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetParameters - NamedType P5Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 3615801952 - NamedType 2464432232" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unblocked posting account with direct posting enabled. Maximum 20 characters.</source>
+          <target>Ólokaður bókunarreikningur með beina bókun virka. Mest 20 stafir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Ólokaður bókunarreikningur með beina bókun virka. Mest 20 stafir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetParameters - NamedType P6Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 3615801952 - NamedType 2958618631" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description, maximum 100 characters; defaults from the account.</source>
+          <target>Lýsing, mest 100 stafir; sjálfgefið úr reikningi.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Lýsing, mest 100 stafir; sjálfgefið úr reikningi.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetParameters - NamedType P7Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 3615801952 - NamedType 1989601382" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manual CO2 emission. Cannot be combined with formula inputs.</source>
+          <target>Handvirk CO2-losun. Má ekki blanda við inntak fyrir formúlur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Handvirk CO2-losun. Má ekki blanda við inntak fyrir formúlur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetParameters - NamedType P8Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 3615801952 - NamedType 1399940549" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manual CH4 emission. Cannot be combined with formula inputs.</source>
+          <target>Handvirk CH4-losun. Má ekki blanda við inntak fyrir formúlur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Handvirk CH4-losun. Má ekki blanda við inntak fyrir formúlur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetParameters - NamedType P9Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 3615801952 - NamedType 1332738205" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manual N2O emission. Cannot be combined with formula inputs.</source>
+          <target>Handvirk N2O-losun. Má ekki blanda við inntak fyrir formúlur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Handvirk N2O-losun. Má ekki blanda við inntak fyrir formúlur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetParameters - NamedType P10Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 3615801952 - NamedType 96221182" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fuel or electricity input for the account category formula.</source>
+          <target>Eldsneyti eða rafmagn fyrir formúlu reikningsflokks.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Eldsneyti eða rafmagn fyrir formúlu reikningsflokks.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetParameters - NamedType P11Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 3615801952 - NamedType 2473982427" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Distance input for the account category formula.</source>
+          <target>Vegalengd fyrir formúlu reikningsflokks.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Vegalengd fyrir formúlu reikningsflokks.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetParameters - NamedType P12Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 3615801952 - NamedType 1979796028" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Custom amount for the account category formula.</source>
+          <target>Sérsniðin fjárhæð fyrir formúlu reikningsflokks.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sérsniðin fjárhæð fyrir formúlu reikningsflokks.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetParameters - NamedType P13Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 3615801952 - NamedType 3773551065" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Installation multiplier; defaults to 1.</source>
+          <target>Margfaldari uppsetningar; sjálfgefið 1.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Margfaldari uppsetningar; sjálfgefið 1.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetParameters - NamedType P14Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 3615801952 - NamedType 2537034042" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Time factor, at most 1; defaults to zero.</source>
+          <target>Tímastuðull, mest 1; sjálfgefið núll.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tímastuðull, mest 1; sjálfgefið núll.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetParameters - NamedType P15Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 3615801952 - NamedType 1340985239" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Existing unit of measure, maximum 10 characters. Valid for manual and formula lines.</source>
+          <target>Fyrirliggjandi mælieining, mest 10 stafir. Gildir fyrir handvirkar línur og formúlur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fyrirliggjandi mælieining, mest 10 stafir. Gildir fyrir handvirkar línur og formúlur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetParameters - NamedType P16Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 3615801952 - NamedType 1567956088" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Existing energy source code, maximum 20 characters.</source>
+          <target>Fyrirliggjandi orkugjafakóði, mest 20 stafir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fyrirliggjandi orkugjafakóði, mest 20 stafir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetParameters - NamedType P17Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 3615801952 - NamedType 2640553877" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Existing country or region code, maximum 10 characters.</source>
+          <target>Fyrirliggjandi lands- eða svæðiskóði, mest 10 stafir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fyrirliggjandi lands- eða svæðiskóði, mest 10 stafir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetParameters - NamedType P18Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 3615801952 - NamedType 1093125238" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Existing responsibility center, maximum 10 characters.</source>
+          <target>Fyrirliggjandi ábyrgðarstöð, mest 10 stafir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fyrirliggjandi ábyrgðarstöð, mest 10 stafir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetParameters - NamedType P19Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 3615801952 - NamedType 4167696308" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimension code to dimension value code map; both at most 20 characters. Merges with account defaults.</source>
+          <target>Vörpun víddarkóða á víddargildiskóða; báðir mest 20 stafir. Bætist við sjálfgefnar víddir reiknings.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Vörpun víddarkóða á víddargildiskóða; báðir mest 20 stafir. Bætist við sjálfgefnar víddir reiknings.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetParameters - NamedType P20Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 4268477247 - NamedType 3616618409" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Created lines in request order.</source>
+          <target>Stofnaðar línur í röð beiðninnar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stofnaðar línur í röð beiðninnar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetResponse - NamedType LinesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 4268477247 - NamedType 3112345243" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Assigned journal line number.</source>
+          <target>Úthlutað númer bókarlínu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Úthlutað númer bókarlínu.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetResponse - NamedType NumberLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 4268477247 - NamedType 1807870741" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Validated emission amount.</source>
+          <target>Staðfest losunarmagn.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Staðfest losunarmagn.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetResponse - NamedType EmissionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3746490515 - Method 4268477247 - NamedType 2879283410" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CO2 equivalent from native emission factors for date, scope and country; zero when no factor exists. No posting.</source>
+          <target>CO2-ígildi úr innbyggðum losunarstuðlum fyrir dagsetningu, umfang og land; núll ef enginn stuðull er til. Engin bókun.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=CO2-ígildi úr innbyggðum losunarstuðlum fyrir dagsetningu, umfang og land; núll ef enginn stuðull er til. Engin bókun.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetResponse - NamedType EquivalentLbl</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 2315649480 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bifrost Sustainability</source>
+          <target>Bifröst - sjálfbærni</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST Sustain ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 3624550339 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bifrost Sustainability Full</source>
+          <target>Bifröst - sjálfbærni (fullt)</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni (fullt)</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST SustFull ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 2471902004 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bifrost Sustainability Read</source>
+          <target>Bifröst - sjálfbærni (lestur)</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni (lestur)</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST SustRead ori - Property Caption</note>
         </trans-unit>
         <trans-unit id="Codeunit 1937637357 - NamedType 140176269" size-unit="char" translate="yes" xml:space="preserve">
           <source>Business Central account-number filter. Omission selects all accounts.</source>
@@ -182,6 +428,18 @@
           <target>Lokadagur hreyfingar, meðtalinn, á sniðinu YYYY-MM-DD. Einnig sjálfgefinn stöðudagur.</target>
           <note from="Developer" annotates="general" priority="2">is-IS=Lokadagur hreyfingar, meðtalinn, á sniðinu YYYY-MM-DD. Einnig sjálfgefinn stöðudagur.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType ToDateLbl</note>
+        </trans-unit>
+        <trans-unit id="Table 4122963098 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability check access</source>
+          <target>Aðgangur að athugun sjálfbærni</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðgangur að athugun sjálfbærni</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Journal Check Access ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4122963098 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <target>Færslunr.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Færslunr.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Journal Check Access ori - Field Entry No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Codeunit 2730793174 - NamedType 1698601683" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sustainability journal batch %1/%2 does not exist.</source>
@@ -512,24 +770,6 @@
           <target>Beiðnin inniheldur annan lykil en scorecardNo, goalNo, baselineFrom, baselineTo, currentFrom eða currentTo.</target>
           <note from="Developer" annotates="general" priority="2">is-IS=Beiðnin inniheldur annan lykil en scorecardNo, goalNo, baselineFrom, baselineTo, currentFrom eða currentTo.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType UnknownKeyWhenLbl</note>
-        </trans-unit>
-        <trans-unit id="PermissionSet 2315649480 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Bifrost Sustainability</source>
-          <target>Bifröst - sjálfbærni</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST Sustain ori - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PermissionSet 3624550339 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Bifrost Sustainability Full</source>
-          <target>Bifröst - sjálfbærni (fullt)</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni (fullt)</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST SustFull ori - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PermissionSet 2471902004 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Bifrost Sustainability Read</source>
-          <target>Bifröst - sjálfbærni (lestur)</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni (lestur)</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST SustRead ori - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2869149468 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sustainability Emission Read Access</source>
