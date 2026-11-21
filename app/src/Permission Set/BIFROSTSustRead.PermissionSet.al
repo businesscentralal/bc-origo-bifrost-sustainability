@@ -1,5 +1,7 @@
 namespace Origo.Bifrost.Sustainability;
 
+using Microsoft.Finance.Dimension;
+using Microsoft.Foundation.NoSeries;
 using Microsoft.Sustainability.Account;
 using Microsoft.Sustainability.Journal;
 using Microsoft.Sustainability.Ledger;
@@ -8,8 +10,8 @@ using Microsoft.Sustainability.Scorecard;
 using Microsoft.Sustainability.Setup;
 
 /// <summary>
-/// Grants read-only journal validation, account balance and scorecard calculation,
-/// plus the native sustainability table reads those types require.
+/// Grants account balance reads, scorecard calculation, journal validation, journal preview
+/// and the native table reads they require.
 /// </summary>
 permissionset 70009203 "BIFROST SustRead ori"
 {
@@ -36,5 +38,13 @@ permissionset 70009203 "BIFROST SustRead ori"
         tabledata "Sustain. Account Subcategory" = R,
         codeunit "Sust Emission Sum Impl ori" = X,
         table "Sust Emission Access ori" = X,
-        tabledata "Sust Emission Access ori" = R;
+        tabledata "Sust Emission Access ori" = R,
+        codeunit "Sust Preview Post Impl ori" = X,
+        codeunit "Sust Preview Runner ori" = X,
+        table "Sust Preview Access ori" = X,
+        tabledata "Sust Preview Access ori" = R,
+        tabledata "Sustainability Value Entry" = R,
+        tabledata "Dimension Set Entry" = R,
+        tabledata "No. Series" = R,
+        tabledata "No. Series Line" = R;
 }

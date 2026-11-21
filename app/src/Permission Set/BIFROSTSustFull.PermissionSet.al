@@ -15,6 +15,8 @@ using System.Automation;
 using System.Security.User;
 
 /// <summary>
+/// Full Bifrost Sustainability role, including all read and preview capabilities.
+/// Includes the read set. Write message types add their grants here.
 /// Full Bifrost Sustainability role. Includes the read set and grants journal creation and its capability.
 /// </summary>
 permissionset 70009202 "BIFROST SustFull ori"
