@@ -6,10 +6,12 @@ using Microsoft.Sustainability.Account;
 using Microsoft.Sustainability.Journal;
 using Microsoft.Sustainability.Ledger;
 using Microsoft.Sustainability.Posting;
+using Microsoft.Sustainability.Scorecard;
 using Microsoft.Sustainability.Setup;
 
 /// <summary>
-/// Grants account balance reads, journal validation, journal preview and the native table reads they require.
+/// Grants account balance reads, scorecard calculation, journal validation, journal preview
+/// and the native table reads they require.
 /// </summary>
 permissionset 70009203 "BIFROST SustRead ori"
 {
@@ -38,5 +40,8 @@ permissionset 70009203 "BIFROST SustRead ori"
                   codeunit "Sust Journal Check Runner ori" = X,
                   codeunit "Sustainability Jnl.-Check" = X,
                   table "Sust Journal Check Access ori" = X,
-                  tabledata "Sust Journal Check Access ori" = R;
+                  tabledata "Sust Journal Check Access ori" = R,
+                  codeunit "Sust Scorecard Get Impl ori" = X,
+                  tabledata "Sustainability Goal" = R,
+                  tabledata "Sustainability Scorecard" = R;
 }
