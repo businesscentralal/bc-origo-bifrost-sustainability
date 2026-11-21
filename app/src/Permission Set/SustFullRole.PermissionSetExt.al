@@ -13,6 +13,7 @@ permissionsetextension 70009204 "Sust Full Role ori" extends "BIFROST Full ori"
     Permissions = codeunit "Sust Registration ori" = X,
         codeunit "Sust Configured ori" = X,
         codeunit "Sust Emission Sum Impl ori" = X,
+        codeunit "Sust Account Bal Impl ori" = X,
         table "Sust Emission Access ori" = X,
         tabledata "Sust Emission Access ori" = R;
 }
