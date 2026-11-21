@@ -14,6 +14,7 @@ goals, and prepare sustainability journals. It is built on the same basis as
 **Microsoft source:** <https://github.com/microsoft/BCApps/tree/main/src/Apps/W1/Sustainability>
 
 **Message types:** `Sustainability.AccountBalance.Get` reads net change and balances for selected accounts.
+`Sustainability.Journal.Create` creates unposted journal lines with manual emissions or formula inputs.
 `Sustainability.Scorecard.Get` reads a scorecard and the progress of its goals.
 `Sustainability.Journal.Check` validates a journal batch without changing it.
 The first release adds the other reads, master-data writes and journal types listed in the release tracker.
@@ -42,8 +43,33 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 | Type | Effect | Retry behavior | Help |
 | --- | --- | --- | --- |
 | `Sustainability.AccountBalance.Get` | Read account net change and balance, including totals | Read-only and idempotent | [Contract](docs/account-balance.md) |
+| `Sustainability.Journal.Create` | Write unposted lines; optionally create a batch | Every retry adds lines | `Help.Implementation.Get` |
 | `Sustainability.Scorecard.Get` | Reads a scorecard and the baseline, current, target and progress of its goals. Posts nothing. | Idempotent. The same request reads the same rows. | [Scorecard](https://docs.bifrost.origo.is/en-us/sustainability/) |
 | `Sustainability.Journal.Check` | Read | Idempotent; all validation changes roll back | Public message-type help, en-US and is-IS |
+
+```json
+{"type":"Sustainability.Journal.Create","data":{"templateName":"GENERAL","batchName":"DEFAULT","lines":[{"postingDate":"2026-01-15","documentNo":"SUST0001","accountNo":"1000","emissionCO2":10}]}}
+```
+
+The template must exist. `createBatch: true` creates a missing batch; otherwise the batch must exist too.
+Each line requires `postingDate` and `accountNo`. `documentNo` defaults from the batch number series.
+Supply either manual `emissionCO2`, `emissionCH4`, `emissionN2O`, or formula inputs `fuelOrElectricity`,
+`distance`, `customAmount`, `installationMultiplier`, `timeFactor`. Native account/category/subcategory
+validation calculates the emissions. Optional metadata: `description`, `unitOfMeasure`, `energySourceCode`,
+`countryRegionCode`, `responsibilityCenter`, and `dimensions` (a map of dimension codes to value codes).
+
+The response contains `lines`, each with `lineNo`, `CO2`, `CH4`, `N2O` and `CO2e`. CO2e uses Microsoft's
+emission factors for the date, scope and country and is zero if no applicable factor exists.
+Refusals use Foundation error `code` values and retain the named business refusal in `reason`:
+`BatchNotFound` (`RecordNotFound`), `InvalidAccount` / `AmbiguousInput` (`InvalidParameter`),
+and `ScopeMismatch` (`PreconditionFailed`). Unknown keys are refused. All lines, a newly created batch and any dimension sets belong to one transaction;
+a validation failure leaves no partial data. This operation never posts a ledger entry. A successful retry
+adds more lines, so check the previous result before retrying.
+
+`BIFROST SustFull ori` grants the write and its empty capability table; Read does not. Visibility uses the
+shared `Sust Configured ori` check: an emission unit of measure or at least one sustainability account,
+and the caller's write permissions. Hidden means absent from the roster; a caller who knows the type
+can still run it, subject to permissions and native validation.
 
 ### Check a sustainability journal
 
