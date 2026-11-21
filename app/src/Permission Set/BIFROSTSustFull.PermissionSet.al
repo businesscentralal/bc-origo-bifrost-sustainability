@@ -1,7 +1,7 @@
 namespace Origo.Bifrost.Sustainability;
 
 /// <summary>
-/// Full Bifrost Sustainability role. In the scaffold it grants registration only; write message types add their grants here.
+/// Full Bifrost Sustainability role. Includes the read set. Write message types add their grants here.
 /// </summary>
 permissionset 70009202 "BIFROST SustFull ori"
 {

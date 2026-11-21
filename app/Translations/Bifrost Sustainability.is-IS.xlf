@@ -3,131 +3,17 @@
   <file datatype="xml" source-language="en-US" target-language="is-IS" original="Bifrost Sustainability">
     <body>
       <group id="body">
-        <trans-unit id="Table 2869149468 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Sustainability Emission Read Access</source>
-          <target>Lesaðgangur að losunaryfirliti</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Lesaðgangur að losunaryfirliti</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Emission Access ori - Property Caption</note>
+        <trans-unit id="Table 4122963098 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability check access</source>
+          <target>Aðgangur að athugun sjálfbærni</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðgangur að athugun sjálfbærni</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Journal Check Access ori - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 2869149468 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Primary Key</source>
-          <target>Aðallykill</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Aðallykill</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Emission Access ori - Field Primary Key - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 2326265146" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Use one of the allowed values and retry.</source>
-          <target>Notaðu eitt af leyfðu gildunum og reyndu aftur.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Notaðu eitt af leyfðu gildunum og reyndu aftur.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType AllowedValueNextLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 1098416156" size-unit="char" translate="yes" xml:space="preserve">
-          <source>a date in the form YYYY-MM-DD, with fromDate on or before toDate</source>
-          <target>dagsetning á forminu ÁÁÁÁ-MM-DD þar sem fromDate er sama dag eða á undan toDate</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=dagsetning á forminu ÁÁÁÁ-MM-DD þar sem fromDate er sama dag eða á undan toDate</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType DateExpectedLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 1412843979" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Send fromDate and toDate as YYYY-MM-DD dates with fromDate on or before toDate.</source>
-          <target>Sendu fromDate og toDate sem ÁÁÁÁ-MM-DD dagsetningar þar sem fromDate er sama dag eða á undan toDate.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Sendu fromDate og toDate sem ÁÁÁÁ-MM-DD dagsetningar þar sem fromDate er sama dag eða á undan toDate.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType DateNextLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 3569966352" maxwidth="250" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Summarises sustainability emissions by emission scope, period and gas.</source>
-          <target>Tekur saman losun eftir umfangi, tímabili og gastegund.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Tekur saman losun eftir umfangi, tímabili og gastegund.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType DescriptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 4195077024" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Correct the named request parameter and retry.</source>
-          <target>Leiðréttu tilgreinda færibreytu beiðninnar og reyndu aftur.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Leiðréttu tilgreinda færibreytu beiðninnar og reyndu aftur.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType FixParameterLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 1977192435" size-unit="char" translate="yes" xml:space="preserve">
-          <source>InvalidPeriod: '%1' must be a date (YYYY-MM-DD), and fromDate must not be after toDate.</source>
-          <target>InvalidPeriod: '%1' verður að vera dagsetning (ÁÁÁÁ-MM-DD) og fromDate má ekki vera eftir toDate.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = parameter name|is-IS=InvalidPeriod: '%1' verður að vera dagsetning (ÁÁÁÁ-MM-DD) og fromDate má ekki vera eftir toDate.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType InvalidPeriodErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 3319458594" size-unit="char" translate="yes" xml:space="preserve">
-          <source>a list of text values</source>
-          <target>listi af textagildum</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=listi af textagildum</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType ListExpectedLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 1575191754" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The required parameter '%1' is missing.</source>
-          <target>Nauðsynlega færibreytu '%1' vantar.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = parameter name|is-IS=Nauðsynlega færibreytu '%1' vantar.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType MissingKeyErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Read-only and idempotent: totals are database sums over Sustainability Ledger Entry, nothing is written and there is no Commit on the path. Periods follow the calendar (weeks start on Monday) and are clipped to fromDate and toDate; at most 400 periods are returned. Closing-date entries count in the period of their date. Reversed entries and their reversals both count, so they net out. Optional filters emissionScope, countryRegionCode, responsibilityCenter, globalDimension1Code and globalDimension2Code narrow the entries. include accepts water, waste and energy; water adds waterIntensity and dischargedIntoWater, waste adds wasteIntensity, energy adds energyConsumption, summed over the entries of the scope row. Ledger rows outside Scope 1-3 (Water/Waste, Out of Scope, blank) are not summarised.</source>
-          <target>Aðeins lestur og sama niðurstaða við endurtekningu: samtölur eru gagnagrunnssummur úr Sustainability Ledger Entry, engu er breytt og ekkert Commit er á leiðinni. Tímabil fylgja dagatalinu (vikur byrja á mánudegi) og eru skorin við fromDate og toDate; að hámarki eru 400 tímabil skiluð. Færslur á lokadagsetningu teljast á tímabil dagsetningar sinnar. Bakfærðar færslur og bakfærslur þeirra teljast báðar og jafnast því út. Valfrjálsar síur emissionScope, countryRegionCode, responsibilityCenter, globalDimension1Code og globalDimension2Code þrengja færslurnar. include tekur water, waste og energy; water bætir við waterIntensity og dischargedIntoWater, waste bætir við wasteIntensity, energy bætir við energyConsumption, samanlagt yfir færslur umfangsins. Færslur utan Scope 1-3 (Water/Waste, Out of Scope, autt) eru ekki teknar saman.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Aðeins lestur og sama niðurstaða við endurtekningu: samtölur eru gagnagrunnssummur úr Sustainability Ledger Entry, engu er breytt og ekkert Commit er á leiðinni. Tímabil fylgja dagatalinu (vikur byrja á mánudegi) og eru skorin við fromDate og toDate; að hámarki eru 400 tímabil skiluð. Færslur á lokadagsetningu teljast á tímabil dagsetningar sinnar. Bakfærðar færslur og bakfærslur þeirra teljast báðar og jafnast því út. Valfrjálsar síur emissionScope, countryRegionCode, responsibilityCenter, globalDimension1Code og globalDimension2Code þrengja færslurnar. include tekur water, waste og energy; water bætir við waterIntensity og dischargedIntoWater, waste bætir við wasteIntensity, energy bætir við energyConsumption, samanlagt yfir færslur umfangsins. Færslur utan Scope 1-3 (Water/Waste, Out of Scope, autt) eru ekki teknar saman.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType NotesLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 3593894611" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Returns posted sustainability emissions summed per emission scope (Scope 1, Scope 2, Scope 3) and per period between fromDate and toDate: CO2, CH4, N2O, CO2e and carbon fee, plus water, waste and energy totals on request, and a grand total per scope. Units come from Sustainability Setup.</source>
-          <target>Skilar bókaðri losun samanlagðri eftir umfangi (Scope 1, Scope 2, Scope 3) og tímabili frá fromDate til toDate: CO2, CH4, N2O, CO2e og kolefnisgjald, auk vatns-, úrgangs- og orkusamtalna sé þess óskað, og heildarsamtölu fyrir hvert umfang. Einingar koma úr uppsetningu sjálfbærni.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Skilar bókaðri losun samanlagðri eftir umfangi (Scope 1, Scope 2, Scope 3) og tímabili frá fromDate til toDate: CO2, CH4, N2O, CO2e og kolefnisgjald, auk vatns-, úrgangs- og orkusamtalna sé þess óskað, og heildarsamtölu fyrir hvert umfang. Einingar koma úr uppsetningu sjálfbærni.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType OverviewLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 315309378" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Reading emission summaries requires BIFROST SustRead ori and read access to the Sustainability ledger and setup (Microsoft's Sustainability Read).</source>
-          <target>Til að lesa losunaryfirlit þarf BIFROST SustRead ori og lesaðgang að fjárhag og uppsetningu sjálfbærni (Sustainability Read frá Microsoft).</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Til að lesa losunaryfirlit þarf BIFROST SustRead ori og lesaðgang að fjárhag og uppsetningu sjálfbærni (Sustainability Read frá Microsoft).</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType PermissionErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 3932376842" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Ask an administrator for BIFROST SustRead ori (included in BIFROST Read ori and BIFROST Full ori) and Sustainability Read.</source>
-          <target>Biddu stjórnanda um BIFROST SustRead ori (er hluti af BIFROST Read ori og BIFROST Full ori) og Sustainability Read.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Biddu stjórnanda um BIFROST SustRead ori (er hluti af BIFROST Read ori og BIFROST Full ori) og Sustainability Read.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType PermissionNextLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 1879669363" size-unit="char" translate="yes" xml:space="preserve">
-          <source>a text value</source>
-          <target>textagildi</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=textagildi</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType TextExpectedLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 3297756640" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The result would contain more than %1 periods. Use a larger periodType or a shorter date range.</source>
-          <target>Niðurstaðan yrði meira en %1 tímabil. Notaðu stærri periodType eða styttra dagsetningabil.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = maximum number of periods|is-IS=Niðurstaðan yrði meira en %1 tímabil. Notaðu stærri periodType eða styttra dagsetningabil.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType TooManyPeriodsErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 979809767" size-unit="char" translate="yes" xml:space="preserve">
-          <source>at most %1 periods</source>
-          <target>að hámarki %1 tímabil</target>
-          <note from="Developer" annotates="general" priority="2">%1 = maximum number of periods|is-IS=að hámarki %1 tímabil</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType TooManyPeriodsExpectedLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 802113960" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Choose a larger periodType (for example Month instead of Day) or a shorter date range.</source>
-          <target>Veldu stærri periodType (til dæmis Month í stað Day) eða styttra dagsetningabil.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Veldu stærri periodType (til dæmis Month í stað Day) eða styttra dagsetningabil.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType TooManyPeriodsNextLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 2912406318" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Unknown parameter '%1'.</source>
-          <target>Óþekkt færibreyta '%1'.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = parameter name|is-IS=Óþekkt færibreyta '%1'.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType UnknownKeyErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 2474658010" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The value '%2' of '%1' is not allowed. Allowed values: %3.</source>
-          <target>Gildið '%2' í '%1' er ekki leyft. Leyfð gildi: %3.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = parameter name, %2 = received value, %3 = allowed values|is-IS=Gildið '%2' í '%1' er ekki leyft. Leyfð gildi: %3.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType UnknownValueErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - Method 1027590672 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Sustainability.EmissionSummary.Get, sustainability, emission, emissions, CO2, CO2e, greenhouse gas, scope 1, scope 2, scope 3, carbon fee, ESG</source>
-          <target>Sustainability.EmissionSummary.Get, sjálfbærni, losun, útblástur, CO2, CO2e, gróðurhúsalofttegund, umfang 1, umfang 2, umfang 3, kolefnisgjald, UFS</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Sustainability.EmissionSummary.Get, sjálfbærni, losun, útblástur, CO2, CO2e, gróðurhúsalofttegund, umfang 1, umfang 2, umfang 3, kolefnisgjald, UFS</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
+        <trans-unit id="Table 4122963098 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <target>Færslunr.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Færslunr.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Journal Check Access ori - Field Entry No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Codeunit 1937637357 - NamedType 140176269" size-unit="char" translate="yes" xml:space="preserve">
           <source>Business Central account-number filter. Omission selects all accounts.</source>
@@ -297,36 +183,6 @@
           <note from="Developer" annotates="general" priority="2">is-IS=Lokadagur hreyfingar, meðtalinn, á sniðinu YYYY-MM-DD. Einnig sjálfgefinn stöðudagur.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType ToDateLbl</note>
         </trans-unit>
-        <trans-unit id="PermissionSet 2315649480 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Bifrost Sustainability</source>
-          <target>Bifröst - sjálfbærni</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST Sustain ori - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PermissionSet 3624550339 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Bifrost Sustainability Full</source>
-          <target>Bifröst - sjálfbærni (fullt)</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni (fullt)</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST SustFull ori - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PermissionSet 2471902004 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Bifrost Sustainability Read</source>
-          <target>Bifröst - sjálfbærni (lestur)</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni (lestur)</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST SustRead ori - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 4122963098 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Sustainability check access</source>
-          <target>Aðgangur að athugun sjálfbærni</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Aðgangur að athugun sjálfbærni</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Journal Check Access ori - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 4122963098 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Entry No.</source>
-          <target>Færslunr.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Færslunr.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Journal Check Access ori - Field Entry No. - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Codeunit 2730793174 - NamedType 1698601683" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sustainability journal batch %1/%2 does not exist.</source>
           <target>Keyrsla sjálfbærnibókar %1/%2 er ekki til.</target>
@@ -452,6 +308,354 @@
           <target>Safnaðar villur með lineNo, fieldName og message. Tóm keyrsla hefur ein skilaboð með lineNo 0.</target>
           <note from="Developer" annotates="general" priority="2">is-IS=Safnaðar villur með lineNo, fieldName og message. Tóm keyrsla hefur ein skilaboð með lineNo 0.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - Method GetResponse - NamedType ErrorsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 2142096021" size-unit="char" translate="yes" xml:space="preserve">
+          <source>baseline</source>
+          <target>grunnlína</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=grunnlína</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType BaselineTok</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 3463406715" size-unit="char" translate="yes" xml:space="preserve">
+          <source>text of at most 20 characters</source>
+          <target>texti sem er í mesta lagi 20 stafir</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=texti sem er í mesta lagi 20 stafir</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType CodeExpectedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 2622383074" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 is longer than %2 characters.</source>
+          <target>%1 er lengra en %2 stafir.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name, %2 = max length||is-IS=%1 er lengra en %2 stafir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType CodeTooLongErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 3145036466" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send the scorecard or goal number from Business Central, at most 20 characters.</source>
+          <target>Sendu númer mælaborðs eða markmiðs úr Business Central, í mesta lagi 20 stafir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sendu númer mælaborðs eða markmiðs úr Business Central, í mesta lagi 20 stafir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType CodeTooLongFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 715967703" size-unit="char" translate="yes" xml:space="preserve">
+          <source>scorecardNo or goalNo is longer than 20 characters.</source>
+          <target>scorecardNo eða goalNo er lengra en 20 stafir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=scorecardNo eða goalNo er lengra en 20 stafir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType CodeTooLongWhenLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 4110763179" size-unit="char" translate="yes" xml:space="preserve">
+          <source>current</source>
+          <target>núverandi</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=núverandi</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType CurrentTok</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 1098416156" size-unit="char" translate="yes" xml:space="preserve">
+          <source>a date in the form yyyy-MM-dd</source>
+          <target>dagsetning á forminu yyyy-MM-dd</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=dagsetning á forminu yyyy-MM-dd</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType DateExpectedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 3569966352" maxwidth="250" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Returns a sustainability scorecard with each goal's baseline, current value, target and progress.</source>
+          <target>Skilar sjálfbærnimælaborði með grunnlínu, núverandi gildi, markgildi og framvindu hvers markmiðs.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Skilar sjálfbærnimælaborði með grunnlínu, núverandi gildi, markgildi og framvindu hvers markmiðs.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 131648365" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability goal '%1' does not exist on scorecard '%2'.</source>
+          <target>Sjálfbærnimarkmiðið '%1' er ekki til á mælaborðinu '%2'.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = goal no., %2 = scorecard no.||is-IS=Sjálfbærnimarkmiðið '%1' er ekki til á mælaborðinu '%2'.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType GoalNotFoundErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 1817013477" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Leave goalNo out to read every goal, or send a goal number that exists on the scorecard.</source>
+          <target>Slepptu goalNo til að lesa öll markmið, eða sendu númer markmiðs sem er til á mælaborðinu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Slepptu goalNo til að lesa öll markmið, eða sendu númer markmiðs sem er til á mælaborðinu.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType GoalNotFoundFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 1610953012" size-unit="char" translate="yes" xml:space="preserve">
+          <source>goalNo is sent and no goal on the scorecard has that number.</source>
+          <target>goalNo er sent og ekkert markmið á mælaborðinu hefur það númer.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=goalNo er sent og ekkert markmið á mælaborðinu hefur það númer.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType GoalNotFoundWhenLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 411844913" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The value of %1 has the wrong JSON type or is not a date in the form yyyy-MM-dd.</source>
+          <target>Gildi %1 er af rangri JSON-gerð eða er ekki dagsetning á forminu yyyy-MM-dd.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name||is-IS=Gildi %1 er af rangri JSON-gerð eða er ekki dagsetning á forminu yyyy-MM-dd.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType InvalidFormatErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 642200393" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send codes as text and dates as yyyy-MM-dd.</source>
+          <target>Sendu kóða sem texta og dagsetningar sem yyyy-MM-dd.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sendu kóða sem texta og dagsetningar sem yyyy-MM-dd.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType InvalidFormatFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 1173296568" size-unit="char" translate="yes" xml:space="preserve">
+          <source>scorecardNo or goalNo is not text, a date parameter is not text, or a date is not yyyy-MM-dd.</source>
+          <target>scorecardNo eða goalNo er ekki texti, dagsetning er ekki texti, eða dagsetning er ekki á forminu yyyy-MM-dd.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=scorecardNo eða goalNo er ekki texti, dagsetning er ekki texti, eða dagsetning er ekki á forminu yyyy-MM-dd.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType InvalidFormatWhenLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 1977192435" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The %1 period is invalid because the from-date is after the to-date.</source>
+          <target>Tímabilið %1 er ógilt því upphafsdagur er á eftir lokadegi.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = baseline or current||is-IS=Tímabilið %1 er ógilt því upphafsdagur er á eftir lokadegi.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType InvalidPeriodErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 897824795" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send the from-date on or before the to-date, or leave both ends of that period out.</source>
+          <target>Sendu upphafsdag á eða fyrir lokadag, eða slepptu báðum endum tímabilsins.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sendu upphafsdag á eða fyrir lokadag, eða slepptu báðum endum tímabilsins.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType InvalidPeriodFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 2763266622" size-unit="char" translate="yes" xml:space="preserve">
+          <source>baselineFrom is after baselineTo, or currentFrom is after currentTo.</source>
+          <target>baselineFrom er á eftir baselineTo, eða currentFrom er á eftir currentTo.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=baselineFrom er á eftir baselineTo, eða currentFrom er á eftir currentTo.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType InvalidPeriodWhenLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>sustainability scorecard, sustainability goal, scorecard, goal, progress, baseline, target, CO2, emissions, on track</source>
+          <target>sjálfbærnimælaborð, sjálfbærnimarkmið, mælaborð, markmið, framvinda, grunnlína, markgildi, CO2, losun, á réttri leið</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=sjálfbærnimælaborð, sjálfbærnimarkmið, mælaborð, markmið, framvinda, grunnlína, markgildi, CO2, losun, á réttri leið</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 3309742093" size-unit="char" translate="yes" xml:space="preserve">
+          <source>scorecardNo, goalNo, baselineFrom, baselineTo, currentFrom and currentTo</source>
+          <target>scorecardNo, goalNo, baselineFrom, baselineTo, currentFrom og currentTo</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=scorecardNo, goalNo, baselineFrom, baselineTo, currentFrom og currentTo</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType KnownKeysExpectedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 4229010375" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The request is missing the required parameter 'scorecardNo'.</source>
+          <target>Beiðnina vantar nauðsynlega færibreytu 'scorecardNo'.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Beiðnina vantar nauðsynlega færibreytu 'scorecardNo'.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType MissingScorecardErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 2445584783" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send scorecardNo with the scorecard number.</source>
+          <target>Sendu scorecardNo með númeri mælaborðsins.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sendu scorecardNo með númeri mælaborðsins.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType MissingScorecardFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 4206922322" size-unit="char" translate="yes" xml:space="preserve">
+          <source>scorecardNo is missing, null or blank.</source>
+          <target>scorecardNo vantar, er null eða autt.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=scorecardNo vantar, er null eða autt.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType MissingScorecardWhenLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Read only and idempotent. The call does not insert, modify, delete or post, and the number of sustainability ledger entries is unchanged. A hidden type (Sustainability is not configured, or the caller lacks read permission) is left out of the roster; a caller that names the type can still run it when the caller has read permission. Unknown request keys are refused before anything is read. Country and responsibility-center flowfilters follow the goal. An open end of a period (only from, or only to) is a valid open-ended filter.</source>
+          <target>Eingöngu lestur og endurtekið. Kallið bætir hvorki við, breytir, eyðir né bókar, og fjöldi færslna í sjálfbærnifærslubók er óbreyttur. Falinn tegund (sjálfbærni er ekki uppsett, eða kallanda skortir lesheimild) er ekki á listanum; kallaandi sem nefnir tegundina getur samt keyrt hana þegar kallandi hefur lesheimild. Óþekktum lyklum beiðni er hafnað áður en nokkuð er lesið. Flæðisíur lands og ábyrgðarstöðvar fylgja markmiðinu. Opinn endi tímabils (aðeins frá, eða aðeins til) er gild opin sía.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Eingöngu lestur og endurtekið. Kallið bætir hvorki við, breytir, eyðir né bókar, og fjöldi færslna í sjálfbærnifærslubók er óbreyttur. Falinn tegund (sjálfbærni er ekki uppsett, eða kallanda skortir lesheimild) er ekki á listanum; kallaandi sem nefnir tegundina getur samt keyrt hana þegar kallandi hefur lesheimild. Óþekktum lyklum beiðni er hafnað áður en nokkuð er lesið. Flæðisíur lands og ábyrgðarstöðvar fylgja markmiðinu. Opinn endi tímabils (aðeins frá, eða aðeins til) er gild opin sía.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType NotesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 3593894611" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reads one sustainability scorecard and its goals so a caller can see whether the company is on track. Baseline and current amounts are the flowfields on the goal. The request periods, when sent, become the flowfilters before those amounts are calculated. When a period is omitted, the goal's own baseline dates or its start and end date are used. Progress for a measure is how far the current amount has moved from the baseline toward the target. When the target equals the baseline, that progress is null.</source>
+          <target>Les eitt sjálfbærnimælaborð og markmið þess svo kallaandi sjái hvort fyrirtækið er á réttri leið. Grunnlína og núverandi upphæðir eru flæðisreitir markmiðsins. Tímabil beiðninnar, þegar þau eru send, verða flæðisíur áður en upphæðirnar eru reiknaðar. Þegar tímabili er sleppt eru eigin grunnlínudagsetningar markmiðsins eða upphafs- og lokadagur þess notaðar. Framvinda mælikvarða er hversu langt núverandi upphæð hefur færst frá grunnlínu að markgildi. Þegar markgildið er jafnt grunnlínunni er framvindan null.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Les eitt sjálfbærnimælaborð og markmið þess svo kallaandi sjái hvort fyrirtækið er á réttri leið. Grunnlína og núverandi upphæðir eru flæðisreitir markmiðsins. Tímabil beiðninnar, þegar þau eru send, verða flæðisíur áður en upphæðirnar eru reiknaðar. Þegar tímabili er sleppt eru eigin grunnlínudagsetningar markmiðsins eða upphafs- og lokadagur þess notaðar. Framvinda mælikvarða er hversu langt núverandi upphæð hefur færst frá grunnlínu að markgildi. Þegar markgildið er jafnt grunnlínunni er framvindan null.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType OverviewLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 1902290539" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You do not have read permission for sustainability scorecards.</source>
+          <target>Þú hefur ekki lesheimild á sjálfbærnimælaborð.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Þú hefur ekki lesheimild á sjálfbærnimælaborð.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType PermissionDeniedErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 1427289299" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ask your administrator for the BIFROST SustRead ori permission set, or for BIFROST Read ori.</source>
+          <target>Biddu kerfisstjóra um heimildasamstæðuna BIFROST SustRead ori, eða um BIFROST Read ori.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Biddu kerfisstjóra um heimildasamstæðuna BIFROST SustRead ori, eða um BIFROST Read ori.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType PermissionDeniedFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 2512505270" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The caller cannot read sustainability scorecards, goals or ledger entries.</source>
+          <target>Kallandinn getur ekki lesið sjálfbærnimælaborð, markmið eða færslubók.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Kallandinn getur ekki lesið sjálfbærnimælaborð, markmið eða færslubók.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType PermissionDeniedWhenLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 441078526" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability scorecard '%1' does not exist.</source>
+          <target>Sjálfbærnimælaborðið '%1' er ekki til.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = scorecard no.||is-IS=Sjálfbærnimælaborðið '%1' er ekki til.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType ScorecardNotFoundErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 3471238798" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send the number of a scorecard that exists in the company.</source>
+          <target>Sendu númer mælaborðs sem er til í fyrirtækinu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sendu númer mælaborðs sem er til í fyrirtækinu.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType ScorecardNotFoundFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 3548440755" size-unit="char" translate="yes" xml:space="preserve">
+          <source>scorecardNo does not match a sustainability scorecard.</source>
+          <target>scorecardNo passar ekki við sjálfbærnimælaborð.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=scorecardNo passar ekki við sjálfbærnimælaborð.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType ScorecardNotFoundWhenLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 895773054" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reads one scorecard and the progress of its goals. It does not change goals and it does not post.</source>
+          <target>Les eitt mælaborð og framvindu markmiða þess. Það breytir ekki markmiðum og bókar ekki.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Les eitt mælaborð og framvindu markmiða þess. Það breytir ekki markmiðum og bókar ekki.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType SelectionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 2912406318" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Parameter '%1' is not declared by this message type. Nothing was read.</source>
+          <target>Viðfangið '%1' er ekki skilgreint fyrir þessa skilaboðategund. Ekkert var lesið.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name||is-IS=Viðfangið '%1' er ekki skilgreint fyrir þessa skilaboðategund. Ekkert var lesið.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType UnknownKeyErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 2892628702" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Remove the unknown key. The declared parameters are listed by Help.Implementation.Get.</source>
+          <target>Fjarlægðu óþekkta lykilinn. Skilgreind viðföng eru talin upp af Help.Implementation.Get.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fjarlægðu óþekkta lykilinn. Skilgreind viðföng eru talin upp af Help.Implementation.Get.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType UnknownKeyFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1071755897 - NamedType 3136841475" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The request contains a key other than scorecardNo, goalNo, baselineFrom, baselineTo, currentFrom or currentTo.</source>
+          <target>Beiðnin inniheldur annan lykil en scorecardNo, goalNo, baselineFrom, baselineTo, currentFrom eða currentTo.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Beiðnin inniheldur annan lykil en scorecardNo, goalNo, baselineFrom, baselineTo, currentFrom eða currentTo.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType UnknownKeyWhenLbl</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 2315649480 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bifrost Sustainability</source>
+          <target>Bifröst - sjálfbærni</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST Sustain ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 3624550339 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bifrost Sustainability Full</source>
+          <target>Bifröst - sjálfbærni (fullt)</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni (fullt)</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST SustFull ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 2471902004 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bifrost Sustainability Read</source>
+          <target>Bifröst - sjálfbærni (lestur)</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni (lestur)</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST SustRead ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2869149468 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability Emission Read Access</source>
+          <target>Lesaðgangur að losunaryfirliti</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Lesaðgangur að losunaryfirliti</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Emission Access ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2869149468 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <target>Aðallykill</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðallykill</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Emission Access ori - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 2326265146" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use one of the allowed values and retry.</source>
+          <target>Notaðu eitt af leyfðu gildunum og reyndu aftur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Notaðu eitt af leyfðu gildunum og reyndu aftur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType AllowedValueNextLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 1098416156" size-unit="char" translate="yes" xml:space="preserve">
+          <source>a date in the form YYYY-MM-DD, with fromDate on or before toDate</source>
+          <target>dagsetning á forminu ÁÁÁÁ-MM-DD þar sem fromDate er sama dag eða á undan toDate</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=dagsetning á forminu ÁÁÁÁ-MM-DD þar sem fromDate er sama dag eða á undan toDate</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType DateExpectedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 1412843979" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send fromDate and toDate as YYYY-MM-DD dates with fromDate on or before toDate.</source>
+          <target>Sendu fromDate og toDate sem ÁÁÁÁ-MM-DD dagsetningar þar sem fromDate er sama dag eða á undan toDate.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sendu fromDate og toDate sem ÁÁÁÁ-MM-DD dagsetningar þar sem fromDate er sama dag eða á undan toDate.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType DateNextLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 3569966352" maxwidth="250" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Summarises sustainability emissions by emission scope, period and gas.</source>
+          <target>Tekur saman losun eftir umfangi, tímabili og gastegund.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tekur saman losun eftir umfangi, tímabili og gastegund.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 4195077024" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Correct the named request parameter and retry.</source>
+          <target>Leiðréttu tilgreinda færibreytu beiðninnar og reyndu aftur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Leiðréttu tilgreinda færibreytu beiðninnar og reyndu aftur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType FixParameterLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 1977192435" size-unit="char" translate="yes" xml:space="preserve">
+          <source>InvalidPeriod: '%1' must be a date (YYYY-MM-DD), and fromDate must not be after toDate.</source>
+          <target>InvalidPeriod: '%1' verður að vera dagsetning (ÁÁÁÁ-MM-DD) og fromDate má ekki vera eftir toDate.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name|is-IS=InvalidPeriod: '%1' verður að vera dagsetning (ÁÁÁÁ-MM-DD) og fromDate má ekki vera eftir toDate.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType InvalidPeriodErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 3319458594" size-unit="char" translate="yes" xml:space="preserve">
+          <source>a list of text values</source>
+          <target>listi af textagildum</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=listi af textagildum</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType ListExpectedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 1575191754" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The required parameter '%1' is missing.</source>
+          <target>Nauðsynlega færibreytu '%1' vantar.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name|is-IS=Nauðsynlega færibreytu '%1' vantar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType MissingKeyErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Read-only and idempotent: totals are database sums over Sustainability Ledger Entry, nothing is written and there is no Commit on the path. Periods follow the calendar (weeks start on Monday) and are clipped to fromDate and toDate; at most 400 periods are returned. Closing-date entries count in the period of their date. Reversed entries and their reversals both count, so they net out. Optional filters emissionScope, countryRegionCode, responsibilityCenter, globalDimension1Code and globalDimension2Code narrow the entries. include accepts water, waste and energy; water adds waterIntensity and dischargedIntoWater, waste adds wasteIntensity, energy adds energyConsumption, summed over the entries of the scope row. Ledger rows outside Scope 1-3 (Water/Waste, Out of Scope, blank) are not summarised.</source>
+          <target>Aðeins lestur og sama niðurstaða við endurtekningu: samtölur eru gagnagrunnssummur úr Sustainability Ledger Entry, engu er breytt og ekkert Commit er á leiðinni. Tímabil fylgja dagatalinu (vikur byrja á mánudegi) og eru skorin við fromDate og toDate; að hámarki eru 400 tímabil skiluð. Færslur á lokadagsetningu teljast á tímabil dagsetningar sinnar. Bakfærðar færslur og bakfærslur þeirra teljast báðar og jafnast því út. Valfrjálsar síur emissionScope, countryRegionCode, responsibilityCenter, globalDimension1Code og globalDimension2Code þrengja færslurnar. include tekur water, waste og energy; water bætir við waterIntensity og dischargedIntoWater, waste bætir við wasteIntensity, energy bætir við energyConsumption, samanlagt yfir færslur umfangsins. Færslur utan Scope 1-3 (Water/Waste, Out of Scope, autt) eru ekki teknar saman.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðeins lestur og sama niðurstaða við endurtekningu: samtölur eru gagnagrunnssummur úr Sustainability Ledger Entry, engu er breytt og ekkert Commit er á leiðinni. Tímabil fylgja dagatalinu (vikur byrja á mánudegi) og eru skorin við fromDate og toDate; að hámarki eru 400 tímabil skiluð. Færslur á lokadagsetningu teljast á tímabil dagsetningar sinnar. Bakfærðar færslur og bakfærslur þeirra teljast báðar og jafnast því út. Valfrjálsar síur emissionScope, countryRegionCode, responsibilityCenter, globalDimension1Code og globalDimension2Code þrengja færslurnar. include tekur water, waste og energy; water bætir við waterIntensity og dischargedIntoWater, waste bætir við wasteIntensity, energy bætir við energyConsumption, samanlagt yfir færslur umfangsins. Færslur utan Scope 1-3 (Water/Waste, Out of Scope, autt) eru ekki teknar saman.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType NotesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 3593894611" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Returns posted sustainability emissions summed per emission scope (Scope 1, Scope 2, Scope 3) and per period between fromDate and toDate: CO2, CH4, N2O, CO2e and carbon fee, plus water, waste and energy totals on request, and a grand total per scope. Units come from Sustainability Setup.</source>
+          <target>Skilar bókaðri losun samanlagðri eftir umfangi (Scope 1, Scope 2, Scope 3) og tímabili frá fromDate til toDate: CO2, CH4, N2O, CO2e og kolefnisgjald, auk vatns-, úrgangs- og orkusamtalna sé þess óskað, og heildarsamtölu fyrir hvert umfang. Einingar koma úr uppsetningu sjálfbærni.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Skilar bókaðri losun samanlagðri eftir umfangi (Scope 1, Scope 2, Scope 3) og tímabili frá fromDate til toDate: CO2, CH4, N2O, CO2e og kolefnisgjald, auk vatns-, úrgangs- og orkusamtalna sé þess óskað, og heildarsamtölu fyrir hvert umfang. Einingar koma úr uppsetningu sjálfbærni.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType OverviewLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 315309378" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reading emission summaries requires BIFROST SustRead ori and read access to the Sustainability ledger and setup (Microsoft's Sustainability Read).</source>
+          <target>Til að lesa losunaryfirlit þarf BIFROST SustRead ori og lesaðgang að fjárhag og uppsetningu sjálfbærni (Sustainability Read frá Microsoft).</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Til að lesa losunaryfirlit þarf BIFROST SustRead ori og lesaðgang að fjárhag og uppsetningu sjálfbærni (Sustainability Read frá Microsoft).</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType PermissionErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 3932376842" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ask an administrator for BIFROST SustRead ori (included in BIFROST Read ori and BIFROST Full ori) and Sustainability Read.</source>
+          <target>Biddu stjórnanda um BIFROST SustRead ori (er hluti af BIFROST Read ori og BIFROST Full ori) og Sustainability Read.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Biddu stjórnanda um BIFROST SustRead ori (er hluti af BIFROST Read ori og BIFROST Full ori) og Sustainability Read.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType PermissionNextLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 1879669363" size-unit="char" translate="yes" xml:space="preserve">
+          <source>a text value</source>
+          <target>textagildi</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=textagildi</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType TextExpectedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 3297756640" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The result would contain more than %1 periods. Use a larger periodType or a shorter date range.</source>
+          <target>Niðurstaðan yrði meira en %1 tímabil. Notaðu stærri periodType eða styttra dagsetningabil.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = maximum number of periods|is-IS=Niðurstaðan yrði meira en %1 tímabil. Notaðu stærri periodType eða styttra dagsetningabil.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType TooManyPeriodsErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 979809767" size-unit="char" translate="yes" xml:space="preserve">
+          <source>at most %1 periods</source>
+          <target>að hámarki %1 tímabil</target>
+          <note from="Developer" annotates="general" priority="2">%1 = maximum number of periods|is-IS=að hámarki %1 tímabil</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType TooManyPeriodsExpectedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 802113960" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Choose a larger periodType (for example Month instead of Day) or a shorter date range.</source>
+          <target>Veldu stærri periodType (til dæmis Month í stað Day) eða styttra dagsetningabil.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Veldu stærri periodType (til dæmis Month í stað Day) eða styttra dagsetningabil.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType TooManyPeriodsNextLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 2912406318" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unknown parameter '%1'.</source>
+          <target>Óþekkt færibreyta '%1'.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name|is-IS=Óþekkt færibreyta '%1'.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType UnknownKeyErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 2474658010" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The value '%2' of '%1' is not allowed. Allowed values: %3.</source>
+          <target>Gildið '%2' í '%1' er ekki leyft. Leyfð gildi: %3.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name, %2 = received value, %3 = allowed values|is-IS=Gildið '%2' í '%1' er ekki leyft. Leyfð gildi: %3.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType UnknownValueErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - Method 1027590672 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability.EmissionSummary.Get, sustainability, emission, emissions, CO2, CO2e, greenhouse gas, scope 1, scope 2, scope 3, carbon fee, ESG</source>
+          <target>Sustainability.EmissionSummary.Get, sjálfbærni, losun, útblástur, CO2, CO2e, gróðurhúsalofttegund, umfang 1, umfang 2, umfang 3, kolefnisgjald, UFS</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sustainability.EmissionSummary.Get, sjálfbærni, losun, útblástur, CO2, CO2e, gróðurhúsalofttegund, umfang 1, umfang 2, umfang 3, kolefnisgjald, UFS</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
         </trans-unit>
       </group>
     </body>

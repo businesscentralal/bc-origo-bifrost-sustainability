@@ -14,6 +14,7 @@ goals, and prepare sustainability journals. It is built on the same basis as
 **Microsoft source:** <https://github.com/microsoft/BCApps/tree/main/src/Apps/W1/Sustainability>
 
 **Message types:** `Sustainability.AccountBalance.Get` reads net change and balances for selected accounts.
+`Sustainability.Scorecard.Get` reads a scorecard and the progress of its goals.
 `Sustainability.Journal.Check` validates a journal batch without changing it.
 The first release adds the other reads, master-data writes and journal types listed in the release tracker
 (see the table below for the ones available so far).
@@ -43,6 +44,7 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 | --- | --- | --- | --- |
 | `Sustainability.AccountBalance.Get` | Read account net change and balance, including totals | Read-only and idempotent | [Contract](docs/account-balance.md) |
 | `Sustainability.EmissionSummary.Get` | read (idempotent, no Commit) | Safe to retry | Emissions (CO2, CH4, N2O, CO2e, carbon fee; optional water, waste, energy) per emission scope and period, with a grand total per scope. Needs `BIFROST SustRead ori` and Microsoft's `Sustainability Read`. |
+| `Sustainability.Scorecard.Get` | Reads a scorecard and the baseline, current, target and progress of its goals. Posts nothing. | Idempotent. The same request reads the same rows. | [Scorecard](https://docs.bifrost.origo.is/en-us/sustainability/) |
 | `Sustainability.Journal.Check` | Read | Idempotent; all validation changes roll back | Public message-type help, en-US and is-IS |
 
 ### Check a sustainability journal
