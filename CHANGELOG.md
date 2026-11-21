@@ -2,6 +2,8 @@
 
 ## [28.0.0.0] - Unreleased
 
+- Added `Sustainability.AccountBalance.Get`: native account net change, balance and totals with date, global-dimension and responsibility-center filters; stored CO2e is summed without recalculating emission factors. Added enum extension/value and implementation codeunit 70009208, Read-role grants, bilingual contracts and dispatcher tests in codeunit 98015.
+
 - Repository scaffolded from the Bifrost Quality Management setup (AL-Go, COSMO Alpaca, source guards, Runtime Package workflow).
 - Foundation application registration (codeunit 70009200), base, Full and Read permission sets (70009201-70009203) and the Foundation Full and Read role extensions (70009204-70009205).
 - `Sustainability.Account.Set` (#14): enum extension and value 70009210, Impl codeunit 70009210 `Sust Account Set Impl ori` and capability table 70009210 `Sust Account Set Access ori` (granted by `BIFROST SustFull ori` and the Foundation Full role extension). Creates or updates a Sustainability Account through Validate, refuses a subcategory of another category or an unknown category (InvalidParameter), blocking an account with open journal lines (PreconditionFailed, naming the batches) and a missing number (MissingParameter); posts nothing (D2). Tests 98025 `Sust Account Set Tst ori` and 98026 `Sust Account Set Perm Tst ori`.
