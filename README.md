@@ -13,7 +13,10 @@ goals, and prepare sustainability journals. It is built on the same basis as
 
 **Microsoft source:** <https://github.com/microsoft/BCApps/tree/main/src/Apps/W1/Sustainability>
 
-**Message types:** `Sustainability.Journal.Create` creates unposted journal lines with manual emissions or formula inputs. Journal posting and ledger reversal come in release 2.
+**Message types:** `Sustainability.AccountBalance.Get` reads net change and balances for selected accounts.
+`Sustainability.Journal.Create` creates unposted journal lines with manual emissions or formula inputs.
+The first release adds the other reads, master-data writes and journal types listed in the release tracker.
+Journal posting and ledger reversal come in release 2.
 
 Foundation discovers this app on **Bifrost Setup** through its application registry. All setup notifications stay on
 that Foundation page. Bifrost Sustainability has no setup page of its own.
@@ -38,6 +41,7 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 
 | Type | Effect | Retry behavior | Help |
 | --- | --- | --- | --- |
+| `Sustainability.AccountBalance.Get` | Read account net change and balance, including totals | Read-only and idempotent | [Contract](docs/account-balance.md) |
 | `Sustainability.Journal.Create` | Write unposted lines; optionally create a batch | Every retry adds lines | `Help.Implementation.Get` |
 
 ```json

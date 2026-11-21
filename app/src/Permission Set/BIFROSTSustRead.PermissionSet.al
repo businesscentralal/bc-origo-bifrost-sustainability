@@ -1,7 +1,10 @@
 namespace Origo.Bifrost.Sustainability;
 
+using Microsoft.Sustainability.Account;
+using Microsoft.Sustainability.Ledger;
+
 /// <summary>
-/// Read-only Bifrost Sustainability role. In the scaffold it grants registration only; read message types add their grants here.
+/// Grants read-only account balance calculation and native sustainability table reads.
 /// </summary>
 permissionset 70009203 "BIFROST SustRead ori"
 {
@@ -9,4 +12,7 @@ permissionset 70009203 "BIFROST SustRead ori"
     Access = Public;
     Caption = 'Bifrost Sustainability Read', MaxLength = 30, Comment = 'is-IS=Bifröst - sjálfbærni (lestur)';
     IncludedPermissionSets = "BIFROST Sustain ori";
+    Permissions = codeunit "Sust Account Bal Impl ori" = X,
+                  tabledata "Sustainability Account" = R,
+                  tabledata "Sustainability Ledger Entry" = R;
 }

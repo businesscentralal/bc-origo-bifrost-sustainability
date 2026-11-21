@@ -261,6 +261,174 @@
           <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni (lestur)</note>
           <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST SustRead ori - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 140176269" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Business Central account-number filter. Omission selects all accounts.</source>
+          <target>Business Central sía fyrir reikningsnúmer. Ef henni er sleppt eru allir reikningar valdir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Business Central sía fyrir reikningsnúmer. Ef henni er sleppt eru allir reikningar valdir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType AccountFilterLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 1947827686" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exact account number, maximum 20 characters. Cannot be combined with accountFilter.</source>
+          <target>Nákvæmt reikningsnúmer, að hámarki 20 stafir. Má ekki nota með accountFilter.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Nákvæmt reikningsnúmer, að hámarki 20 stafir. Má ekki nota með accountFilter.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType AccountNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 3792450033" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability account '%1' does not exist.</source>
+          <target>Sjálfbærnireikningur '%1' er ekki til.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = received value; %2 = parameter name||is-IS=Sjálfbærnireikningur '%1' er ekki til.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType AccountNotFoundErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 1987373247" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inclusive balance date in YYYY-MM-DD format, independent of fromDate; defaults to toDate, otherwise all dates.</source>
+          <target>Stöðudagur, meðtalinn, á sniðinu YYYY-MM-DD, óháður fromDate; sjálfgefið toDate, annars allar dagsetningar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stöðudagur, meðtalinn, á sniðinu YYYY-MM-DD, óháður fromDate; sjálfgefið toDate, annars allar dagsetningar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType AsOfDateLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 1449450473" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No sustainability data changes and no posting. Reads account metadata and ledger totals.</source>
+          <target>Engum sjálfbærnigögnum er breytt og ekkert bókað. Les lýsigögn reikninga og samtölur færslna.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Engum sjálfbærnigögnum er breytt og ekkert bókað. Les lýsigögn reikninga og samtölur færslna.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType ChangesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Returns sustainability account net change and balances, including totals, for selected dates and dimensions.</source>
+          <target>Skilar hreyfingu og stöðu sjálfbærnireikninga, ásamt samtölum, fyrir valdar dagsetningar og víddir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Skilar hreyfingu og stöðu sjálfbærnireikninga, ásamt samtölum, fyrir valdar dagsetningar og víddir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 2907899789" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Business Central Global Dimension 1 filter on ledger entries.</source>
+          <target>Business Central sía fyrir altæka vídd 1 á færslum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Business Central sía fyrir altæka vídd 1 á færslum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType Dimension1Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 2138640364" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Business Central Global Dimension 2 filter on ledger entries.</source>
+          <target>Business Central sía fyrir altæka vídd 2 á færslum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Business Central sía fyrir altæka vídd 2 á færslum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType Dimension2Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 36270934" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Read one CRONUS-style account including zero balances</source>
+          <target>Lesa einn reikning að hætti CRONUS ásamt núllstöðum</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Lesa einn reikning að hætti CRONUS ásamt núllstöðum</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType ExampleLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 4158795400" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use an existing sustainability account number.</source>
+          <target>Notaðu númer sjálfbærnireiknings sem er til.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Notaðu númer sjálfbærnireiknings sem er til.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FixAccountLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 2257690959" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Correct the Business Central filter expression.</source>
+          <target>Leiðréttu síusetninguna í Business Central.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Leiðréttu síusetninguna í Business Central.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FixFilterLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 1352104360" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Review the native error and correct the account setup or filters.</source>
+          <target>Farðu yfir innbyggðu villuna og leiðréttu reikningsuppsetningu eða síur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Farðu yfir innbyggðu villuna og leiðréttu reikningsuppsetningu eða síur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FixNativeLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 4195077024" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use only the documented keys and JSON types; accountNo and accountFilter are mutually exclusive.</source>
+          <target>Notaðu aðeins skráða lykla og JSON-gagnagerðir; accountNo og accountFilter má ekki nota saman.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Notaðu aðeins skráða lykla og JSON-gagnagerðir; accountNo og accountFilter má ekki nota saman.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FixParameterLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 2859024436" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send valid ISO dates and an ordered date range.</source>
+          <target>Sendu gildar ISO-dagsetningar og rétt raðað tímabil.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sendu gildar ISO-dagsetningar og rétt raðað tímabil.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FixPeriodLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 1157690618" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Assign BIFROST Read ori alongside BIFROST SustRead ori.</source>
+          <target>Úthlutaðu BIFROST Read ori ásamt BIFROST SustRead ori.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Úthlutaðu BIFROST Read ori ásamt BIFROST SustRead ori.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FixPermissionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 2593779812" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inclusive net-change start date in YYYY-MM-DD format. Omission means no lower bound.</source>
+          <target>Upphafsdagur hreyfingar, meðtalinn, á sniðinu YYYY-MM-DD. Ef honum er sleppt eru engin neðri mörk.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Upphafsdagur hreyfingar, meðtalinn, á sniðinu YYYY-MM-DD. Ef honum er sleppt eru engin neðri mörk.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FromDateLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 4053472552" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Include accounts whose net change and balance are both zero for all measures; defaults to false.</source>
+          <target>Taka með reikninga með núllhreyfingu og núllstöðu í öllum mælikvörðum; sjálfgefið false.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Taka með reikninga með núllhreyfingu og núllstöðu í öllum mælikvörðum; sjálfgefið false.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType IncludeZeroLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 880984256" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invalid filter '%1' for %2.</source>
+          <target>Ógild sía '%1' fyrir %2.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = received value; %2 = parameter name||is-IS=Ógild sía '%1' fyrir %2.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType InvalidFilterErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 991639743" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invalid or unknown parameter '%1'.</source>
+          <target>Ógild eða óþekkt færibreyta '%1'.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = received value; %2 = parameter name||is-IS=Ógild eða óþekkt færibreyta '%1'.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType InvalidParameterErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 1977192435" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dates must be ISO dates (YYYY-MM-DD), and fromDate must not be after toDate.</source>
+          <target>Dagsetningar verða að vera á ISO-sniði (YYYY-MM-DD) og fromDate má ekki vera á eftir toDate.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Dagsetningar verða að vera á ISO-sniði (YYYY-MM-DD) og fromDate má ekki vera á eftir toDate.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType InvalidPeriodErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>sustainability account balance, emission net change, sustainability totals</source>
+          <target>staða sjálfbærnireiknings, hreyfing losunar, samtölur sjálfbærni</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=staða sjálfbærnireiknings, hreyfing losunar, samtölur sjálfbærni</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 998465917" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Business Central could not read the selected accounts or ledger amounts.</source>
+          <target>Business Central gat ekki lesið valda reikninga eða fjárhæðir færslna.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Business Central gat ekki lesið valda reikninga eða fjárhæðir færslna.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType NativeErrorLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Read-only and idempotent. Native FlowFields calculate six measures; CO2e sums the stored ledger amount with identical filters. Totaling applies to Total and End Total accounts. Balance uses asOfDate, otherwise toDate, otherwise all dates. Heading and Begin Total rows have zero values. No Commit is called. Foundation may record message processing. Hidden catalogue entries remain callable by name.</source>
+          <target>Aðeins lestur og endurtekin köll breyta engu. Innbyggðir flæðireitir reikna sex mælikvarða; CO2e leggur saman geymda fjárhæð færslna með sömu síum. Samtölusía gildir fyrir samtölu- og lokasamtölureikninga. Staða miðast við asOfDate, annars toDate, annars allar dagsetningar. Fyrirsagnar- og upphafssamtölulínur hafa núllgildi. Ekki er kallað á Commit. Grunnforritið getur skráð skilaboðavinnslu. Faldar tegundir má áfram kalla eftir nafni.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðeins lestur og endurtekin köll breyta engu. Innbyggðir flæðireitir reikna sex mælikvarða; CO2e leggur saman geymda fjárhæð færslna með sömu síum. Samtölusía gildir fyrir samtölu- og lokasamtölureikninga. Staða miðast við asOfDate, annars toDate, annars allar dagsetningar. Fyrirsagnar- og upphafssamtölulínur hafa núllgildi. Ekki er kallað á Commit. Grunnforritið getur skráð skilaboðavinnslu. Faldar tegundir má áfram kalla eftir nafni.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType NotesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 2009142491" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Read permission on sustainability accounts and ledger entries is required.</source>
+          <target>Lesréttindi á sjálfbærnireikningum og sjálfbærnifærslum eru nauðsynleg.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Lesréttindi á sjálfbærnireikningum og sjálfbærnifærslum eru nauðsynleg.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType PermissionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 2676460995" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account rows with no, name, invariant accountType, indentation and netChange/balance objects containing co2, ch4, n2o, co2e, water, dischargedWater and waste. All amounts retain their stored unit.</source>
+          <target>Reikningslínur með no, name, tungumálaóháðu accountType, indentation og netChange/balance-hlutum með co2, ch4, n2o, co2e, water, dischargedWater og waste. Allar fjárhæðir halda geymdri einingu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Reikningslínur með no, name, tungumálaóháðu accountType, indentation og netChange/balance-hlutum með co2, ch4, n2o, co2e, water, dischargedWater og waste. Allar fjárhæðir halda geymdri einingu.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType ResponseLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 4237468538" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Business Central responsibility-center filter on ledger entries.</source>
+          <target>Business Central sía fyrir ábyrgðarstöð á færslum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Business Central sía fyrir ábyrgðarstöð á færslum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType ResponsibilityLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 3193096050" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Success when the selected account balances were read.</source>
+          <target>Success þegar stöður valinna reikninga voru lesnar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Success þegar stöður valinna reikninga voru lesnar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType StatusLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 362255215" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inclusive net-change end date in YYYY-MM-DD format. Also the default balance date.</source>
+          <target>Lokadagur hreyfingar, meðtalinn, á sniðinu YYYY-MM-DD. Einnig sjálfgefinn stöðudagur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Lokadagur hreyfingar, meðtalinn, á sniðinu YYYY-MM-DD. Einnig sjálfgefinn stöðudagur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType ToDateLbl</note>
+        </trans-unit>
       </group>
     </body>
   </file>

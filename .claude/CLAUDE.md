@@ -37,6 +37,9 @@ The app block is small. Allocate IDs densely and record every allocated id here 
 | Test codeunit | 98041 | Sust Jnl Create Perm Tst ori |
 | Test fixture codeunit | 98042 | Sust Jnl Create Fixture ori |
 | Test permission set | 98043 | Sust Jnl Exec ori |
+| Enum extension/value | 70009208 | Sust Account Balance ori / Sustainability.AccountBalance.Get |
+| Codeunit | 70009208 | Sust Account Bal Impl ori |
+| Test codeunit | 98015 | Sust Account Balance Tst ori |
 
 Reserved for the release 1 issues (one number per message type; the enum extension, its enum value, the Impl
 codeunit and any capability table of a type all use that type's number, since they are different object types):
