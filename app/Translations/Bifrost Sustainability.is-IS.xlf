@@ -1239,7 +1239,6 @@
           <note from="Developer" annotates="general" priority="2">is-IS=sjálfbærni, flokkur, undirflokkur, losunarstuðull, viðhalda flokki, endurnýjanleg orka</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
         </trans-unit>
-      </group>
           <trans-unit id="Table 1591406506 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sustainability goal write access</source>
           <target>Aðgangur að ritun sjálfbærnimarkmiða</target>
@@ -1366,6 +1365,7 @@
           <note from="Developer" annotates="general" priority="2">is-IS=Áhrif: skorkortið og markmiðin sem talin eru upp eru stofnuð eða uppfærð með stöðluðum töflureglum; markmið sem ekki eru talin upp haldast óbreytt. Ídempotent: sama beiðni aftur breytir engu. Ekkert er bókað og ekkert Commit er á þessari leið. Höfnun bakfærir alla beiðnina. Í ham án staðfestingar ber kallandi ábyrgð á bakfærslu.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - Method GetNotes - NamedType NotesLbl</note>
         </trans-unit>
+      </group>
     </body>
   </file>
 </xliff>
