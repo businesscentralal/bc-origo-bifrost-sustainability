@@ -14,6 +14,10 @@ permissionsetextension 70009204 "Sust Full Role ori" extends "BIFROST Full ori"
         codeunit "Sust Configured ori" = X,
         codeunit "Sust Category Set Impl ori" = X,
         codeunit "Sust Account Bal Impl ori" = X,
+        codeunit "Sust Journal Check Impl ori" = X,
+        codeunit "Sust Journal Check Runner ori" = X,
         table "Sust Category Access ori" = X,
-        tabledata "Sust Category Access ori" = RIMD;
+        tabledata "Sust Category Access ori" = RIMD,
+        table "Sust Journal Check Access ori" = X,
+        tabledata "Sust Journal Check Access ori" = R;
 }

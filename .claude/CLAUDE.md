@@ -17,6 +17,9 @@ The app block is small. Allocate IDs densely and record every allocated id here 
 
 | Object | ID | Name |
 | --- | --- | --- |
+| Enum extension/value, table, codeunit | 70009214 | Sust Journal Check ori; Sust Journal Check Access ori; Sust Journal Check Impl ori |
+| Codeunit | 70009228 | Sust Journal Check Runner ori (#8 rollback boundary) |
+| Test codeunit / permission set / subscriber | 98045 / 98046 / 98047 | Sust Journal Check Tst ori / Sust Chk Denied ori / Sust Check Mutation Tst ori |
 | Codeunit | 70009200 | Sust Registration ori |
 | Permission set | 70009201 | BIFROST Sustain ori (base) |
 | Permission set | 70009202 | BIFROST SustFull ori |

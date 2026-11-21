@@ -3,6 +3,7 @@
 ## [28.0.0.0] - Unreleased
 
 - Add `Sustainability.Category.Set`: atomic, idempotent category and subcategory maintenance through Microsoft validation, with Full-only access and bilingual contract help. Enum extension, enum value, implementation codeunit and empty permission capability table use 70009211. Dispatcher tests use 98030-98031.
+- Added `Sustainability.Journal.Check` (#8): enum extension/value, implementation and capability table 70009214, rollback runner codeunit 70009228. Uses the standard batch validator, returns all line errors, treats empty batches as not ready and commits no journal or ledger changes. Includes Foundation Read/Full capability grants, bilingual help, and dispatcher/rollback tests 98045–98047.
 - Added `Sustainability.AccountBalance.Get`: native account net change, balance and totals with date, global-dimension and responsibility-center filters; stored CO2e is summed without recalculating emission factors. Added enum extension/value and implementation codeunit 70009208, Read-role grants, bilingual contracts and dispatcher tests in codeunit 98015.
 
 - Repository scaffolded from the Bifrost Quality Management setup (AL-Go, COSMO Alpaca, source guards, Runtime Package workflow).
