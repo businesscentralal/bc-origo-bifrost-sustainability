@@ -3,6 +3,42 @@
   <file datatype="xml" source-language="en-US" target-language="is-IS" original="Bifrost Sustainability">
     <body>
       <group id="body">
+        <trans-unit id="Table 3362049683 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category Write Access</source>
+          <target>Skrifaðgangur að flokkum</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Skrifaðgangur að flokkum</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Category Access ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3362049683 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <target>Aðallykill</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðallykill</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Category Access ori - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2869149468 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability Emission Read Access</source>
+          <target>Lesaðgangur að losunaryfirliti</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Lesaðgangur að losunaryfirliti</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Emission Access ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2869149468 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <target>Aðallykill</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðallykill</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Emission Access ori - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1591406506 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability goal write access</source>
+          <target>Aðgangur að ritun sjálfbærnimarkmiða</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðgangur að ritun sjálfbærnimarkmiða</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Goal Set Access ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1591406506 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary key</source>
+          <target>Aðallykill</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðallykill</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Goal Set Access ori - Field Primary Key - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 22106557 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Create sustainability journal</source>
           <target>Stofna sjálfbærnibók</target>
@@ -14,6 +50,588 @@
           <target>Aðallykill</target>
           <note from="Developer" annotates="general" priority="2">is-IS=Aðallykill</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Sust Jnl Create Cap ori - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4122963098 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability check access</source>
+          <target>Aðgangur að athugun sjálfbærni</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðgangur að athugun sjálfbærni</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Journal Check Access ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4122963098 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <target>Færslunr.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Færslunr.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Journal Check Access ori - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4135161029 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability preview access</source>
+          <target>Aðgangur að forskoðun sjálfbærni</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðgangur að forskoðun sjálfbærni</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Preview Access ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4135161029 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <target>Færslunr.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Færslunr.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Preview Access ori - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 140176269" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Business Central account-number filter. Omission selects all accounts.</source>
+          <target>Business Central sía fyrir reikningsnúmer. Ef henni er sleppt eru allir reikningar valdir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Business Central sía fyrir reikningsnúmer. Ef henni er sleppt eru allir reikningar valdir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType AccountFilterLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 1947827686" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exact account number, maximum 20 characters. Cannot be combined with accountFilter.</source>
+          <target>Nákvæmt reikningsnúmer, að hámarki 20 stafir. Má ekki nota með accountFilter.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Nákvæmt reikningsnúmer, að hámarki 20 stafir. Má ekki nota með accountFilter.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType AccountNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 3792450033" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability account '%1' does not exist.</source>
+          <target>Sjálfbærnireikningur '%1' er ekki til.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = received value; %2 = parameter name||is-IS=Sjálfbærnireikningur '%1' er ekki til.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType AccountNotFoundErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 1987373247" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inclusive balance date in YYYY-MM-DD format, independent of fromDate; defaults to toDate, otherwise all dates.</source>
+          <target>Stöðudagur, meðtalinn, á sniðinu YYYY-MM-DD, óháður fromDate; sjálfgefið toDate, annars allar dagsetningar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stöðudagur, meðtalinn, á sniðinu YYYY-MM-DD, óháður fromDate; sjálfgefið toDate, annars allar dagsetningar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType AsOfDateLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 1449450473" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No sustainability data changes and no posting. Reads account metadata and ledger totals.</source>
+          <target>Engum sjálfbærnigögnum er breytt og ekkert bókað. Les lýsigögn reikninga og samtölur færslna.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Engum sjálfbærnigögnum er breytt og ekkert bókað. Les lýsigögn reikninga og samtölur færslna.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType ChangesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Returns sustainability account net change and balances, including totals, for selected dates and dimensions.</source>
+          <target>Skilar hreyfingu og stöðu sjálfbærnireikninga, ásamt samtölum, fyrir valdar dagsetningar og víddir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Skilar hreyfingu og stöðu sjálfbærnireikninga, ásamt samtölum, fyrir valdar dagsetningar og víddir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 2907899789" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Business Central Global Dimension 1 filter on ledger entries.</source>
+          <target>Business Central sía fyrir altæka vídd 1 á færslum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Business Central sía fyrir altæka vídd 1 á færslum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType Dimension1Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 2138640364" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Business Central Global Dimension 2 filter on ledger entries.</source>
+          <target>Business Central sía fyrir altæka vídd 2 á færslum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Business Central sía fyrir altæka vídd 2 á færslum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType Dimension2Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 36270934" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Read one CRONUS-style account including zero balances</source>
+          <target>Lesa einn reikning að hætti CRONUS ásamt núllstöðum</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Lesa einn reikning að hætti CRONUS ásamt núllstöðum</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType ExampleLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 4158795400" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use an existing sustainability account number.</source>
+          <target>Notaðu númer sjálfbærnireiknings sem er til.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Notaðu númer sjálfbærnireiknings sem er til.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FixAccountLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 2257690959" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Correct the Business Central filter expression.</source>
+          <target>Leiðréttu síusetninguna í Business Central.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Leiðréttu síusetninguna í Business Central.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FixFilterLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 1352104360" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Review the native error and correct the account setup or filters.</source>
+          <target>Farðu yfir innbyggðu villuna og leiðréttu reikningsuppsetningu eða síur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Farðu yfir innbyggðu villuna og leiðréttu reikningsuppsetningu eða síur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FixNativeLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 4195077024" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use only the documented keys and JSON types; accountNo and accountFilter are mutually exclusive.</source>
+          <target>Notaðu aðeins skráða lykla og JSON-gagnagerðir; accountNo og accountFilter má ekki nota saman.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Notaðu aðeins skráða lykla og JSON-gagnagerðir; accountNo og accountFilter má ekki nota saman.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FixParameterLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 2859024436" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send valid ISO dates and an ordered date range.</source>
+          <target>Sendu gildar ISO-dagsetningar og rétt raðað tímabil.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sendu gildar ISO-dagsetningar og rétt raðað tímabil.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FixPeriodLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 1157690618" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Assign BIFROST Read ori alongside BIFROST SustRead ori.</source>
+          <target>Úthlutaðu BIFROST Read ori ásamt BIFROST SustRead ori.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Úthlutaðu BIFROST Read ori ásamt BIFROST SustRead ori.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FixPermissionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 2593779812" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inclusive net-change start date in YYYY-MM-DD format. Omission means no lower bound.</source>
+          <target>Upphafsdagur hreyfingar, meðtalinn, á sniðinu YYYY-MM-DD. Ef honum er sleppt eru engin neðri mörk.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Upphafsdagur hreyfingar, meðtalinn, á sniðinu YYYY-MM-DD. Ef honum er sleppt eru engin neðri mörk.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FromDateLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 4053472552" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Include accounts whose net change and balance are both zero for all measures; defaults to false.</source>
+          <target>Taka með reikninga með núllhreyfingu og núllstöðu í öllum mælikvörðum; sjálfgefið false.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Taka með reikninga með núllhreyfingu og núllstöðu í öllum mælikvörðum; sjálfgefið false.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType IncludeZeroLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 880984256" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invalid filter '%1' for %2.</source>
+          <target>Ógild sía '%1' fyrir %2.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = received value; %2 = parameter name||is-IS=Ógild sía '%1' fyrir %2.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType InvalidFilterErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 991639743" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invalid or unknown parameter '%1'.</source>
+          <target>Ógild eða óþekkt færibreyta '%1'.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = received value; %2 = parameter name||is-IS=Ógild eða óþekkt færibreyta '%1'.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType InvalidParameterErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 1977192435" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dates must be ISO dates (YYYY-MM-DD), and fromDate must not be after toDate.</source>
+          <target>Dagsetningar verða að vera á ISO-sniði (YYYY-MM-DD) og fromDate má ekki vera á eftir toDate.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Dagsetningar verða að vera á ISO-sniði (YYYY-MM-DD) og fromDate má ekki vera á eftir toDate.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType InvalidPeriodErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>sustainability account balance, emission net change, sustainability totals</source>
+          <target>staða sjálfbærnireiknings, hreyfing losunar, samtölur sjálfbærni</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=staða sjálfbærnireiknings, hreyfing losunar, samtölur sjálfbærni</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 998465917" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Business Central could not read the selected accounts or ledger amounts.</source>
+          <target>Business Central gat ekki lesið valda reikninga eða fjárhæðir færslna.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Business Central gat ekki lesið valda reikninga eða fjárhæðir færslna.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType NativeErrorLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Read-only and idempotent. Native FlowFields calculate six measures; CO2e sums the stored ledger amount with identical filters. Totaling applies to Total and End Total accounts. Balance uses asOfDate, otherwise toDate, otherwise all dates. Heading and Begin Total rows have zero values. No Commit is called. Foundation may record message processing. Hidden catalogue entries remain callable by name.</source>
+          <target>Aðeins lestur og endurtekin köll breyta engu. Innbyggðir flæðireitir reikna sex mælikvarða; CO2e leggur saman geymda fjárhæð færslna með sömu síum. Samtölusía gildir fyrir samtölu- og lokasamtölureikninga. Staða miðast við asOfDate, annars toDate, annars allar dagsetningar. Fyrirsagnar- og upphafssamtölulínur hafa núllgildi. Ekki er kallað á Commit. Grunnforritið getur skráð skilaboðavinnslu. Faldar tegundir má áfram kalla eftir nafni.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðeins lestur og endurtekin köll breyta engu. Innbyggðir flæðireitir reikna sex mælikvarða; CO2e leggur saman geymda fjárhæð færslna með sömu síum. Samtölusía gildir fyrir samtölu- og lokasamtölureikninga. Staða miðast við asOfDate, annars toDate, annars allar dagsetningar. Fyrirsagnar- og upphafssamtölulínur hafa núllgildi. Ekki er kallað á Commit. Grunnforritið getur skráð skilaboðavinnslu. Faldar tegundir má áfram kalla eftir nafni.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType NotesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 2009142491" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Read permission on sustainability accounts and ledger entries is required.</source>
+          <target>Lesréttindi á sjálfbærnireikningum og sjálfbærnifærslum eru nauðsynleg.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Lesréttindi á sjálfbærnireikningum og sjálfbærnifærslum eru nauðsynleg.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType PermissionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 2676460995" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account rows with no, name, invariant accountType, indentation and netChange/balance objects containing co2, ch4, n2o, co2e, water, dischargedWater and waste. All amounts retain their stored unit.</source>
+          <target>Reikningslínur með no, name, tungumálaóháðu accountType, indentation og netChange/balance-hlutum með co2, ch4, n2o, co2e, water, dischargedWater og waste. Allar fjárhæðir halda geymdri einingu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Reikningslínur með no, name, tungumálaóháðu accountType, indentation og netChange/balance-hlutum með co2, ch4, n2o, co2e, water, dischargedWater og waste. Allar fjárhæðir halda geymdri einingu.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType ResponseLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 4237468538" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Business Central responsibility-center filter on ledger entries.</source>
+          <target>Business Central sía fyrir ábyrgðarstöð á færslum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Business Central sía fyrir ábyrgðarstöð á færslum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType ResponsibilityLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 3193096050" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Success when the selected account balances were read.</source>
+          <target>Success þegar stöður valinna reikninga voru lesnar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Success þegar stöður valinna reikninga voru lesnar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType StatusLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1937637357 - NamedType 362255215" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inclusive net-change end date in YYYY-MM-DD format. Also the default balance date.</source>
+          <target>Lokadagur hreyfingar, meðtalinn, á sniðinu YYYY-MM-DD. Einnig sjálfgefinn stöðudagur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Lokadagur hreyfingar, meðtalinn, á sniðinu YYYY-MM-DD. Einnig sjálfgefinn stöðudagur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType ToDateLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 2323544895" size-unit="char" translate="yes" xml:space="preserve">
+          <source>an array of subcategory objects</source>
+          <target>fylki af undirflokkshlutum</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=fylki af undirflokkshlutum</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType ArrayExpectedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 3030677188" size-unit="char" translate="yes" xml:space="preserve">
+          <source>a JSON boolean</source>
+          <target>JSON-rökgildi</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=JSON-rökgildi</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType BooleanExpectedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 212599149" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Follow the Business Central message; correct the setup or use a new category. No changes were saved.</source>
+          <target>Fylgdu skilaboðum Business Central; leiðréttu uppsetningu eða notaðu nýjan flokk. Engar breytingar voru vistaðar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fylgdu skilaboðum Business Central; leiðréttu uppsetningu eða notaðu nýjan flokk. Engar breytingar voru vistaðar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType BusinessFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 3337763772" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Microsoft validation rejects the request, including an emission scope change on a category used by posted ledger entries.</source>
+          <target>Sannprófun Microsoft hafnar beiðni, meðal annars breytingu á losunarumfangi flokks sem er notaður í bókuðum færslum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sannprófun Microsoft hafnar beiðni, meðal annars breytingu á losunarumfangi flokks sem er notaður í bókuðum færslum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType BusinessWhenLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 3370320355" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category as stored, using the request field names and invariant enum names.</source>
+          <target>Flokkur eins og hann er vistaður með heitum færibreyta og föstum upptalningarheitum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Flokkur eins og hann er vistaður með heitum færibreyta og föstum upptalningarheitum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType CategoryResponseLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 1449450473" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Upserts Sustain. Account Category and listed Sustain. Account Subcategory records through Validate, Insert(true) and Modify(true). Standard validation may recalculate related journal lines. Never deletes a subcategory or posts a ledger entry.</source>
+          <target>Stofnar eða uppfærir sjálfbærnireikningsflokk og tilgreinda undirflokka með Validate, Insert(true) og Modify(true). Stöðluð sannprófun getur endurreiknað tengdar bókarlínur. Eyðir aldrei undirflokki og bókar aldrei fjárhagsfærslu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stofnar eða uppfærir sjálfbærnireikningsflokk og tilgreinda undirflokka með Validate, Insert(true) og Modify(true). Stöðluð sannprófun getur endurreiknað tengdar bókarlínur. Eyðir aldrei undirflokki og bókar aldrei fjárhagsfærslu.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType ChangesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 2415667290" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category code, required text, maximum 20 characters.</source>
+          <target>Flokkskóði, nauðsynlegur texti, að hámarki 20 stafir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Flokkskóði, nauðsynlegur texti, að hámarki 20 stafir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType CodeHelpLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 3569966352" maxwidth="250" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creates or updates a sustainability account category and its listed subcategories using Microsoft validation. Leaves other subcategories unchanged and posts no ledger entries.</source>
+          <target>Stofnar eða uppfærir sjálfbærnireikningsflokk og tilgreinda undirflokka með sannprófun Microsoft. Aðrir undirflokkar haldast óbreyttir og engar fjárhagsfærslur eru bókaðar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stofnar eða uppfærir sjálfbærnireikningsflokk og tilgreinda undirflokka með sannprófun Microsoft. Aðrir undirflokkar haldast óbreyttir og engar fjárhagsfærslur eru bókaðar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 36270934" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintain a demo fuel category</source>
+          <target>Viðhalda eldsneytisflokki í sýnigögnum</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Viðhalda eldsneytisflokki í sýnigögnum</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType ExampleLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 2078768823" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Correct the named parameter and retry; no changes were saved.</source>
+          <target>Leiðréttu tilgreinda færibreytu og reyndu aftur; engar breytingar voru vistaðar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Leiðréttu tilgreinda færibreytu og reyndu aftur; engar breytingar voru vistaðar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType FixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 3128388233" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Optional JSON boolean; omitted values are unchanged.</source>
+          <target>Valfrjálst JSON-rökgildi; gildi sem er sleppt helst óbreytt.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Valfrjálst JSON-rökgildi; gildi sem er sleppt helst óbreytt.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType FlagHelpLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 1170860084" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invariant enum name: blank, Fuel/Electricity, Distance, Installations or Custom.</source>
+          <target>Fast upptalningarheiti: bil, Fuel/Electricity, Distance, Installations eða Custom.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fast upptalningarheiti: bil, Fuel/Electricity, Distance, Installations eða Custom.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType FoundationHelpLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 3177803720" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invalid parameter %1. Expected %2.</source>
+          <target>Ógild færibreyta %1. Búist var við %2.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name, %2 = expected value|is-IS=Ógild færibreyta %1. Búist var við %2.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType InvalidErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 1830439019" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The required parameter %1 is missing or empty.</source>
+          <target>Nauðsynlega færibreytu %1 vantar eða hún er tóm.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name|is-IS=Nauðsynlega færibreytu %1 vantar eða hún er tóm.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType MissingErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Only code is required. Omitted fields retain stored values; new records use Microsoft defaults. Enum inputs use the invariant Microsoft enum names, not translated captions. Each listed subcategory requires code; omitted subcategories are never deleted. Microsoft validation can recalculate existing sustainability journal lines and refuse changes to categories used by ledger entries. No posting codeunit or external service is called. There is no explicit Commit; normal Codeunit.Run commits the complete successful write and rolls it back on refusal. Omit Commit delegates transaction and rollback ownership to the caller. Explicit subscriber commits are prohibited.</source>
+          <target>Aðeins code er skylda. Slepptri færibreytu er haldið óbreyttri; nýjar færslur nota sjálfgefin gildi Microsoft. Upptalningar nota föst heiti Microsoft en ekki þýdda titla. Hver tilgreindur undirflokkur krefst code; undirflokkum er aldrei eytt. Sannprófun Microsoft getur endurreiknað sjálfbærnibókarlínur og hafnað breytingum á flokkum sem eru notaðir í fjárhagsfærslum. Engin bókunarvinnsla eða ytri þjónusta er kölluð. Ekkert beint Commit er notað; venjulegt Codeunit.Run vistar alla breytinguna þegar hún tekst og bakfærir við höfnun. Með Omit Commit ber kallandi ábyrgð á færslu og bakfærslu. Beinar staðfestingar áskrifenda eru bannaðar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðeins code er skylda. Slepptri færibreytu er haldið óbreyttri; nýjar færslur nota sjálfgefin gildi Microsoft. Upptalningar nota föst heiti Microsoft en ekki þýdda titla. Hver tilgreindur undirflokkur krefst code; undirflokkum er aldrei eytt. Sannprófun Microsoft getur endurreiknað sjálfbærnibókarlínur og hafnað breytingum á flokkum sem eru notaðir í fjárhagsfærslum. Engin bókunarvinnsla eða ytri þjónusta er kölluð. Ekkert beint Commit er notað; venjulegt Codeunit.Run vistar alla breytinguna þegar hún tekst og bakfærir við höfnun. Með Omit Commit ber kallandi ábyrgð á færslu og bakfærslu. Beinar staðfestingar áskrifenda eru bannaðar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType NotesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 93319113" size-unit="char" translate="yes" xml:space="preserve">
+          <source>a JSON number</source>
+          <target>JSON-tölugildi</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=JSON-tölugildi</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType NumberExpectedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 3451652123" size-unit="char" translate="yes" xml:space="preserve">
+          <source>a subcategory object</source>
+          <target>undirflokkshlutur</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=undirflokkshlutur</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType ObjectExpectedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 315309378" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category maintenance requires BIFROST SustFull ori.</source>
+          <target>Viðhald flokka krefst BIFROST SustFull ori.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Viðhald flokka krefst BIFROST SustFull ori.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType PermissionErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 4114032018" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ask an administrator for BIFROST SustFull ori and the Microsoft Sustainability permissions.</source>
+          <target>Biddu stjórnanda um BIFROST SustFull ori og sjálfbærniheimildir Microsoft.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Biddu stjórnanda um BIFROST SustFull ori og sjálfbærniheimildir Microsoft.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType PermissionFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 4278021287" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Full role and native Microsoft table permissions; values must satisfy standard Sustainability validation. Configuration controls roster visibility only and does not block a known type.</source>
+          <target>Fullt hlutverk og staðlaðar töfluheimildir Microsoft; gildi verða að standast sjálfbærnisannprófun. Uppsetning stýrir aðeins sýnileika og hindrar ekki kall á þekkta tegund.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fullt hlutverk og staðlaðar töfluheimildir Microsoft; gildi verða að standast sjálfbærnisannprófun. Uppsetning stýrir aðeins sýnileika og hindrar ekki kall á þekkta tegund.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType PreconditionsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 367311843" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invariant enum name: blank, Scope 1, Scope 2, Scope 3, Water/Waste or Out of Scope. Extensions may add names.</source>
+          <target>Fast upptalningarheiti: bil, Scope 1, Scope 2, Scope 3, Water/Waste eða Out of Scope. Viðbætur geta bætt við heitum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fast upptalningarheiti: bil, Scope 1, Scope 2, Scope 3, Water/Waste eða Out of Scope. Viðbætur geta bætt við heitum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType ScopeHelpLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 5339811" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Array of objects: required code (20 characters), optional description (100), emissionFactorCO2, emissionFactorCH4, emissionFactorN2O (JSON numbers) and renewableEnergy (JSON boolean). Unknown nested keys are refused. Unlisted subcategories remain unchanged.</source>
+          <target>Fylki hluta: code er skylda (20 stafir), valfrjálst description (100), emissionFactorCO2, emissionFactorCH4, emissionFactorN2O (JSON-tölur) og renewableEnergy (JSON-rökgildi). Óþekktum undirlyklum er hafnað. Ótilgreindir undirflokkar haldast óbreyttir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fylki hluta: code er skylda (20 stafir), valfrjálst description (100), emissionFactorCO2, emissionFactorCH4, emissionFactorN2O (JSON-tölur) og renewableEnergy (JSON-rökgildi). Óþekktum undirlyklum er hafnað. Ótilgreindir undirflokkar haldast óbreyttir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType SubcategoriesHelpLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 1477760623" size-unit="char" translate="yes" xml:space="preserve">
+          <source>All stored subcategories of this category, including those not listed in the request.</source>
+          <target>Allir vistaðir undirflokkar þessa flokks, einnig þeir sem eru ekki tilgreindir í beiðni.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Allir vistaðir undirflokkar þessa flokks, einnig þeir sem eru ekki tilgreindir í beiðni.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType SubcategoryResponseLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 3854350619" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Success.</source>
+          <target>Tókst.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tókst.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType SuccessLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 1879669363" size-unit="char" translate="yes" xml:space="preserve">
+          <source>text of at most %1 characters</source>
+          <target>texti með að hámarki %1 stöfum</target>
+          <note from="Developer" annotates="general" priority="2">%1 = maximum length|is-IS=texti með að hámarki %1 stöfum</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType TextExpectedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - NamedType 1668614503" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unknown parameter %1.</source>
+          <target>Óþekkt færibreyta %1.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name|is-IS=Óþekkt færibreyta %1.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType UnknownErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1514881569 - Method 1027590672 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>sustainability, category, subcategory, emission factor, maintain category, renewable energy</source>
+          <target>sjálfbærni, flokkur, undirflokkur, losunarstuðull, viðhalda flokki, endurnýjanleg orka</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=sjálfbærni, flokkur, undirflokkur, losunarstuðull, viðhalda flokki, endurnýjanleg orka</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 2326265146" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use one of the allowed values and retry.</source>
+          <target>Notaðu eitt af leyfðu gildunum og reyndu aftur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Notaðu eitt af leyfðu gildunum og reyndu aftur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType AllowedValueNextLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 1098416156" size-unit="char" translate="yes" xml:space="preserve">
+          <source>a date in the form YYYY-MM-DD, with fromDate on or before toDate</source>
+          <target>dagsetning á forminu ÁÁÁÁ-MM-DD þar sem fromDate er sama dag eða á undan toDate</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=dagsetning á forminu ÁÁÁÁ-MM-DD þar sem fromDate er sama dag eða á undan toDate</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType DateExpectedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 1412843979" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send fromDate and toDate as YYYY-MM-DD dates with fromDate on or before toDate.</source>
+          <target>Sendu fromDate og toDate sem ÁÁÁÁ-MM-DD dagsetningar þar sem fromDate er sama dag eða á undan toDate.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sendu fromDate og toDate sem ÁÁÁÁ-MM-DD dagsetningar þar sem fromDate er sama dag eða á undan toDate.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType DateNextLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 3569966352" maxwidth="250" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Summarises sustainability emissions by emission scope, period and gas.</source>
+          <target>Tekur saman losun eftir umfangi, tímabili og gastegund.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tekur saman losun eftir umfangi, tímabili og gastegund.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 4195077024" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Correct the named request parameter and retry.</source>
+          <target>Leiðréttu tilgreinda færibreytu beiðninnar og reyndu aftur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Leiðréttu tilgreinda færibreytu beiðninnar og reyndu aftur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType FixParameterLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 1977192435" size-unit="char" translate="yes" xml:space="preserve">
+          <source>InvalidPeriod: '%1' must be a date (YYYY-MM-DD), and fromDate must not be after toDate.</source>
+          <target>InvalidPeriod: '%1' verður að vera dagsetning (ÁÁÁÁ-MM-DD) og fromDate má ekki vera eftir toDate.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name|is-IS=InvalidPeriod: '%1' verður að vera dagsetning (ÁÁÁÁ-MM-DD) og fromDate má ekki vera eftir toDate.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType InvalidPeriodErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 3319458594" size-unit="char" translate="yes" xml:space="preserve">
+          <source>a list of text values</source>
+          <target>listi af textagildum</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=listi af textagildum</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType ListExpectedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 1575191754" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The required parameter '%1' is missing.</source>
+          <target>Nauðsynlega færibreytu '%1' vantar.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name|is-IS=Nauðsynlega færibreytu '%1' vantar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType MissingKeyErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Read-only and idempotent: totals are database sums over Sustainability Ledger Entry, nothing is written and there is no Commit on the path. Periods follow the calendar (weeks start on Monday) and are clipped to fromDate and toDate; at most 400 periods are returned. Closing-date entries count in the period of their date. Reversed entries and their reversals both count, so they net out. Optional filters emissionScope, countryRegionCode, responsibilityCenter, globalDimension1Code and globalDimension2Code narrow the entries. include accepts water, waste and energy; water adds waterIntensity and dischargedIntoWater, waste adds wasteIntensity, energy adds energyConsumption, summed over the entries of the scope row. Ledger rows outside Scope 1-3 (Water/Waste, Out of Scope, blank) are not summarised.</source>
+          <target>Aðeins lestur og sama niðurstaða við endurtekningu: samtölur eru gagnagrunnssummur úr Sustainability Ledger Entry, engu er breytt og ekkert Commit er á leiðinni. Tímabil fylgja dagatalinu (vikur byrja á mánudegi) og eru skorin við fromDate og toDate; að hámarki eru 400 tímabil skiluð. Færslur á lokadagsetningu teljast á tímabil dagsetningar sinnar. Bakfærðar færslur og bakfærslur þeirra teljast báðar og jafnast því út. Valfrjálsar síur emissionScope, countryRegionCode, responsibilityCenter, globalDimension1Code og globalDimension2Code þrengja færslurnar. include tekur water, waste og energy; water bætir við waterIntensity og dischargedIntoWater, waste bætir við wasteIntensity, energy bætir við energyConsumption, samanlagt yfir færslur umfangsins. Færslur utan Scope 1-3 (Water/Waste, Out of Scope, autt) eru ekki teknar saman.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðeins lestur og sama niðurstaða við endurtekningu: samtölur eru gagnagrunnssummur úr Sustainability Ledger Entry, engu er breytt og ekkert Commit er á leiðinni. Tímabil fylgja dagatalinu (vikur byrja á mánudegi) og eru skorin við fromDate og toDate; að hámarki eru 400 tímabil skiluð. Færslur á lokadagsetningu teljast á tímabil dagsetningar sinnar. Bakfærðar færslur og bakfærslur þeirra teljast báðar og jafnast því út. Valfrjálsar síur emissionScope, countryRegionCode, responsibilityCenter, globalDimension1Code og globalDimension2Code þrengja færslurnar. include tekur water, waste og energy; water bætir við waterIntensity og dischargedIntoWater, waste bætir við wasteIntensity, energy bætir við energyConsumption, samanlagt yfir færslur umfangsins. Færslur utan Scope 1-3 (Water/Waste, Out of Scope, autt) eru ekki teknar saman.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType NotesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 3593894611" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Returns posted sustainability emissions summed per emission scope (Scope 1, Scope 2, Scope 3) and per period between fromDate and toDate: CO2, CH4, N2O, CO2e and carbon fee, plus water, waste and energy totals on request, and a grand total per scope. Units come from Sustainability Setup.</source>
+          <target>Skilar bókaðri losun samanlagðri eftir umfangi (Scope 1, Scope 2, Scope 3) og tímabili frá fromDate til toDate: CO2, CH4, N2O, CO2e og kolefnisgjald, auk vatns-, úrgangs- og orkusamtalna sé þess óskað, og heildarsamtölu fyrir hvert umfang. Einingar koma úr uppsetningu sjálfbærni.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Skilar bókaðri losun samanlagðri eftir umfangi (Scope 1, Scope 2, Scope 3) og tímabili frá fromDate til toDate: CO2, CH4, N2O, CO2e og kolefnisgjald, auk vatns-, úrgangs- og orkusamtalna sé þess óskað, og heildarsamtölu fyrir hvert umfang. Einingar koma úr uppsetningu sjálfbærni.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType OverviewLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 315309378" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reading emission summaries requires BIFROST SustRead ori and read access to the Sustainability ledger and setup (Microsoft's Sustainability Read).</source>
+          <target>Til að lesa losunaryfirlit þarf BIFROST SustRead ori og lesaðgang að fjárhag og uppsetningu sjálfbærni (Sustainability Read frá Microsoft).</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Til að lesa losunaryfirlit þarf BIFROST SustRead ori og lesaðgang að fjárhag og uppsetningu sjálfbærni (Sustainability Read frá Microsoft).</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType PermissionErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 3932376842" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ask an administrator for BIFROST SustRead ori (included in BIFROST Read ori and BIFROST Full ori) and Sustainability Read.</source>
+          <target>Biddu stjórnanda um BIFROST SustRead ori (er hluti af BIFROST Read ori og BIFROST Full ori) og Sustainability Read.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Biddu stjórnanda um BIFROST SustRead ori (er hluti af BIFROST Read ori og BIFROST Full ori) og Sustainability Read.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType PermissionNextLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 1879669363" size-unit="char" translate="yes" xml:space="preserve">
+          <source>a text value</source>
+          <target>textagildi</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=textagildi</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType TextExpectedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 3297756640" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The result would contain more than %1 periods. Use a larger periodType or a shorter date range.</source>
+          <target>Niðurstaðan yrði meira en %1 tímabil. Notaðu stærri periodType eða styttra dagsetningabil.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = maximum number of periods|is-IS=Niðurstaðan yrði meira en %1 tímabil. Notaðu stærri periodType eða styttra dagsetningabil.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType TooManyPeriodsErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 979809767" size-unit="char" translate="yes" xml:space="preserve">
+          <source>at most %1 periods</source>
+          <target>að hámarki %1 tímabil</target>
+          <note from="Developer" annotates="general" priority="2">%1 = maximum number of periods|is-IS=að hámarki %1 tímabil</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType TooManyPeriodsExpectedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 802113960" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Choose a larger periodType (for example Month instead of Day) or a shorter date range.</source>
+          <target>Veldu stærri periodType (til dæmis Month í stað Day) eða styttra dagsetningabil.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Veldu stærri periodType (til dæmis Month í stað Day) eða styttra dagsetningabil.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType TooManyPeriodsNextLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 2912406318" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unknown parameter '%1'.</source>
+          <target>Óþekkt færibreyta '%1'.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name|is-IS=Óþekkt færibreyta '%1'.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType UnknownKeyErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - NamedType 2474658010" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The value '%2' of '%1' is not allowed. Allowed values: %3.</source>
+          <target>Gildið '%2' í '%1' er ekki leyft. Leyfð gildi: %3.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name, %2 = received value, %3 = allowed values|is-IS=Gildið '%2' í '%1' er ekki leyft. Leyfð gildi: %3.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType UnknownValueErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 789657793 - Method 1027590672 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability.EmissionSummary.Get, sustainability, emission, emissions, CO2, CO2e, greenhouse gas, scope 1, scope 2, scope 3, carbon fee, ESG</source>
+          <target>Sustainability.EmissionSummary.Get, sjálfbærni, losun, útblástur, CO2, CO2e, gróðurhúsalofttegund, umfang 1, umfang 2, umfang 3, kolefnisgjald, UFS</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sustainability.EmissionSummary.Get, sjálfbærni, losun, útblástur, CO2, CO2e, gróðurhúsalofttegund, umfang 1, umfang 2, umfang 3, kolefnisgjald, UFS</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 2536038079" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The baseline end date of goal %1 is before its baseline start date.</source>
+          <target>Lokadagsetning grunnlínu markmiðs %1 er á undan upphafsdagsetningu grunnlínunnar.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = goal no., is-IS=Lokadagsetning grunnlínu markmiðs %1 er á undan upphafsdagsetningu grunnlínunnar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType BaselineEndBeforeStartTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 1615947222" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The baseline period of goal %1 must end before the goal period starts.</source>
+          <target>Grunnlínutímabil markmiðs %1 verður að enda áður en markmiðstímabilið hefst.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = goal no., is-IS=Grunnlínutímabil markmiðs %1 verður að enda áður en markmiðstímabilið hefst.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType BaselineNotBeforeGoalTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 3181543810" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The end date of goal %1 is before its start date.</source>
+          <target>Lokadagsetning markmiðs %1 er á undan upphafsdagsetningu þess.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = goal no., is-IS=Lokadagsetning markmiðs %1 er á undan upphafsdagsetningu þess.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType EndBeforeStartTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 2149872477" size-unit="char" translate="yes" xml:space="preserve">
+          <source>a valid goal and baseline period</source>
+          <target>gilt markmiðs- og grunnlínutímabil</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=gilt markmiðs- og grunnlínutímabil</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType ExpectedPeriodTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 1462436902" size-unit="char" translate="yes" xml:space="preserve">
+          <source>a scorecard number</source>
+          <target>númer skorkorts</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=númer skorkorts</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType ExpectedScorecardTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 879891180" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use only the keys listed in the contract of Sustainability.Goal.Set.</source>
+          <target>Notaðu aðeins lyklana sem eru taldir upp í samningi Sustainability.Goal.Set.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Notaðu aðeins lyklana sem eru taldir upp í samningi Sustainability.Goal.Set.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType FixKeyTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 716623342" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send a start date on or before the end date, and a baseline period that ends before the goal period starts.</source>
+          <target>Sendu upphafsdagsetningu sem er sama dag eða á undan lokadagsetningu og grunnlínutímabil sem endar áður en markmiðstímabilið hefst.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sendu upphafsdagsetningu sem er sama dag eða á undan lokadagsetningu og grunnlínutímabil sem endar áður en markmiðstímabilið hefst.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType FixPeriodTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 459476893" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send scorecardNo with the scorecard number, at most 20 characters.</source>
+          <target>Sendu scorecardNo með númeri skorkortsins, að hámarki 20 stafi.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sendu scorecardNo með númeri skorkortsins, að hámarki 20 stafi.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType FixScorecardTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 4279912376" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send dates as YYYY-MM-DD, numbers as JSON numbers, mainGoal as true or false and texts within the field length.</source>
+          <target>Sendu dagsetningar sem ÁÁÁÁ-MM-DD, tölur sem JSON-tölur, mainGoal sem true eða false og texta innan lengdar svæðisins.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sendu dagsetningar sem ÁÁÁÁ-MM-DD, tölur sem JSON-tölur, mainGoal sem true eða false og texta innan lengdar svæðisins.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType FixValueTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 1977192435" size-unit="char" translate="yes" xml:space="preserve">
+          <source>InvalidPeriod: %1 Nothing was changed.</source>
+          <target>InvalidPeriod: %1 Engu var breytt.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = the period rule that failed, is-IS=InvalidPeriod: %1 Engu var breytt.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType InvalidPeriodErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 2510853505" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The value of %1 is not valid. Nothing was changed.</source>
+          <target>Gildið í %1 er ekki gilt. Engu var breytt.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = request key, is-IS=Gildið í %1 er ekki gilt. Engu var breytt.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType InvalidValueErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 3967309767" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Every goal needs a no. Nothing was changed.</source>
+          <target>Hvert markmið þarf no. Engu var breytt.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Hvert markmið þarf no. Engu var breytt.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType MissingGoalNoErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 4229010375" size-unit="char" translate="yes" xml:space="preserve">
+          <source>scorecardNo is required. Nothing was changed.</source>
+          <target>scorecardNo er áskilið. Engu var breytt.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=scorecardNo er áskilið. Engu var breytt.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType MissingScorecardErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 315309378" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You need BIFROST SustFull ori to create or update sustainability scorecards and goals.</source>
+          <target>Þú þarft BIFROST SustFull ori til að stofna eða uppfæra sjálfbærniskorkort og markmið.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Þú þarft BIFROST SustFull ori til að stofna eða uppfæra sjálfbærniskorkort og markmið.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType PermissionErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 1738233936" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ask an administrator for the Bifrost Sustainability Full role, which Bifrost Full includes.</source>
+          <target>Biddu stjórnanda um hlutverkið Bifrost Sustainability Full sem Bifrost Full inniheldur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Biddu stjórnanda um hlutverkið Bifrost Sustainability Full sem Bifrost Full inniheldur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType PermissionNextTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - NamedType 2912406318" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unknown parameter %1. Nothing was changed.</source>
+          <target>Óþekkt viðfang %1. Engu var breytt.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = request key, is-IS=Óþekkt viðfang %1. Engu var breytt.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType UnknownKeyErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - Method 4077369804 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creates or updates a sustainability scorecard and its goals with the standard validation. Goals that are not listed are left as they are. Nothing is posted.</source>
+          <target>Stofnar eða uppfærir sjálfbærniskorkort og markmið þess með staðlaðri sannprófun. Markmið sem ekki eru talin upp haldast óbreytt. Ekkert er bókað.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stofnar eða uppfærir sjálfbærniskorkort og markmið þess með staðlaðri sannprófun. Markmið sem ekki eru talin upp haldast óbreytt. Ekkert er bókað.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - Method GetDescription - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - Method 1027590672 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>sustainability, scorecard, goal, target, emission target, baseline, main goal</source>
+          <target>sjálfbærni, skorkort, markmið, viðmið, losunarmarkmið, grunnlína, aðalmarkmið</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=sjálfbærni, skorkort, markmið, viðmið, losunarmarkmið, grunnlína, aðalmarkmið</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 761798470 - Method 3650283039 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Effect: the scorecard and the listed goals are created or updated with the standard table rules; goals that are not listed stay as they are. Idempotent: the same request again changes nothing. Nothing is posted and there is no Commit on this path. A refusal rolls back the whole request. In omit-commit mode the caller owns the rollback.</source>
+          <target>Áhrif: skorkortið og markmiðin sem talin eru upp eru stofnuð eða uppfærð með stöðluðum töflureglum; markmið sem ekki eru talin upp haldast óbreytt. Ídempotent: sama beiðni aftur breytir engu. Ekkert er bókað og ekkert Commit er á þessari leið. Höfnun bakfærir alla beiðnina. Í ham án staðfestingar ber kallandi ábyrgð á bakfærslu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Áhrif: skorkortið og markmiðin sem talin eru upp eru stofnuð eða uppfærð með stöðluðum töflureglum; markmið sem ekki eru talin upp haldast óbreytt. Ídempotent: sama beiðni aftur breytir engu. Ekkert er bókað og ekkert Commit er á þessari leið. Höfnun bakfærir alla beiðnina. Í ham án staðfestingar ber kallandi ábyrgð á bakfærslu.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - Method GetNotes - NamedType NotesLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 3746490515 - NamedType 2014814840" size-unit="char" translate="yes" xml:space="preserve">
           <source>The sustainability account does not exist, is blocked, or is not a posting account.</source>
@@ -243,204 +861,6 @@
           <note from="Developer" annotates="general" priority="2">is-IS=CO2-ígildi úr innbyggðum losunarstuðlum fyrir dagsetningu, umfang og land; núll ef enginn stuðull er til. Engin bókun.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Jnl Create Impl ori - Method GetResponse - NamedType EquivalentLbl</note>
         </trans-unit>
-        <trans-unit id="PermissionSet 2315649480 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Bifrost Sustainability</source>
-          <target>Bifröst - sjálfbærni</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST Sustain ori - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PermissionSet 3624550339 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Bifrost Sustainability Full</source>
-          <target>Bifröst - sjálfbærni (fullt)</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni (fullt)</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST SustFull ori - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PermissionSet 2471902004 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Bifrost Sustainability Read</source>
-          <target>Bifröst - sjálfbærni (lestur)</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni (lestur)</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST SustRead ori - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 140176269" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Business Central account-number filter. Omission selects all accounts.</source>
-          <target>Business Central sía fyrir reikningsnúmer. Ef henni er sleppt eru allir reikningar valdir.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Business Central sía fyrir reikningsnúmer. Ef henni er sleppt eru allir reikningar valdir.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType AccountFilterLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 1947827686" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Exact account number, maximum 20 characters. Cannot be combined with accountFilter.</source>
-          <target>Nákvæmt reikningsnúmer, að hámarki 20 stafir. Má ekki nota með accountFilter.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Nákvæmt reikningsnúmer, að hámarki 20 stafir. Má ekki nota með accountFilter.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType AccountNoLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 3792450033" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Sustainability account '%1' does not exist.</source>
-          <target>Sjálfbærnireikningur '%1' er ekki til.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = received value; %2 = parameter name||is-IS=Sjálfbærnireikningur '%1' er ekki til.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType AccountNotFoundErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 1987373247" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Inclusive balance date in YYYY-MM-DD format, independent of fromDate; defaults to toDate, otherwise all dates.</source>
-          <target>Stöðudagur, meðtalinn, á sniðinu YYYY-MM-DD, óháður fromDate; sjálfgefið toDate, annars allar dagsetningar.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Stöðudagur, meðtalinn, á sniðinu YYYY-MM-DD, óháður fromDate; sjálfgefið toDate, annars allar dagsetningar.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType AsOfDateLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 1449450473" size-unit="char" translate="yes" xml:space="preserve">
-          <source>No sustainability data changes and no posting. Reads account metadata and ledger totals.</source>
-          <target>Engum sjálfbærnigögnum er breytt og ekkert bókað. Les lýsigögn reikninga og samtölur færslna.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Engum sjálfbærnigögnum er breytt og ekkert bókað. Les lýsigögn reikninga og samtölur færslna.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType ChangesLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Returns sustainability account net change and balances, including totals, for selected dates and dimensions.</source>
-          <target>Skilar hreyfingu og stöðu sjálfbærnireikninga, ásamt samtölum, fyrir valdar dagsetningar og víddir.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Skilar hreyfingu og stöðu sjálfbærnireikninga, ásamt samtölum, fyrir valdar dagsetningar og víddir.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType DescriptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 2907899789" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Business Central Global Dimension 1 filter on ledger entries.</source>
-          <target>Business Central sía fyrir altæka vídd 1 á færslum.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Business Central sía fyrir altæka vídd 1 á færslum.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType Dimension1Lbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 2138640364" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Business Central Global Dimension 2 filter on ledger entries.</source>
-          <target>Business Central sía fyrir altæka vídd 2 á færslum.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Business Central sía fyrir altæka vídd 2 á færslum.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType Dimension2Lbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 36270934" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Read one CRONUS-style account including zero balances</source>
-          <target>Lesa einn reikning að hætti CRONUS ásamt núllstöðum</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Lesa einn reikning að hætti CRONUS ásamt núllstöðum</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType ExampleLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 4158795400" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Use an existing sustainability account number.</source>
-          <target>Notaðu númer sjálfbærnireiknings sem er til.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Notaðu númer sjálfbærnireiknings sem er til.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FixAccountLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 2257690959" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Correct the Business Central filter expression.</source>
-          <target>Leiðréttu síusetninguna í Business Central.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Leiðréttu síusetninguna í Business Central.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FixFilterLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 1352104360" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Review the native error and correct the account setup or filters.</source>
-          <target>Farðu yfir innbyggðu villuna og leiðréttu reikningsuppsetningu eða síur.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Farðu yfir innbyggðu villuna og leiðréttu reikningsuppsetningu eða síur.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FixNativeLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 4195077024" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Use only the documented keys and JSON types; accountNo and accountFilter are mutually exclusive.</source>
-          <target>Notaðu aðeins skráða lykla og JSON-gagnagerðir; accountNo og accountFilter má ekki nota saman.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Notaðu aðeins skráða lykla og JSON-gagnagerðir; accountNo og accountFilter má ekki nota saman.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FixParameterLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 2859024436" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Send valid ISO dates and an ordered date range.</source>
-          <target>Sendu gildar ISO-dagsetningar og rétt raðað tímabil.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Sendu gildar ISO-dagsetningar og rétt raðað tímabil.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FixPeriodLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 1157690618" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Assign BIFROST Read ori alongside BIFROST SustRead ori.</source>
-          <target>Úthlutaðu BIFROST Read ori ásamt BIFROST SustRead ori.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Úthlutaðu BIFROST Read ori ásamt BIFROST SustRead ori.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FixPermissionLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 2593779812" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Inclusive net-change start date in YYYY-MM-DD format. Omission means no lower bound.</source>
-          <target>Upphafsdagur hreyfingar, meðtalinn, á sniðinu YYYY-MM-DD. Ef honum er sleppt eru engin neðri mörk.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Upphafsdagur hreyfingar, meðtalinn, á sniðinu YYYY-MM-DD. Ef honum er sleppt eru engin neðri mörk.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType FromDateLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 4053472552" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Include accounts whose net change and balance are both zero for all measures; defaults to false.</source>
-          <target>Taka með reikninga með núllhreyfingu og núllstöðu í öllum mælikvörðum; sjálfgefið false.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Taka með reikninga með núllhreyfingu og núllstöðu í öllum mælikvörðum; sjálfgefið false.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType IncludeZeroLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 880984256" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Invalid filter '%1' for %2.</source>
-          <target>Ógild sía '%1' fyrir %2.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = received value; %2 = parameter name||is-IS=Ógild sía '%1' fyrir %2.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType InvalidFilterErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 991639743" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Invalid or unknown parameter '%1'.</source>
-          <target>Ógild eða óþekkt færibreyta '%1'.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = received value; %2 = parameter name||is-IS=Ógild eða óþekkt færibreyta '%1'.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType InvalidParameterErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 1977192435" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Dates must be ISO dates (YYYY-MM-DD), and fromDate must not be after toDate.</source>
-          <target>Dagsetningar verða að vera á ISO-sniði (YYYY-MM-DD) og fromDate má ekki vera á eftir toDate.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Dagsetningar verða að vera á ISO-sniði (YYYY-MM-DD) og fromDate má ekki vera á eftir toDate.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType InvalidPeriodErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
-          <source>sustainability account balance, emission net change, sustainability totals</source>
-          <target>staða sjálfbærnireiknings, hreyfing losunar, samtölur sjálfbærni</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=staða sjálfbærnireiknings, hreyfing losunar, samtölur sjálfbærni</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType KeywordsLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 998465917" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Business Central could not read the selected accounts or ledger amounts.</source>
-          <target>Business Central gat ekki lesið valda reikninga eða fjárhæðir færslna.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Business Central gat ekki lesið valda reikninga eða fjárhæðir færslna.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType NativeErrorLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Read-only and idempotent. Native FlowFields calculate six measures; CO2e sums the stored ledger amount with identical filters. Totaling applies to Total and End Total accounts. Balance uses asOfDate, otherwise toDate, otherwise all dates. Heading and Begin Total rows have zero values. No Commit is called. Foundation may record message processing. Hidden catalogue entries remain callable by name.</source>
-          <target>Aðeins lestur og endurtekin köll breyta engu. Innbyggðir flæðireitir reikna sex mælikvarða; CO2e leggur saman geymda fjárhæð færslna með sömu síum. Samtölusía gildir fyrir samtölu- og lokasamtölureikninga. Staða miðast við asOfDate, annars toDate, annars allar dagsetningar. Fyrirsagnar- og upphafssamtölulínur hafa núllgildi. Ekki er kallað á Commit. Grunnforritið getur skráð skilaboðavinnslu. Faldar tegundir má áfram kalla eftir nafni.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Aðeins lestur og endurtekin köll breyta engu. Innbyggðir flæðireitir reikna sex mælikvarða; CO2e leggur saman geymda fjárhæð færslna með sömu síum. Samtölusía gildir fyrir samtölu- og lokasamtölureikninga. Staða miðast við asOfDate, annars toDate, annars allar dagsetningar. Fyrirsagnar- og upphafssamtölulínur hafa núllgildi. Ekki er kallað á Commit. Grunnforritið getur skráð skilaboðavinnslu. Faldar tegundir má áfram kalla eftir nafni.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType NotesLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 2009142491" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Read permission on sustainability accounts and ledger entries is required.</source>
-          <target>Lesréttindi á sjálfbærnireikningum og sjálfbærnifærslum eru nauðsynleg.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Lesréttindi á sjálfbærnireikningum og sjálfbærnifærslum eru nauðsynleg.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType PermissionLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 2676460995" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Account rows with no, name, invariant accountType, indentation and netChange/balance objects containing co2, ch4, n2o, co2e, water, dischargedWater and waste. All amounts retain their stored unit.</source>
-          <target>Reikningslínur með no, name, tungumálaóháðu accountType, indentation og netChange/balance-hlutum með co2, ch4, n2o, co2e, water, dischargedWater og waste. Allar fjárhæðir halda geymdri einingu.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Reikningslínur með no, name, tungumálaóháðu accountType, indentation og netChange/balance-hlutum með co2, ch4, n2o, co2e, water, dischargedWater og waste. Allar fjárhæðir halda geymdri einingu.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType ResponseLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 4237468538" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Business Central responsibility-center filter on ledger entries.</source>
-          <target>Business Central sía fyrir ábyrgðarstöð á færslum.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Business Central sía fyrir ábyrgðarstöð á færslum.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType ResponsibilityLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 3193096050" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Success when the selected account balances were read.</source>
-          <target>Success þegar stöður valinna reikninga voru lesnar.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Success þegar stöður valinna reikninga voru lesnar.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType StatusLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1937637357 - NamedType 362255215" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Inclusive net-change end date in YYYY-MM-DD format. Also the default balance date.</source>
-          <target>Lokadagur hreyfingar, meðtalinn, á sniðinu YYYY-MM-DD. Einnig sjálfgefinn stöðudagur.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Lokadagur hreyfingar, meðtalinn, á sniðinu YYYY-MM-DD. Einnig sjálfgefinn stöðudagur.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType ToDateLbl</note>
-        </trans-unit>
-        <trans-unit id="Table 4122963098 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Sustainability check access</source>
-          <target>Aðgangur að athugun sjálfbærni</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Aðgangur að athugun sjálfbærni</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Journal Check Access ori - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 4122963098 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Entry No.</source>
-          <target>Færslunr.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Færslunr.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Journal Check Access ori - Field Entry No. - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Codeunit 2730793174 - NamedType 1698601683" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sustainability journal batch %1/%2 does not exist.</source>
           <target>Keyrsla sjálfbærnibókar %1/%2 er ekki til.</target>
@@ -566,6 +986,162 @@
           <target>Safnaðar villur með lineNo, fieldName og message. Tóm keyrsla hefur ein skilaboð með lineNo 0.</target>
           <note from="Developer" annotates="general" priority="2">is-IS=Safnaðar villur með lineNo, fieldName og message. Tóm keyrsla hefur ein skilaboð með lineNo 0.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Journal Check Impl ori - Method GetResponse - NamedType ErrorsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 1698601683" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability journal batch %1/%2 does not exist.</source>
+          <target>Keyrsla sjálfbærnibókar %1/%2 er ekki til.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = template, %2 = batch||is-IS=Keyrsla sjálfbærnibókar %1/%2 er ekki til.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType BatchErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 3316243964" size-unit="char" translate="yes" xml:space="preserve">
+          <source>An existing sustainability journal batch %1/%2.</source>
+          <target>Fyrirliggjandi keyrsla sjálfbærnibókar %1/%2.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = template, %2 = batch||is-IS=Fyrirliggjandi keyrsla sjálfbærnibókar %1/%2.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType BatchExpectedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 857380347" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Choose an existing sustainability journal template and batch.</source>
+          <target>Veldu fyrirliggjandi sniðmát og keyrslu sjálfbærnibókar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Veldu fyrirliggjandi sniðmát og keyrslu sjálfbærnibókar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType BatchFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 3923529917" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Run Sustainability.Journal.Check and correct every reported journal error.</source>
+          <target>Keyrðu Sustainability.Journal.Check og leiðréttu allar villur sem koma fram.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Keyrðu Sustainability.Journal.Check og leiðréttu allar villur sem koma fram.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType CheckFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 3569966352" maxwidth="250" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Preview the sustainability entries a journal batch would create. All posting changes are rolled back.</source>
+          <target>Forskoða sjálfbærnifærslur sem bókarkeyrsla myndi stofna. Öllum bókunarbreytingum er afturkallað.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Forskoða sjálfbærnifærslur sem bókarkeyrsla myndi stofna. Öllum bókunarbreytingum er afturkallað.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 3777985252" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The sustainability journal batch has no lines.</source>
+          <target>Keyrsla sjálfbærnibókar hefur engar línur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Keyrsla sjálfbærnibókar hefur engar línur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType EmptyErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>preview sustainability journal, simulate emissions posting, check sustainability entries</source>
+          <target>forskoða sjálfbærnibók, herma bókun losunar, athuga sjálfbærnifærslur</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=forskoða sjálfbærnibók, herma bókun losunar, athuga sjálfbærnifærslur</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 1601715269" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The sustainability journal is not ready for posting.</source>
+          <target>Sjálfbærnibókin er ekki tilbúin til bókunar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sjálfbærnibókin er ekki tilbúin til bókunar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType NotReadyErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 2191129744" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Parameter %1 must be a non-empty string of at most 10 characters.</source>
+          <target>Færibreytan %1 verður að vera texti með 1 til 10 stöfum.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter||is-IS=Færibreytan %1 verður að vera texti með 1 til 10 stöfum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType ParameterErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 1989765040" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Supply only templateName and batchName, using existing journal codes.</source>
+          <target>Tilgreindu aðeins templateName og batchName með fyrirliggjandi bókarkóðum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tilgreindu aðeins templateName og batchName með fyrirliggjandi bókarkóðum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType ParameterFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 315309378" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You do not have permission to preview sustainability journals.</source>
+          <target>Þú hefur ekki heimild til að forskoða sjálfbærnibækur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Þú hefur ekki heimild til að forskoða sjálfbærnibækur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType PermissionErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 4114032018" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ask an administrator for BIFROST SustRead ori and the required Business Central permissions.</source>
+          <target>Biðjið kerfisstjóra um BIFROST SustRead ori og nauðsynlegar Business Central heimildir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Biðjið kerfisstjóra um BIFROST SustRead ori og nauðsynlegar Business Central heimildir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType PermissionFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 2845165943" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Business Central could not preview this journal. No posting changes were committed.</source>
+          <target>Business Central gat ekki forskoðað þessa bók. Engar bókunarbreytingar voru vistaðar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Business Central gat ekki forskoðað þessa bók. Engar bókunarbreytingar voru vistaðar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType PostingErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - NamedType 1668614503" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unknown request parameter: %1.</source>
+          <target>Óþekkt færibreyta beiðni: %1.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter||is-IS=Óþekkt færibreyta beiðni: %1.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType UnknownErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - Method 1479631707 - NamedType 1449450473" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting runs on a temporary journal snapshot inside the standard preview transaction. After processing every line, the standard approval check runs and preview rolls back before line deletion. Number-series updates and entries are rolled back. No Commit is called; explicit commits inside preview are rejected.</source>
+          <target>Bókun keyrir á tímabundnu afriti bókarlína innan staðlaðrar forskoðunar. Eftir vinnslu allra lína er stöðluð samþykktarathugun keyrð og forskoðun afturkölluð fyrir eyðingu lína. Uppfærslu númeraraða og færslum er afturkallað. Ekki er kallað á Commit; slík vistun innan forskoðunar er ekki leyfð.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bókun keyrir á tímabundnu afriti bókarlína innan staðlaðrar forskoðunar. Eftir vinnslu allra lína er stöðluð samþykktarathugun keyrð og forskoðun afturkölluð fyrir eyðingu lína. Uppfærslu númeraraða og færslum er afturkallað. Ekki er kallað á Commit; slík vistun innan forskoðunar er ekki leyfð.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetEffect - NamedType ChangesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - Method 1479631707 - NamedType 1687577938" size-unit="char" translate="yes" xml:space="preserve">
+          <source>An existing journal batch whose lines pass the standard sustainability journal check.</source>
+          <target>Fyrirliggjandi bókarkeyrsla með línum sem standast staðlaða athugun sjálfbærnibókar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fyrirliggjandi bókarkeyrsla með línum sem standast staðlaða athugun sjálfbærnibókar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetEffect - NamedType PreconditionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - Method 3255554567 - NamedType 1582893390" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Preview a demo journal</source>
+          <target>Forskoða sýnibók</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Forskoða sýnibók</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetExamples - NamedType TitleLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - Method 3650283039 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
+          <source>An empty batch is PreconditionFailed. Unknown keys are refused. Hidden types remain callable when Sustainability is unconfigured. The preview never posts a ledger entry or consumes a journal line.</source>
+          <target>Tóm keyrsla skilar PreconditionFailed. Óþekktum lyklum er hafnað. Faldar tegundir eru áfram kallanlegar þegar sjálfbærni er óuppsett. Forskoðun bókar aldrei færslu né eyðir bókarlínu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tóm keyrsla skilar PreconditionFailed. Óþekktum lyklum er hafnað. Faldar tegundir eru áfram kallanlegar þegar sjálfbærni er óuppsett. Forskoðun bókar aldrei færslu né eyðir bókarlínu.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetNotes - NamedType NotesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - Method 3615801952 - NamedType 807217974" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Existing sustainability journal template code, up to 10 characters.</source>
+          <target>Fyrirliggjandi sniðmátskóði sjálfbærnibókar, allt að 10 stafir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fyrirliggjandi sniðmátskóði sjálfbærnibókar, allt að 10 stafir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetParameters - NamedType TemplateLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - Method 3615801952 - NamedType 1533895450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Existing batch in that template, up to 10 characters.</source>
+          <target>Fyrirliggjandi keyrsla í sniðmátinu, allt að 10 stafir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fyrirliggjandi keyrsla í sniðmátinu, allt að 10 stafir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetParameters - NamedType BatchLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - Method 4268477247 - NamedType 851404832" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Always true. No posting changes are committed.</source>
+          <target>Alltaf satt. Engar bókunarbreytingar eru vistaðar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Alltaf satt. Engar bókunarbreytingar eru vistaðar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetResponse - NamedType RollbackLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - Method 4268477247 - NamedType 3071622107" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Count of captured ledger and value entries.</source>
+          <target>Fjöldi sjálfbærni- og virðisfærslna í forskoðun.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fjöldi sjálfbærni- og virðisfærslna í forskoðun.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetResponse - NamedType CountLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - Method 4268477247 - NamedType 392547388" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting date, document, account, emission scope, CO2, CH4, N2O, CO2e, carbon fee, water, waste, energy and dimensions from the standard posting engine.</source>
+          <target>Bókunardagur, skjal, reikningur, umfang losunar, CO2, CH4, N2O, CO2e, kolefnisgjald, vatn, úrgangur, orka og víddir frá staðlaðri bókun.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bókunardagur, skjal, reikningur, umfang losunar, CO2, CH4, N2O, CO2e, kolefnisgjald, vatn, úrgangur, orka og víddir frá staðlaðri bókun.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetResponse - NamedType EntriesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - Method 4268477247 - NamedType 633872462" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value entries captured during preview; empty when the journal creates none.</source>
+          <target>Virðisfærslur í forskoðun; tómt þegar bókin stofnar engar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Virðisfærslur í forskoðun; tómt þegar bókin stofnar engar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetResponse - NamedType ValuesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 884022185 - Method 4268477247 - NamedType 1308046429" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sums of CO2, CH4, N2O, CO2e, carbonFee, water, waste and energy over the ledger entries.</source>
+          <target>Samtölur CO2, CH4, N2O, CO2e, kolefnisgjalds, vatns, úrgangs og orku úr sjálfbærnifærslum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Samtölur CO2, CH4, N2O, CO2e, kolefnisgjalds, vatns, úrgangs og orku úr sjálfbærnifærslum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetResponse - NamedType TotalsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1376074593 - NamedType 1752251194" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This operation requires an active posting preview.</source>
+          <target>Þessi aðgerð krefst virkrar forskoðunar bókunar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Þessi aðgerð krefst virkrar forskoðunar bókunar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Runner ori - NamedType PreviewRequiredErr</note>
         </trans-unit>
         <trans-unit id="Codeunit 1071755897 - NamedType 2142096021" size-unit="char" translate="yes" xml:space="preserve">
           <source>baseline</source>
@@ -771,599 +1347,23 @@
           <note from="Developer" annotates="general" priority="2">is-IS=Beiðnin inniheldur annan lykil en scorecardNo, goalNo, baselineFrom, baselineTo, currentFrom eða currentTo.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Scorecard Get Impl ori - NamedType UnknownKeyWhenLbl</note>
         </trans-unit>
-        <trans-unit id="Table 2869149468 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Sustainability Emission Read Access</source>
-          <target>Lesaðgangur að losunaryfirliti</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Lesaðgangur að losunaryfirliti</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Emission Access ori - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2869149468 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Primary Key</source>
-          <target>Aðallykill</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Aðallykill</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Emission Access ori - Field Primary Key - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 2326265146" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Use one of the allowed values and retry.</source>
-          <target>Notaðu eitt af leyfðu gildunum og reyndu aftur.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Notaðu eitt af leyfðu gildunum og reyndu aftur.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType AllowedValueNextLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 1098416156" size-unit="char" translate="yes" xml:space="preserve">
-          <source>a date in the form YYYY-MM-DD, with fromDate on or before toDate</source>
-          <target>dagsetning á forminu ÁÁÁÁ-MM-DD þar sem fromDate er sama dag eða á undan toDate</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=dagsetning á forminu ÁÁÁÁ-MM-DD þar sem fromDate er sama dag eða á undan toDate</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType DateExpectedLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 1412843979" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Send fromDate and toDate as YYYY-MM-DD dates with fromDate on or before toDate.</source>
-          <target>Sendu fromDate og toDate sem ÁÁÁÁ-MM-DD dagsetningar þar sem fromDate er sama dag eða á undan toDate.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Sendu fromDate og toDate sem ÁÁÁÁ-MM-DD dagsetningar þar sem fromDate er sama dag eða á undan toDate.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType DateNextLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 3569966352" maxwidth="250" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Summarises sustainability emissions by emission scope, period and gas.</source>
-          <target>Tekur saman losun eftir umfangi, tímabili og gastegund.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Tekur saman losun eftir umfangi, tímabili og gastegund.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType DescriptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 4195077024" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Correct the named request parameter and retry.</source>
-          <target>Leiðréttu tilgreinda færibreytu beiðninnar og reyndu aftur.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Leiðréttu tilgreinda færibreytu beiðninnar og reyndu aftur.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType FixParameterLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 1977192435" size-unit="char" translate="yes" xml:space="preserve">
-          <source>InvalidPeriod: '%1' must be a date (YYYY-MM-DD), and fromDate must not be after toDate.</source>
-          <target>InvalidPeriod: '%1' verður að vera dagsetning (ÁÁÁÁ-MM-DD) og fromDate má ekki vera eftir toDate.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = parameter name|is-IS=InvalidPeriod: '%1' verður að vera dagsetning (ÁÁÁÁ-MM-DD) og fromDate má ekki vera eftir toDate.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType InvalidPeriodErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 3319458594" size-unit="char" translate="yes" xml:space="preserve">
-          <source>a list of text values</source>
-          <target>listi af textagildum</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=listi af textagildum</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType ListExpectedLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 1575191754" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The required parameter '%1' is missing.</source>
-          <target>Nauðsynlega færibreytu '%1' vantar.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = parameter name|is-IS=Nauðsynlega færibreytu '%1' vantar.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType MissingKeyErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Read-only and idempotent: totals are database sums over Sustainability Ledger Entry, nothing is written and there is no Commit on the path. Periods follow the calendar (weeks start on Monday) and are clipped to fromDate and toDate; at most 400 periods are returned. Closing-date entries count in the period of their date. Reversed entries and their reversals both count, so they net out. Optional filters emissionScope, countryRegionCode, responsibilityCenter, globalDimension1Code and globalDimension2Code narrow the entries. include accepts water, waste and energy; water adds waterIntensity and dischargedIntoWater, waste adds wasteIntensity, energy adds energyConsumption, summed over the entries of the scope row. Ledger rows outside Scope 1-3 (Water/Waste, Out of Scope, blank) are not summarised.</source>
-          <target>Aðeins lestur og sama niðurstaða við endurtekningu: samtölur eru gagnagrunnssummur úr Sustainability Ledger Entry, engu er breytt og ekkert Commit er á leiðinni. Tímabil fylgja dagatalinu (vikur byrja á mánudegi) og eru skorin við fromDate og toDate; að hámarki eru 400 tímabil skiluð. Færslur á lokadagsetningu teljast á tímabil dagsetningar sinnar. Bakfærðar færslur og bakfærslur þeirra teljast báðar og jafnast því út. Valfrjálsar síur emissionScope, countryRegionCode, responsibilityCenter, globalDimension1Code og globalDimension2Code þrengja færslurnar. include tekur water, waste og energy; water bætir við waterIntensity og dischargedIntoWater, waste bætir við wasteIntensity, energy bætir við energyConsumption, samanlagt yfir færslur umfangsins. Færslur utan Scope 1-3 (Water/Waste, Out of Scope, autt) eru ekki teknar saman.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Aðeins lestur og sama niðurstaða við endurtekningu: samtölur eru gagnagrunnssummur úr Sustainability Ledger Entry, engu er breytt og ekkert Commit er á leiðinni. Tímabil fylgja dagatalinu (vikur byrja á mánudegi) og eru skorin við fromDate og toDate; að hámarki eru 400 tímabil skiluð. Færslur á lokadagsetningu teljast á tímabil dagsetningar sinnar. Bakfærðar færslur og bakfærslur þeirra teljast báðar og jafnast því út. Valfrjálsar síur emissionScope, countryRegionCode, responsibilityCenter, globalDimension1Code og globalDimension2Code þrengja færslurnar. include tekur water, waste og energy; water bætir við waterIntensity og dischargedIntoWater, waste bætir við wasteIntensity, energy bætir við energyConsumption, samanlagt yfir færslur umfangsins. Færslur utan Scope 1-3 (Water/Waste, Out of Scope, autt) eru ekki teknar saman.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType NotesLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 3593894611" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Returns posted sustainability emissions summed per emission scope (Scope 1, Scope 2, Scope 3) and per period between fromDate and toDate: CO2, CH4, N2O, CO2e and carbon fee, plus water, waste and energy totals on request, and a grand total per scope. Units come from Sustainability Setup.</source>
-          <target>Skilar bókaðri losun samanlagðri eftir umfangi (Scope 1, Scope 2, Scope 3) og tímabili frá fromDate til toDate: CO2, CH4, N2O, CO2e og kolefnisgjald, auk vatns-, úrgangs- og orkusamtalna sé þess óskað, og heildarsamtölu fyrir hvert umfang. Einingar koma úr uppsetningu sjálfbærni.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Skilar bókaðri losun samanlagðri eftir umfangi (Scope 1, Scope 2, Scope 3) og tímabili frá fromDate til toDate: CO2, CH4, N2O, CO2e og kolefnisgjald, auk vatns-, úrgangs- og orkusamtalna sé þess óskað, og heildarsamtölu fyrir hvert umfang. Einingar koma úr uppsetningu sjálfbærni.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType OverviewLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 315309378" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Reading emission summaries requires BIFROST SustRead ori and read access to the Sustainability ledger and setup (Microsoft's Sustainability Read).</source>
-          <target>Til að lesa losunaryfirlit þarf BIFROST SustRead ori og lesaðgang að fjárhag og uppsetningu sjálfbærni (Sustainability Read frá Microsoft).</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Til að lesa losunaryfirlit þarf BIFROST SustRead ori og lesaðgang að fjárhag og uppsetningu sjálfbærni (Sustainability Read frá Microsoft).</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType PermissionErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 3932376842" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Ask an administrator for BIFROST SustRead ori (included in BIFROST Read ori and BIFROST Full ori) and Sustainability Read.</source>
-          <target>Biddu stjórnanda um BIFROST SustRead ori (er hluti af BIFROST Read ori og BIFROST Full ori) og Sustainability Read.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Biddu stjórnanda um BIFROST SustRead ori (er hluti af BIFROST Read ori og BIFROST Full ori) og Sustainability Read.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType PermissionNextLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 1879669363" size-unit="char" translate="yes" xml:space="preserve">
-          <source>a text value</source>
-          <target>textagildi</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=textagildi</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType TextExpectedLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 3297756640" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The result would contain more than %1 periods. Use a larger periodType or a shorter date range.</source>
-          <target>Niðurstaðan yrði meira en %1 tímabil. Notaðu stærri periodType eða styttra dagsetningabil.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = maximum number of periods|is-IS=Niðurstaðan yrði meira en %1 tímabil. Notaðu stærri periodType eða styttra dagsetningabil.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType TooManyPeriodsErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 979809767" size-unit="char" translate="yes" xml:space="preserve">
-          <source>at most %1 periods</source>
-          <target>að hámarki %1 tímabil</target>
-          <note from="Developer" annotates="general" priority="2">%1 = maximum number of periods|is-IS=að hámarki %1 tímabil</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType TooManyPeriodsExpectedLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 802113960" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Choose a larger periodType (for example Month instead of Day) or a shorter date range.</source>
-          <target>Veldu stærri periodType (til dæmis Month í stað Day) eða styttra dagsetningabil.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Veldu stærri periodType (til dæmis Month í stað Day) eða styttra dagsetningabil.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType TooManyPeriodsNextLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 2912406318" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Unknown parameter '%1'.</source>
-          <target>Óþekkt færibreyta '%1'.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = parameter name|is-IS=Óþekkt færibreyta '%1'.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType UnknownKeyErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - NamedType 2474658010" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The value '%2' of '%1' is not allowed. Allowed values: %3.</source>
-          <target>Gildið '%2' í '%1' er ekki leyft. Leyfð gildi: %3.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = parameter name, %2 = received value, %3 = allowed values|is-IS=Gildið '%2' í '%1' er ekki leyft. Leyfð gildi: %3.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - NamedType UnknownValueErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 789657793 - Method 1027590672 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Sustainability.EmissionSummary.Get, sustainability, emission, emissions, CO2, CO2e, greenhouse gas, scope 1, scope 2, scope 3, carbon fee, ESG</source>
-          <target>Sustainability.EmissionSummary.Get, sjálfbærni, losun, útblástur, CO2, CO2e, gróðurhúsalofttegund, umfang 1, umfang 2, umfang 3, kolefnisgjald, UFS</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Sustainability.EmissionSummary.Get, sjálfbærni, losun, útblástur, CO2, CO2e, gróðurhúsalofttegund, umfang 1, umfang 2, umfang 3, kolefnisgjald, UFS</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Emission Sum Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
-        </trans-unit>
-        <trans-unit id="Table 4135161029 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Sustainability preview access</source>
-          <target>Aðgangur að forskoðun sjálfbærni</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Aðgangur að forskoðun sjálfbærni</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Preview Access ori - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 4135161029 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Entry No.</source>
-          <target>Færslunr.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Færslunr.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Preview Access ori - Field Entry No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - NamedType 1698601683" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Sustainability journal batch %1/%2 does not exist.</source>
-          <target>Keyrsla sjálfbærnibókar %1/%2 er ekki til.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = template, %2 = batch||is-IS=Keyrsla sjálfbærnibókar %1/%2 er ekki til.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType BatchErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - NamedType 3316243964" size-unit="char" translate="yes" xml:space="preserve">
-          <source>An existing sustainability journal batch %1/%2.</source>
-          <target>Fyrirliggjandi keyrsla sjálfbærnibókar %1/%2.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = template, %2 = batch||is-IS=Fyrirliggjandi keyrsla sjálfbærnibókar %1/%2.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType BatchExpectedLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - NamedType 857380347" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Choose an existing sustainability journal template and batch.</source>
-          <target>Veldu fyrirliggjandi sniðmát og keyrslu sjálfbærnibókar.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Veldu fyrirliggjandi sniðmát og keyrslu sjálfbærnibókar.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType BatchFixLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - NamedType 3923529917" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Run Sustainability.Journal.Check and correct every reported journal error.</source>
-          <target>Keyrðu Sustainability.Journal.Check og leiðréttu allar villur sem koma fram.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Keyrðu Sustainability.Journal.Check og leiðréttu allar villur sem koma fram.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType CheckFixLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - NamedType 3569966352" maxwidth="250" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Preview the sustainability entries a journal batch would create. All posting changes are rolled back.</source>
-          <target>Forskoða sjálfbærnifærslur sem bókarkeyrsla myndi stofna. Öllum bókunarbreytingum er afturkallað.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Forskoða sjálfbærnifærslur sem bókarkeyrsla myndi stofna. Öllum bókunarbreytingum er afturkallað.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType DescriptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - NamedType 3777985252" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The sustainability journal batch has no lines.</source>
-          <target>Keyrsla sjálfbærnibókar hefur engar línur.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Keyrsla sjálfbærnibókar hefur engar línur.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType EmptyErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
-          <source>preview sustainability journal, simulate emissions posting, check sustainability entries</source>
-          <target>forskoða sjálfbærnibók, herma bókun losunar, athuga sjálfbærnifærslur</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=forskoða sjálfbærnibók, herma bókun losunar, athuga sjálfbærnifærslur</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType KeywordsLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - NamedType 1601715269" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The sustainability journal is not ready for posting.</source>
-          <target>Sjálfbærnibókin er ekki tilbúin til bókunar.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Sjálfbærnibókin er ekki tilbúin til bókunar.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType NotReadyErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - NamedType 2191129744" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Parameter %1 must be a non-empty string of at most 10 characters.</source>
-          <target>Færibreytan %1 verður að vera texti með 1 til 10 stöfum.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = parameter||is-IS=Færibreytan %1 verður að vera texti með 1 til 10 stöfum.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType ParameterErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - NamedType 1989765040" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Supply only templateName and batchName, using existing journal codes.</source>
-          <target>Tilgreindu aðeins templateName og batchName með fyrirliggjandi bókarkóðum.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Tilgreindu aðeins templateName og batchName með fyrirliggjandi bókarkóðum.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType ParameterFixLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - NamedType 315309378" size-unit="char" translate="yes" xml:space="preserve">
-          <source>You do not have permission to preview sustainability journals.</source>
-          <target>Þú hefur ekki heimild til að forskoða sjálfbærnibækur.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Þú hefur ekki heimild til að forskoða sjálfbærnibækur.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType PermissionErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - NamedType 4114032018" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Ask an administrator for BIFROST SustRead ori and the required Business Central permissions.</source>
-          <target>Biðjið kerfisstjóra um BIFROST SustRead ori og nauðsynlegar Business Central heimildir.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Biðjið kerfisstjóra um BIFROST SustRead ori og nauðsynlegar Business Central heimildir.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType PermissionFixLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - NamedType 2845165943" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Business Central could not preview this journal. No posting changes were committed.</source>
-          <target>Business Central gat ekki forskoðað þessa bók. Engar bókunarbreytingar voru vistaðar.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Business Central gat ekki forskoðað þessa bók. Engar bókunarbreytingar voru vistaðar.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType PostingErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - NamedType 1668614503" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Unknown request parameter: %1.</source>
-          <target>Óþekkt færibreyta beiðni: %1.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = parameter||is-IS=Óþekkt færibreyta beiðni: %1.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - NamedType UnknownErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - Method 1479631707 - NamedType 1449450473" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Posting runs on a temporary journal snapshot inside the standard preview transaction. After processing every line, the standard approval check runs and preview rolls back before line deletion. Number-series updates and entries are rolled back. No Commit is called; explicit commits inside preview are rejected.</source>
-          <target>Bókun keyrir á tímabundnu afriti bókarlína innan staðlaðrar forskoðunar. Eftir vinnslu allra lína er stöðluð samþykktarathugun keyrð og forskoðun afturkölluð fyrir eyðingu lína. Uppfærslu númeraraða og færslum er afturkallað. Ekki er kallað á Commit; slík vistun innan forskoðunar er ekki leyfð.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Bókun keyrir á tímabundnu afriti bókarlína innan staðlaðrar forskoðunar. Eftir vinnslu allra lína er stöðluð samþykktarathugun keyrð og forskoðun afturkölluð fyrir eyðingu lína. Uppfærslu númeraraða og færslum er afturkallað. Ekki er kallað á Commit; slík vistun innan forskoðunar er ekki leyfð.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetEffect - NamedType ChangesLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - Method 1479631707 - NamedType 1687577938" size-unit="char" translate="yes" xml:space="preserve">
-          <source>An existing journal batch whose lines pass the standard sustainability journal check.</source>
-          <target>Fyrirliggjandi bókarkeyrsla með línum sem standast staðlaða athugun sjálfbærnibókar.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Fyrirliggjandi bókarkeyrsla með línum sem standast staðlaða athugun sjálfbærnibókar.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetEffect - NamedType PreconditionLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - Method 3255554567 - NamedType 1582893390" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Preview a demo journal</source>
-          <target>Forskoða sýnibók</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Forskoða sýnibók</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetExamples - NamedType TitleLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - Method 3650283039 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
-          <source>An empty batch is PreconditionFailed. Unknown keys are refused. Hidden types remain callable when Sustainability is unconfigured. The preview never posts a ledger entry or consumes a journal line.</source>
-          <target>Tóm keyrsla skilar PreconditionFailed. Óþekktum lyklum er hafnað. Faldar tegundir eru áfram kallanlegar þegar sjálfbærni er óuppsett. Forskoðun bókar aldrei færslu né eyðir bókarlínu.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Tóm keyrsla skilar PreconditionFailed. Óþekktum lyklum er hafnað. Faldar tegundir eru áfram kallanlegar þegar sjálfbærni er óuppsett. Forskoðun bókar aldrei færslu né eyðir bókarlínu.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetNotes - NamedType NotesLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - Method 3615801952 - NamedType 807217974" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Existing sustainability journal template code, up to 10 characters.</source>
-          <target>Fyrirliggjandi sniðmátskóði sjálfbærnibókar, allt að 10 stafir.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Fyrirliggjandi sniðmátskóði sjálfbærnibókar, allt að 10 stafir.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetParameters - NamedType TemplateLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - Method 3615801952 - NamedType 1533895450" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Existing batch in that template, up to 10 characters.</source>
-          <target>Fyrirliggjandi keyrsla í sniðmátinu, allt að 10 stafir.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Fyrirliggjandi keyrsla í sniðmátinu, allt að 10 stafir.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetParameters - NamedType BatchLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - Method 4268477247 - NamedType 851404832" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Always true. No posting changes are committed.</source>
-          <target>Alltaf satt. Engar bókunarbreytingar eru vistaðar.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Alltaf satt. Engar bókunarbreytingar eru vistaðar.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetResponse - NamedType RollbackLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - Method 4268477247 - NamedType 3071622107" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Count of captured ledger and value entries.</source>
-          <target>Fjöldi sjálfbærni- og virðisfærslna í forskoðun.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Fjöldi sjálfbærni- og virðisfærslna í forskoðun.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetResponse - NamedType CountLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - Method 4268477247 - NamedType 392547388" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Posting date, document, account, emission scope, CO2, CH4, N2O, CO2e, carbon fee, water, waste, energy and dimensions from the standard posting engine.</source>
-          <target>Bókunardagur, skjal, reikningur, umfang losunar, CO2, CH4, N2O, CO2e, kolefnisgjald, vatn, úrgangur, orka og víddir frá staðlaðri bókun.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Bókunardagur, skjal, reikningur, umfang losunar, CO2, CH4, N2O, CO2e, kolefnisgjald, vatn, úrgangur, orka og víddir frá staðlaðri bókun.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetResponse - NamedType EntriesLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - Method 4268477247 - NamedType 633872462" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Value entries captured during preview; empty when the journal creates none.</source>
-          <target>Virðisfærslur í forskoðun; tómt þegar bókin stofnar engar.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Virðisfærslur í forskoðun; tómt þegar bókin stofnar engar.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetResponse - NamedType ValuesLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 884022185 - Method 4268477247 - NamedType 1308046429" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Sums of CO2, CH4, N2O, CO2e, carbonFee, water, waste and energy over the ledger entries.</source>
-          <target>Samtölur CO2, CH4, N2O, CO2e, kolefnisgjalds, vatns, úrgangs og orku úr sjálfbærnifærslum.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Samtölur CO2, CH4, N2O, CO2e, kolefnisgjalds, vatns, úrgangs og orku úr sjálfbærnifærslum.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Post Impl ori - Method GetResponse - NamedType TotalsLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1376074593 - NamedType 1752251194" size-unit="char" translate="yes" xml:space="preserve">
-          <source>This operation requires an active posting preview.</source>
-          <target>Þessi aðgerð krefst virkrar forskoðunar bókunar.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Þessi aðgerð krefst virkrar forskoðunar bókunar.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Preview Runner ori - NamedType PreviewRequiredErr</note>
-        </trans-unit>
-      <trans-unit id="Table 3362049683 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Category Write Access</source>
-          <target>Skrifaðgangur að flokkum</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Skrifaðgangur að flokkum</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Category Access ori - Property Caption</note>
-        </trans-unit>
-      <trans-unit id="Table 3362049683 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Primary Key</source>
-          <target>Aðallykill</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Aðallykill</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Category Access ori - Field Primary Key - Property Caption</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 2323544895" size-unit="char" translate="yes" xml:space="preserve">
-          <source>an array of subcategory objects</source>
-          <target>fylki af undirflokkshlutum</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=fylki af undirflokkshlutum</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType ArrayExpectedLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 3030677188" size-unit="char" translate="yes" xml:space="preserve">
-          <source>a JSON boolean</source>
-          <target>JSON-rökgildi</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=JSON-rökgildi</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType BooleanExpectedLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 212599149" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Follow the Business Central message; correct the setup or use a new category. No changes were saved.</source>
-          <target>Fylgdu skilaboðum Business Central; leiðréttu uppsetningu eða notaðu nýjan flokk. Engar breytingar voru vistaðar.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Fylgdu skilaboðum Business Central; leiðréttu uppsetningu eða notaðu nýjan flokk. Engar breytingar voru vistaðar.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType BusinessFixLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 3337763772" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Microsoft validation rejects the request, including an emission scope change on a category used by posted ledger entries.</source>
-          <target>Sannprófun Microsoft hafnar beiðni, meðal annars breytingu á losunarumfangi flokks sem er notaður í bókuðum færslum.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Sannprófun Microsoft hafnar beiðni, meðal annars breytingu á losunarumfangi flokks sem er notaður í bókuðum færslum.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType BusinessWhenLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 3370320355" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Category as stored, using the request field names and invariant enum names.</source>
-          <target>Flokkur eins og hann er vistaður með heitum færibreyta og föstum upptalningarheitum.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Flokkur eins og hann er vistaður með heitum færibreyta og föstum upptalningarheitum.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType CategoryResponseLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 1449450473" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Upserts Sustain. Account Category and listed Sustain. Account Subcategory records through Validate, Insert(true) and Modify(true). Standard validation may recalculate related journal lines. Never deletes a subcategory or posts a ledger entry.</source>
-          <target>Stofnar eða uppfærir sjálfbærnireikningsflokk og tilgreinda undirflokka með Validate, Insert(true) og Modify(true). Stöðluð sannprófun getur endurreiknað tengdar bókarlínur. Eyðir aldrei undirflokki og bókar aldrei fjárhagsfærslu.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Stofnar eða uppfærir sjálfbærnireikningsflokk og tilgreinda undirflokka með Validate, Insert(true) og Modify(true). Stöðluð sannprófun getur endurreiknað tengdar bókarlínur. Eyðir aldrei undirflokki og bókar aldrei fjárhagsfærslu.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType ChangesLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 2415667290" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Category code, required text, maximum 20 characters.</source>
-          <target>Flokkskóði, nauðsynlegur texti, að hámarki 20 stafir.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Flokkskóði, nauðsynlegur texti, að hámarki 20 stafir.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType CodeHelpLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 3569966352" maxwidth="250" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Creates or updates a sustainability account category and its listed subcategories using Microsoft validation. Leaves other subcategories unchanged and posts no ledger entries.</source>
-          <target>Stofnar eða uppfærir sjálfbærnireikningsflokk og tilgreinda undirflokka með sannprófun Microsoft. Aðrir undirflokkar haldast óbreyttir og engar fjárhagsfærslur eru bókaðar.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Stofnar eða uppfærir sjálfbærnireikningsflokk og tilgreinda undirflokka með sannprófun Microsoft. Aðrir undirflokkar haldast óbreyttir og engar fjárhagsfærslur eru bókaðar.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType DescriptionLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 36270934" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Maintain a demo fuel category</source>
-          <target>Viðhalda eldsneytisflokki í sýnigögnum</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Viðhalda eldsneytisflokki í sýnigögnum</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType ExampleLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 2078768823" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Correct the named parameter and retry; no changes were saved.</source>
-          <target>Leiðréttu tilgreinda færibreytu og reyndu aftur; engar breytingar voru vistaðar.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Leiðréttu tilgreinda færibreytu og reyndu aftur; engar breytingar voru vistaðar.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType FixLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 3128388233" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Optional JSON boolean; omitted values are unchanged.</source>
-          <target>Valfrjálst JSON-rökgildi; gildi sem er sleppt helst óbreytt.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Valfrjálst JSON-rökgildi; gildi sem er sleppt helst óbreytt.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType FlagHelpLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 1170860084" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Invariant enum name: blank, Fuel/Electricity, Distance, Installations or Custom.</source>
-          <target>Fast upptalningarheiti: bil, Fuel/Electricity, Distance, Installations eða Custom.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Fast upptalningarheiti: bil, Fuel/Electricity, Distance, Installations eða Custom.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType FoundationHelpLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 3177803720" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Invalid parameter %1. Expected %2.</source>
-          <target>Ógild færibreyta %1. Búist var við %2.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = parameter name, %2 = expected value|is-IS=Ógild færibreyta %1. Búist var við %2.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType InvalidErr</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 1830439019" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The required parameter %1 is missing or empty.</source>
-          <target>Nauðsynlega færibreytu %1 vantar eða hún er tóm.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = parameter name|is-IS=Nauðsynlega færibreytu %1 vantar eða hún er tóm.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType MissingErr</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Only code is required. Omitted fields retain stored values; new records use Microsoft defaults. Enum inputs use the invariant Microsoft enum names, not translated captions. Each listed subcategory requires code; omitted subcategories are never deleted. Microsoft validation can recalculate existing sustainability journal lines and refuse changes to categories used by ledger entries. No posting codeunit or external service is called. There is no explicit Commit; normal Codeunit.Run commits the complete successful write and rolls it back on refusal. Omit Commit delegates transaction and rollback ownership to the caller. Explicit subscriber commits are prohibited.</source>
-          <target>Aðeins code er skylda. Slepptri færibreytu er haldið óbreyttri; nýjar færslur nota sjálfgefin gildi Microsoft. Upptalningar nota föst heiti Microsoft en ekki þýdda titla. Hver tilgreindur undirflokkur krefst code; undirflokkum er aldrei eytt. Sannprófun Microsoft getur endurreiknað sjálfbærnibókarlínur og hafnað breytingum á flokkum sem eru notaðir í fjárhagsfærslum. Engin bókunarvinnsla eða ytri þjónusta er kölluð. Ekkert beint Commit er notað; venjulegt Codeunit.Run vistar alla breytinguna þegar hún tekst og bakfærir við höfnun. Með Omit Commit ber kallandi ábyrgð á færslu og bakfærslu. Beinar staðfestingar áskrifenda eru bannaðar.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Aðeins code er skylda. Slepptri færibreytu er haldið óbreyttri; nýjar færslur nota sjálfgefin gildi Microsoft. Upptalningar nota föst heiti Microsoft en ekki þýdda titla. Hver tilgreindur undirflokkur krefst code; undirflokkum er aldrei eytt. Sannprófun Microsoft getur endurreiknað sjálfbærnibókarlínur og hafnað breytingum á flokkum sem eru notaðir í fjárhagsfærslum. Engin bókunarvinnsla eða ytri þjónusta er kölluð. Ekkert beint Commit er notað; venjulegt Codeunit.Run vistar alla breytinguna þegar hún tekst og bakfærir við höfnun. Með Omit Commit ber kallandi ábyrgð á færslu og bakfærslu. Beinar staðfestingar áskrifenda eru bannaðar.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType NotesLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 93319113" size-unit="char" translate="yes" xml:space="preserve">
-          <source>a JSON number</source>
-          <target>JSON-tölugildi</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=JSON-tölugildi</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType NumberExpectedLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 3451652123" size-unit="char" translate="yes" xml:space="preserve">
-          <source>a subcategory object</source>
-          <target>undirflokkshlutur</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=undirflokkshlutur</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType ObjectExpectedLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 315309378" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Category maintenance requires BIFROST SustFull ori.</source>
-          <target>Viðhald flokka krefst BIFROST SustFull ori.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Viðhald flokka krefst BIFROST SustFull ori.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType PermissionErr</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 4114032018" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Ask an administrator for BIFROST SustFull ori and the Microsoft Sustainability permissions.</source>
-          <target>Biddu stjórnanda um BIFROST SustFull ori og sjálfbærniheimildir Microsoft.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Biddu stjórnanda um BIFROST SustFull ori og sjálfbærniheimildir Microsoft.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType PermissionFixLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 4278021287" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Full role and native Microsoft table permissions; values must satisfy standard Sustainability validation. Configuration controls roster visibility only and does not block a known type.</source>
-          <target>Fullt hlutverk og staðlaðar töfluheimildir Microsoft; gildi verða að standast sjálfbærnisannprófun. Uppsetning stýrir aðeins sýnileika og hindrar ekki kall á þekkta tegund.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Fullt hlutverk og staðlaðar töfluheimildir Microsoft; gildi verða að standast sjálfbærnisannprófun. Uppsetning stýrir aðeins sýnileika og hindrar ekki kall á þekkta tegund.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType PreconditionsLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 367311843" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Invariant enum name: blank, Scope 1, Scope 2, Scope 3, Water/Waste or Out of Scope. Extensions may add names.</source>
-          <target>Fast upptalningarheiti: bil, Scope 1, Scope 2, Scope 3, Water/Waste eða Out of Scope. Viðbætur geta bætt við heitum.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Fast upptalningarheiti: bil, Scope 1, Scope 2, Scope 3, Water/Waste eða Out of Scope. Viðbætur geta bætt við heitum.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType ScopeHelpLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 5339811" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Array of objects: required code (20 characters), optional description (100), emissionFactorCO2, emissionFactorCH4, emissionFactorN2O (JSON numbers) and renewableEnergy (JSON boolean). Unknown nested keys are refused. Unlisted subcategories remain unchanged.</source>
-          <target>Fylki hluta: code er skylda (20 stafir), valfrjálst description (100), emissionFactorCO2, emissionFactorCH4, emissionFactorN2O (JSON-tölur) og renewableEnergy (JSON-rökgildi). Óþekktum undirlyklum er hafnað. Ótilgreindir undirflokkar haldast óbreyttir.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Fylki hluta: code er skylda (20 stafir), valfrjálst description (100), emissionFactorCO2, emissionFactorCH4, emissionFactorN2O (JSON-tölur) og renewableEnergy (JSON-rökgildi). Óþekktum undirlyklum er hafnað. Ótilgreindir undirflokkar haldast óbreyttir.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType SubcategoriesHelpLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 1477760623" size-unit="char" translate="yes" xml:space="preserve">
-          <source>All stored subcategories of this category, including those not listed in the request.</source>
-          <target>Allir vistaðir undirflokkar þessa flokks, einnig þeir sem eru ekki tilgreindir í beiðni.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Allir vistaðir undirflokkar þessa flokks, einnig þeir sem eru ekki tilgreindir í beiðni.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType SubcategoryResponseLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 3854350619" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Success.</source>
-          <target>Tókst.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Tókst.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType SuccessLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 1879669363" size-unit="char" translate="yes" xml:space="preserve">
-          <source>text of at most %1 characters</source>
-          <target>texti með að hámarki %1 stöfum</target>
-          <note from="Developer" annotates="general" priority="2">%1 = maximum length|is-IS=texti með að hámarki %1 stöfum</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType TextExpectedLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - NamedType 1668614503" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Unknown parameter %1.</source>
-          <target>Óþekkt færibreyta %1.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = parameter name|is-IS=Óþekkt færibreyta %1.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - NamedType UnknownErr</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 1514881569 - Method 1027590672 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
-          <source>sustainability, category, subcategory, emission factor, maintain category, renewable energy</source>
-          <target>sjálfbærni, flokkur, undirflokkur, losunarstuðull, viðhalda flokki, endurnýjanleg orka</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=sjálfbærni, flokkur, undirflokkur, losunarstuðull, viðhalda flokki, endurnýjanleg orka</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Category Set Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
-        </trans-unit>
-          <trans-unit id="Table 1591406506 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Sustainability goal write access</source>
-          <target>Aðgangur að ritun sjálfbærnimarkmiða</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Aðgangur að ritun sjálfbærnimarkmiða</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Goal Set Access ori - Property Caption</note>
-        </trans-unit>
-      <trans-unit id="Table 1591406506 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Primary key</source>
-          <target>Aðallykill</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Aðallykill</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Goal Set Access ori - Field Primary Key - Property Caption</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 761798470 - NamedType 2536038079" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The baseline end date of goal %1 is before its baseline start date.</source>
-          <target>Lokadagsetning grunnlínu markmiðs %1 er á undan upphafsdagsetningu grunnlínunnar.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = goal no., is-IS=Lokadagsetning grunnlínu markmiðs %1 er á undan upphafsdagsetningu grunnlínunnar.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType BaselineEndBeforeStartTxt</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 761798470 - NamedType 1615947222" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The baseline period of goal %1 must end before the goal period starts.</source>
-          <target>Grunnlínutímabil markmiðs %1 verður að enda áður en markmiðstímabilið hefst.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = goal no., is-IS=Grunnlínutímabil markmiðs %1 verður að enda áður en markmiðstímabilið hefst.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType BaselineNotBeforeGoalTxt</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 761798470 - NamedType 3181543810" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The end date of goal %1 is before its start date.</source>
-          <target>Lokadagsetning markmiðs %1 er á undan upphafsdagsetningu þess.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = goal no., is-IS=Lokadagsetning markmiðs %1 er á undan upphafsdagsetningu þess.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType EndBeforeStartTxt</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 761798470 - NamedType 2149872477" size-unit="char" translate="yes" xml:space="preserve">
-          <source>a valid goal and baseline period</source>
-          <target>gilt markmiðs- og grunnlínutímabil</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=gilt markmiðs- og grunnlínutímabil</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType ExpectedPeriodTxt</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 761798470 - NamedType 1462436902" size-unit="char" translate="yes" xml:space="preserve">
-          <source>a scorecard number</source>
-          <target>númer skorkorts</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=númer skorkorts</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType ExpectedScorecardTxt</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 761798470 - NamedType 879891180" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Use only the keys listed in the contract of Sustainability.Goal.Set.</source>
-          <target>Notaðu aðeins lyklana sem eru taldir upp í samningi Sustainability.Goal.Set.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Notaðu aðeins lyklana sem eru taldir upp í samningi Sustainability.Goal.Set.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType FixKeyTxt</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 761798470 - NamedType 716623342" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Send a start date on or before the end date, and a baseline period that ends before the goal period starts.</source>
-          <target>Sendu upphafsdagsetningu sem er sama dag eða á undan lokadagsetningu og grunnlínutímabil sem endar áður en markmiðstímabilið hefst.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Sendu upphafsdagsetningu sem er sama dag eða á undan lokadagsetningu og grunnlínutímabil sem endar áður en markmiðstímabilið hefst.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType FixPeriodTxt</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 761798470 - NamedType 459476893" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Send scorecardNo with the scorecard number, at most 20 characters.</source>
-          <target>Sendu scorecardNo með númeri skorkortsins, að hámarki 20 stafi.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Sendu scorecardNo með númeri skorkortsins, að hámarki 20 stafi.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType FixScorecardTxt</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 761798470 - NamedType 4279912376" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Send dates as YYYY-MM-DD, numbers as JSON numbers, mainGoal as true or false and texts within the field length.</source>
-          <target>Sendu dagsetningar sem ÁÁÁÁ-MM-DD, tölur sem JSON-tölur, mainGoal sem true eða false og texta innan lengdar svæðisins.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Sendu dagsetningar sem ÁÁÁÁ-MM-DD, tölur sem JSON-tölur, mainGoal sem true eða false og texta innan lengdar svæðisins.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType FixValueTxt</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 761798470 - NamedType 1977192435" size-unit="char" translate="yes" xml:space="preserve">
-          <source>InvalidPeriod: %1 Nothing was changed.</source>
-          <target>InvalidPeriod: %1 Engu var breytt.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = the period rule that failed, is-IS=InvalidPeriod: %1 Engu var breytt.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType InvalidPeriodErr</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 761798470 - NamedType 2510853505" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The value of %1 is not valid. Nothing was changed.</source>
-          <target>Gildið í %1 er ekki gilt. Engu var breytt.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = request key, is-IS=Gildið í %1 er ekki gilt. Engu var breytt.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType InvalidValueErr</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 761798470 - NamedType 3967309767" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Every goal needs a no. Nothing was changed.</source>
-          <target>Hvert markmið þarf no. Engu var breytt.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Hvert markmið þarf no. Engu var breytt.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType MissingGoalNoErr</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 761798470 - NamedType 4229010375" size-unit="char" translate="yes" xml:space="preserve">
-          <source>scorecardNo is required. Nothing was changed.</source>
-          <target>scorecardNo er áskilið. Engu var breytt.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=scorecardNo er áskilið. Engu var breytt.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType MissingScorecardErr</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 761798470 - NamedType 315309378" size-unit="char" translate="yes" xml:space="preserve">
-          <source>You need BIFROST SustFull ori to create or update sustainability scorecards and goals.</source>
-          <target>Þú þarft BIFROST SustFull ori til að stofna eða uppfæra sjálfbærniskorkort og markmið.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Þú þarft BIFROST SustFull ori til að stofna eða uppfæra sjálfbærniskorkort og markmið.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType PermissionErr</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 761798470 - NamedType 1738233936" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Ask an administrator for the Bifrost Sustainability Full role, which Bifrost Full includes.</source>
-          <target>Biddu stjórnanda um hlutverkið Bifrost Sustainability Full sem Bifrost Full inniheldur.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Biddu stjórnanda um hlutverkið Bifrost Sustainability Full sem Bifrost Full inniheldur.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType PermissionNextTxt</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 761798470 - NamedType 2912406318" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Unknown parameter %1. Nothing was changed.</source>
-          <target>Óþekkt viðfang %1. Engu var breytt.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = request key, is-IS=Óþekkt viðfang %1. Engu var breytt.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - NamedType UnknownKeyErr</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 761798470 - Method 4077369804 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Creates or updates a sustainability scorecard and its goals with the standard validation. Goals that are not listed are left as they are. Nothing is posted.</source>
-          <target>Stofnar eða uppfærir sjálfbærniskorkort og markmið þess með staðlaðri sannprófun. Markmið sem ekki eru talin upp haldast óbreytt. Ekkert er bókað.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Stofnar eða uppfærir sjálfbærniskorkort og markmið þess með staðlaðri sannprófun. Markmið sem ekki eru talin upp haldast óbreytt. Ekkert er bókað.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - Method GetDescription - NamedType DescriptionLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 761798470 - Method 1027590672 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
-          <source>sustainability, scorecard, goal, target, emission target, baseline, main goal</source>
-          <target>sjálfbærni, skorkort, markmið, viðmið, losunarmarkmið, grunnlína, aðalmarkmið</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=sjálfbærni, skorkort, markmið, viðmið, losunarmarkmið, grunnlína, aðalmarkmið</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
-        </trans-unit>
-      <trans-unit id="Codeunit 761798470 - Method 3650283039 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Effect: the scorecard and the listed goals are created or updated with the standard table rules; goals that are not listed stay as they are. Idempotent: the same request again changes nothing. Nothing is posted and there is no Commit on this path. A refusal rolls back the whole request. In omit-commit mode the caller owns the rollback.</source>
-          <target>Áhrif: skorkortið og markmiðin sem talin eru upp eru stofnuð eða uppfærð með stöðluðum töflureglum; markmið sem ekki eru talin upp haldast óbreytt. Ídempotent: sama beiðni aftur breytir engu. Ekkert er bókað og ekkert Commit er á þessari leið. Höfnun bakfærir alla beiðnina. Í ham án staðfestingar ber kallandi ábyrgð á bakfærslu.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Áhrif: skorkortið og markmiðin sem talin eru upp eru stofnuð eða uppfærð með stöðluðum töflureglum; markmið sem ekki eru talin upp haldast óbreytt. Ídempotent: sama beiðni aftur breytir engu. Ekkert er bókað og ekkert Commit er á þessari leið. Höfnun bakfærir alla beiðnina. Í ham án staðfestingar ber kallandi ábyrgð á bakfærslu.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Goal Set Impl ori - Method GetNotes - NamedType NotesLbl</note>
+        <trans-unit id="PermissionSet 2315649480 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bifrost Sustainability</source>
+          <target>Bifröst - sjálfbærni</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST Sustain ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 3624550339 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bifrost Sustainability Full</source>
+          <target>Bifröst - sjálfbærni (fullt)</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni (fullt)</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST SustFull ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 2471902004 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bifrost Sustainability Read</source>
+          <target>Bifröst - sjálfbærni (lestur)</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - sjálfbærni (lestur)</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST SustRead ori - Property Caption</note>
         </trans-unit>
       </group>
     </body>
