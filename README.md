@@ -13,15 +13,16 @@ goals, and prepare sustainability journals. It is built on the same basis as
 
 **Microsoft source:** <https://github.com/microsoft/BCApps/tree/main/src/Apps/W1/Sustainability>
 
-**Message types:** `Sustainability.Scorecard.Get` reads a scorecard and the progress of its goals. The rest of the
-first release adds the other `Sustainability.*` reads, master-data writes and journal types listed in the release
-tracking issue. Journal posting and ledger reversal come in release 2.
+**Message types:** `Sustainability.AccountBalance.Get` reads net change and balances for selected accounts.
+`Sustainability.Scorecard.Get` reads a scorecard and the progress of its goals. The rest of the first release adds
+the other `Sustainability.*` reads, master-data writes and journal types listed in the release tracking issue.
+Journal posting and ledger reversal come in release 2.
 
 Foundation discovers this app on **Bifrost Setup** through its application registry. All setup notifications stay on
 that Foundation page. Bifrost Sustainability has no setup page of its own.
 
 Assign `BIFROST Sustain ori`, `BIFROST SustFull ori` or `BIFROST SustRead ori` alongside the appropriate Foundation
-role. Foundation Full and Read already include the matching Sustainability set. The complete object allocation is
+role. Foundation Full and Read grant this app's codeunit execution; the Sustainability sets supply the native table reads. The complete object allocation is
 recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 
 ---
@@ -39,6 +40,7 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 
 | Type | Effect | Retry behavior | Help |
 | --- | --- | --- | --- |
+| `Sustainability.AccountBalance.Get` | Read account net change and balance, including totals | Read-only and idempotent | [Contract](docs/account-balance.md) |
 | `Sustainability.Scorecard.Get` | Reads a scorecard and the baseline, current, target and progress of its goals. Posts nothing. | Idempotent. The same request reads the same rows. | [Scorecard](https://docs.bifrost.origo.is/en-us/sustainability/) |
 
 ### When the Sustainability types are listed

@@ -24,6 +24,8 @@ The app block is small. Allocate IDs densely and record every allocated id here 
 | Permission set extension | 70009204 | Sust Full Role ori (extends `BIFROST Full ori`) |
 | Permission set extension | 70009205 | Sust Read Role ori (extends `BIFROST Read ori`) |
 | Codeunit | 70009206 | Sust Configured ori (shared visibility check, D5, #1) |
+| Enum extension/value | 70009208 | Sust Account Balance ori / Sustainability.AccountBalance.Get |
+| Codeunit | 70009208 | Sust Account Bal Impl ori |
 | Enum extension | 70009209 | Sust Scorecard Msg ori |
 | Codeunit | 70009209 | Sust Scorecard Get Impl ori |
 | Test codeunit | 98000 | Sust Scaffold Tst ori |
@@ -32,6 +34,7 @@ The app block is small. Allocate IDs densely and record every allocated id here 
 | Test codeunit | 98003 | Sust Configured Perm Tst ori |
 | Test enum extension + value + codeunit | 98004 | Sust Visibility Probe ori (`Sustainability.Test.Visibility`, test-only) |
 | Test codeunit | 98005 | Sust Roster Tst ori |
+| Test codeunit | 98015 | Sust Account Balance Tst ori |
 | Test codeunit | 98020 | Sust Scorecard Get Tst ori |
 | Test codeunit | 98021 | Sust Scorecard Perm Tst ori |
 | Test permission set | 98022 | Sust Sc Exec ori |
@@ -44,7 +47,7 @@ codeunit and any capability table of a type all use that type's number, since th
 | --- | --- | --- |
 | 70009206 | allocated: Sust Configured ori | 98002-98009 |
 | 70009207 | Sustainability.EmissionSummary.Get | 98010-98014 |
-| 70009208 | Sustainability.AccountBalance.Get | 98015-98019 |
+| 70009208 | allocated: Sustainability.AccountBalance.Get | 98015-98019 |
 | 70009209 | allocated: Sustainability.Scorecard.Get | 98020-98024 |
 | 70009210 | Sustainability.Account.Set | 98025-98029 |
 | 70009211 | Sustainability.Category.Set | 98030-98034 |
