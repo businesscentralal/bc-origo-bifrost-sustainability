@@ -15,6 +15,7 @@ goals, and prepare sustainability journals. It is built on the same basis as
 
 **Message types:** `Sustainability.AccountBalance.Get` reads net change and balances for selected accounts.
 `Sustainability.Journal.Create` creates unposted journal lines with manual emissions or formula inputs.
+`Sustainability.Journal.Check` validates a journal batch without changing it.
 The first release adds the other reads, master-data writes and journal types listed in the release tracker.
 Journal posting and ledger reversal come in release 2.
 
@@ -22,8 +23,7 @@ Foundation discovers this app on **Bifrost Setup** through its application regis
 that Foundation page. Bifrost Sustainability has no setup page of its own.
 
 Assign `BIFROST Sustain ori`, `BIFROST SustFull ori` or `BIFROST SustRead ori` alongside the appropriate Foundation
-role. Foundation Full and Read grant access to this app’s own objects; assign the matching Sustainability set
-for Microsoft table permissions (the AppSource-compatible pattern established by the shared visibility gate). The complete object allocation is
+role. Foundation Full and Read receive this app's execute and capability grants; Microsoft table reads come from the assignable Sustainability sets or the user's existing Business Central roles. The complete object allocation is
 recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 
 ---
@@ -43,6 +43,7 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 | --- | --- | --- | --- |
 | `Sustainability.AccountBalance.Get` | Read account net change and balance, including totals | Read-only and idempotent | [Contract](docs/account-balance.md) |
 | `Sustainability.Journal.Create` | Write unposted lines; optionally create a batch | Every retry adds lines | `Help.Implementation.Get` |
+| `Sustainability.Journal.Check` | Read | Idempotent; all validation changes roll back | Public message-type help, en-US and is-IS |
 
 ```json
 {"type":"Sustainability.Journal.Create","data":{"templateName":"GENERAL","batchName":"DEFAULT","lines":[{"postingDate":"2026-01-15","documentNo":"SUST0001","accountNo":"1000","emissionCO2":10}]}}
@@ -67,6 +68,16 @@ adds more lines, so check the previous result before retrying.
 shared `Sust Configured ori` check: an emission unit of measure or at least one sustainability account,
 and the caller's write permissions. Hidden means absent from the roster; a caller who knows the type
 can still run it, subject to permissions and native validation.
+
+### Check a sustainability journal
+
+```json
+{"type":"Sustainability.Journal.Check","data":{"templateName":"GENERAL","batchName":"DEFAULT"}}
+```
+
+Returns `status: Success`, `ready`, `lineCount`, and `journalErrors` containing `lineNo`, `fieldName`, and `message` from Microsoft's standard journal check. Empty batches return `ready: false`, zero lines and one explanatory message. Invalid lines also return `ready: false` with all collected errors. The check never posts or changes journal data; its transaction always rolls back and rejects explicit commits.
+
+Unknown templates or batches return `RecordNotFound` with the requested codes and a corrective next step (the story's BatchNotFound reason). Unknown keys and invalid input are refused. Both names must be strings of 1–10 characters. Assign `BIFROST SustRead ori` and the required Business Central read permissions; a user lacking the capability receives `PermissionDenied` and cannot discover the type.
 
 ### When the Sustainability types are listed
 
