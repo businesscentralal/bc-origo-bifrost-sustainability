@@ -3,6 +3,18 @@
   <file datatype="xml" source-language="en-US" target-language="is-IS" original="Bifrost Sustainability">
     <body>
       <group id="body">
+        <trans-unit id="Table 4290402526 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sustainability account maintenance</source>
+          <target>Viðhald sjálfbærnireikninga</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Viðhald sjálfbærnireikninga</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Account Set Access ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4290402526 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <target>Aðallykill</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðallykill</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sust Account Set Access ori - Field Primary Key - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3362049683 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Category Write Access</source>
           <target>Skrifaðgangur að flokkum</target>
@@ -242,6 +254,138 @@
           <target>Lokadagur hreyfingar, meðtalinn, á sniðinu YYYY-MM-DD. Einnig sjálfgefinn stöðudagur.</target>
           <note from="Developer" annotates="general" priority="2">is-IS=Lokadagur hreyfingar, meðtalinn, á sniðinu YYYY-MM-DD. Einnig sjálfgefinn stöðudagur.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Bal Impl ori - NamedType ToDateLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 61036626 - NamedType 2805267460" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The sustainability account '%1' cannot be blocked because open journal lines use it in these batches: %2.</source>
+          <target>Ekki er hægt að loka sjálfbærnireikningnum '%1' því að opnar færslubókarlínur nota hann í þessum bunkum: %2.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = account number, %2 = journal template and batch names||is-IS=Ekki er hægt að loka sjálfbærnireikningnum '%1' því að opnar færslubókarlínur nota hann í þessum bunkum: %2.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Set Impl ori - NamedType AccountInUseErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 61036626 - NamedType 3539992675" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting, Heading, Total, Begin-Total or End-Total.</source>
+          <target>Posting, Heading, Total, Begin-Total eða End-Total.</target>
+          <note from="Developer" annotates="general" priority="2">Values are request tokens||is-IS=Posting, Heading, Total, Begin-Total eða End-Total.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Set Impl ori - NamedType AccountTypeValuesTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 61036626 - NamedType 3741120694" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ask your administrator for the permission set, then resend the request.</source>
+          <target>Biddu kerfisstjóra um heimildasafnið og sendu beiðnina svo aftur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Biddu kerfisstjóra um heimildasafnið og sendu beiðnina svo aftur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Set Impl ori - NamedType AskAdministratorTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 61036626 - NamedType 1599896104" size-unit="char" translate="yes" xml:space="preserve">
+          <source>true or false.</source>
+          <target>true eða false.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=true eða false.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Set Impl ori - NamedType BooleanTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 61036626 - NamedType 1656680017" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Correct %1 and resend the request.</source>
+          <target>Leiðréttu %1 og sendu beiðnina aftur.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter||is-IS=Leiðréttu %1 og sendu beiðnina aftur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Set Impl ori - NamedType CorrectParameterTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 61036626 - NamedType 3569966352" maxwidth="250" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creates or updates a sustainability account and checks that its subcategory belongs to its category.</source>
+          <target>Stofnar eða uppfærir sjálfbærnireikning og athugar að undirflokkur hans tilheyri flokki hans.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stofnar eða uppfærir sjálfbærnireikning og athugar að undirflokkur hans tilheyri flokki hans.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Set Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 61036626 - NamedType 1305304821" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The code of an existing sustainability account category.</source>
+          <target>Kóði fyrirliggjandi flokks sjálfbærnireiknings.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Kóði fyrirliggjandi flokks sjálfbærnireiknings.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Set Impl ori - NamedType ExistingCategoryTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 61036626 - NamedType 3794095353" size-unit="char" translate="yes" xml:space="preserve">
+          <source>A subcategory of the account's category.</source>
+          <target>Undirflokkur í flokki reikningsins.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Undirflokkur í flokki reikningsins.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Set Impl ori - NamedType ExistingSubcategoryTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 61036626 - NamedType 859044575" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The parameter 'accountType' has the invalid value '%1'.</source>
+          <target>Færibreytan 'accountType' hefur ógilda gildið '%1'.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = received value||is-IS=Færibreytan 'accountType' hefur ógilda gildið '%1'.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Set Impl ori - NamedType InvalidAccountTypeErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 61036626 - NamedType 3769622284" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The parameter '%1' must be true or false.</source>
+          <target>Færibreytan '%1' verður að vera true eða false.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name||is-IS=Færibreytan '%1' verður að vera true eða false.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Set Impl ori - NamedType InvalidBooleanErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 61036626 - NamedType 2450001600" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 characters at most.</source>
+          <target>Að hámarki %1 stafir.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = maximum length||is-IS=Að hámarki %1 stafir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Set Impl ori - NamedType MaximumLengthTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 61036626 - NamedType 2436593916" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The request is missing the required parameter '%1'.</source>
+          <target>Beiðnina vantar nauðsynlega færibreytu '%1'.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name||is-IS=Beiðnina vantar nauðsynlega færibreytu '%1'.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Set Impl ori - NamedType MissingParameterErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 61036626 - NamedType 3888199949" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The number of the sustainability account.</source>
+          <target>Númer sjálfbærnireikningsins.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Númer sjálfbærnireikningsins.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Set Impl ori - NamedType MissingParameterExpectedTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 61036626 - NamedType 1913413148" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No open sustainability journal lines on the account.</source>
+          <target>Engar opnar færslubókarlínur sjálfbærni á reikningnum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Engar opnar færslubókarlínur sjálfbærni á reikningnum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Set Impl ori - NamedType NoOpenLinesTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 61036626 - NamedType 315309378" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You do not have permission to maintain sustainability accounts through Bifrost. Ask your administrator for the BIFROST SustFull ori permission set.</source>
+          <target>Þú hefur ekki heimild til að viðhalda sjálfbærnireikningum í gegnum Bifröst. Biddu kerfisstjóra um heimildasafnið BIFROST SustFull ori.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Þú hefur ekki heimild til að viðhalda sjálfbærnireikningum í gegnum Bifröst. Biddu kerfisstjóra um heimildasafnið BIFROST SustFull ori.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Set Impl ori - NamedType PermissionErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 61036626 - NamedType 870608751" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The BIFROST SustFull ori permission set.</source>
+          <target>Heimildasafnið BIFROST SustFull ori.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Heimildasafnið BIFROST SustFull ori.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Set Impl ori - NamedType PermissionExpectedTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 61036626 - NamedType 2773799810" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delete or move the open journal lines of the account, then block it.</source>
+          <target>Eyddu eða færðu opnu færslubókarlínur reikningsins og lokaðu honum svo.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Eyddu eða færðu opnu færslubókarlínur reikningsins og lokaðu honum svo.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Set Impl ori - NamedType PostOrRemoveLinesTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 61036626 - NamedType 1898259847" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The sustainability account category '%1' does not exist.</source>
+          <target>Flokkur sjálfbærnireiknings '%1' er ekki til.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = category code||is-IS=Flokkur sjálfbærnireiknings '%1' er ekki til.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Set Impl ori - NamedType UnknownCategoryErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 61036626 - NamedType 2127484308" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The parameter '%1' is longer than the %2 characters allowed.</source>
+          <target>Færibreytan '%1' er lengri en leyfilegur hámarksfjöldi stafa, %2.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name, %2 = maximum length||is-IS=Færibreytan '%1' er lengri en leyfilegur hámarksfjöldi stafa, %2.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Set Impl ori - NamedType ValueTooLongErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 61036626 - NamedType 2166510278" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The subcategory '%1' does not belong to the sustainability account category '%2'.</source>
+          <target>Undirflokkurinn '%1' tilheyrir ekki flokki sjálfbærnireiknings '%2'.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = subcategory code, %2 = category code||is-IS=Undirflokkurinn '%1' tilheyrir ekki flokki sjálfbærnireiknings '%2'.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Set Impl ori - NamedType WrongSubcategoryErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 61036626 - Method 1027590672 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>create sustainability account, update sustainability account, emission account, carbon account, set account category, set account subcategory, block sustainability account, sustainability chart of accounts</source>
+          <target>stofna sjálfbærnireikning, uppfæra sjálfbærnireikning, losunarreikningur, kolefnisreikningur, setja flokk reiknings, setja undirflokk reiknings, loka sjálfbærnireikningi, bókhaldslykill sjálfbærni</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=stofna sjálfbærnireikning, uppfæra sjálfbærnireikning, losunarreikningur, kolefnisreikningur, setja flokk reiknings, setja undirflokk reiknings, loka sjálfbærnireikningi, bókhaldslykill sjálfbærni</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Set Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 61036626 - Method 79446908 - NamedType 895773054" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create or update one sustainability account: name, type, totaling, category and subcategory (checked together), direct posting, blocked and global dimensions. Writes master data and posts nothing. To read balances use Sustainability.AccountBalance.Get.</source>
+          <target>Stofna eða uppfæra einn sjálfbærnireikning: heiti, tegund, samtölu, flokk og undirflokk (athugaðir saman), beina bókun, lokun og altækar víddir. Skrifar grunngögn og bókar ekkert. Til að lesa stöður skal nota Sustainability.AccountBalance.Get.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stofna eða uppfæra einn sjálfbærnireikning: heiti, tegund, samtölu, flokk og undirflokk (athugaðir saman), beina bókun, lokun og altækar víddir. Skrifar grunngögn og bókar ekkert. Til að lesa stöður skal nota Sustainability.AccountBalance.Get.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sust Account Set Impl ori - Method GetSelectionDescription - NamedType SelectionLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 1514881569 - NamedType 2323544895" size-unit="char" translate="yes" xml:space="preserve">
           <source>an array of subcategory objects</source>
